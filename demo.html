@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Law Library Search - Demo</title>
+    <meta name="description" content="Demo of AI-powered search for legal resources, databases, and research materials">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+    
+    <style>
+        /* Same styles as index.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #0ea5e9, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .demo-notice {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #6ee7b7;
+        }
+        
+        .ai-search-container {
+            --ais-bg: #0f172a;
+            --ais-card: #1e293b;
+            --ais-muted: #94a3b8;
+            --ais-text: #f8fafc;
+            --ais-accent: #0ea5e9;
+            --ais-accent-2: #10b981;
+            --ais-danger: #ef4444;
+            --ais-border: #334155;
+            --ais-input-bg: #1e293b;
+            
+            background: var(--ais-card);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 0 auto 40px;
+            max-width: 800px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--ais-border);
+        }
+        
+        .ais-wrap { 
+            max-width: 100%; 
+            margin: 0; 
+            padding: 0;
+        }
+        
+        .ais-brand { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 8px;
+        }
+        
+        .ais-brand .icon { 
+            font-size: 24px; 
+        }
+        
+        .ais-brand .title { 
+            font-size: 1.5rem; 
+            font-weight: 600; 
+            background: linear-gradient(135deg, var(--ais-accent), var(--ais-accent-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .ais-form { 
+            margin-bottom: 20px; 
+        }
+        
+        .ais-input-group { 
+            display: flex; 
+            gap: 8px; 
+        }
+        
+        .ais-input { 
+            flex: 1; 
+            padding: 12px 16px; 
+            background: var(--ais-input-bg); 
+            border: 1px solid var(--ais-border); 
+            border-radius: 8px; 
+            color: var(--ais-text); 
+            font-size: 16px;
+            transition: all 0.2s ease;
+        }
+        
+        .ais-input:focus { 
+            outline: none; 
+            border-color: var(--ais-accent); 
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+        }
+        
+        .ais-input::placeholder { 
+            color: var(--ais-muted); 
+        }
+        
+        .ais-btn { 
+            padding: 12px 24px; 
+            background: linear-gradient(135deg, var(--ais-accent), var(--ais-accent-2)); 
+            color: white; 
+            border: none; 
+            border-radius: 8px; 
+            font-weight: 600; 
+            cursor: pointer; 
+            transition: all 0.2s ease;
+            font-size: 16px;
+        }
+        
+        .ais-btn:hover { 
+            transform: translateY(-1px); 
+            box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+        }
+        
+        .ais-btn:disabled { 
+            opacity: 0.6; 
+            cursor: not-allowed; 
+            transform: none;
+        }
+        
+        .ais-status { 
+            margin-bottom: 16px; 
+            font-size: 14px; 
+            color: var(--ais-muted);
+        }
+        
+        .ais-status.loading { 
+            color: var(--ais-accent); 
+        }
+        
+        .ais-status.error { 
+            color: var(--ais-danger); 
+        }
+        
+        .ais-results { 
+            max-height: 600px; 
+            overflow-y: auto; 
+        }
+        
+        .ais-result { 
+            background: rgba(30, 41, 59, 0.5); 
+            border: 1px solid var(--ais-border); 
+            border-radius: 8px; 
+            padding: 16px; 
+            margin-bottom: 12px; 
+            transition: all 0.2s ease;
+        }
+        
+        .ais-result:hover { 
+            border-color: var(--ais-accent); 
+            transform: translateY(-1px);
+        }
+        
+        .ais-result-title { 
+            font-weight: 600; 
+            margin-bottom: 8px; 
+            color: var(--ais-text);
+        }
+        
+        .ais-result-title a { 
+            color: var(--ais-accent); 
+            text-decoration: none; 
+        }
+        
+        .ais-result-title a:hover { 
+            text-decoration: underline; 
+        }
+        
+        .ais-result-desc { 
+            color: var(--ais-muted); 
+            margin-bottom: 8px; 
+            line-height: 1.5;
+        }
+        
+        .ais-result-meta { 
+            display: flex; 
+            gap: 16px; 
+            font-size: 12px; 
+            color: var(--ais-muted);
+        }
+        
+        .ais-legal-notice { 
+            background: rgba(239, 68, 68, 0.1); 
+            border: 1px solid rgba(239, 68, 68, 0.3); 
+            border-radius: 8px; 
+            padding: 16px; 
+            margin-bottom: 20px; 
+            font-size: 14px; 
+            color: #fecaca;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--ais-border);
+            margin-top: 60px;
+            color: var(--ais-muted);
+        }
+        
+        .footer a {
+            color: var(--ais-accent);
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .ais-input-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>⚖️ AI Law Library Search</h1>
+            <p>Intelligent search across 10,000+ legal resources, databases, and research materials</p>
+        </header>
+        
+        <div class="demo-notice">
+            <strong>📋 Demo Version:</strong> This is a demonstration of the AI Law Library Search interface. 
+            For the full experience with live AI search, visit the production version.
+        </div>
+
+        <div class="ai-search-container">
+            <div class="ais-wrap">
+                <div class="ais-brand">
+                    <span class="icon">🤖</span>
+                    <span class="title">AI Legal Research Assistant</span>
+                </div>
+                
+                <form class="ais-form" onsubmit="performDemoSearch(event)">
+                    <div class="ais-input-group">
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="ais-input" 
+                            placeholder="Try: contract law, intellectual property, employment law..."
+                            required
+                        >
+                        <button type="submit" class="ais-btn" id="searchBtn">
+                            🔍 Search Demo
+                        </button>
+                    </div>
+                </form>
+                
+                <div id="statusDiv" class="ais-status" style="display: none;"></div>
+                <div id="legalNoticeDiv" class="ais-legal-notice" style="display: none;"></div>
+                <div id="resultsDiv" class="ais-results"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>
+                Powered by AI • 
+                <a href="https://github.com/garrettstephen/libguidesearch" target="_blank">View on GitHub</a> • 
+                John Richardson Computer & Business Law Library
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Demo data - sample legal resources
+        const DEMO_RESOURCES = [
+            {
+                title: "Westlaw Legal Database",
+                description: "Comprehensive legal research database with case law, statutes, regulations, and legal journals covering all areas of law.",
+                url: "https://www.westlaw.com",
+                type: "Legal Database",
+                database: "Westlaw",
+                relevance: 0.95
+            },
+            {
+                title: "Black's Law Dictionary Online",
+                description: "The most widely used law dictionary providing definitions and pronunciations for legal terms.",
+                url: "https://www.blackslawdictionary.com",
+                type: "Reference",
+                database: "Thomson Reuters",
+                relevance: 0.88
+            },
+            {
+                title: "Cornell Law School Legal Information Institute",
+                description: "Free access to legal materials including U.S. Code, Constitution, Supreme Court decisions, and legal topics.",
+                url: "https://www.law.cornell.edu",
+                type: "Legal Portal",
+                database: "Cornell LII",
+                relevance: 0.92
+            },
+            {
+                title: "Google Scholar Legal Opinions",
+                description: "Search court opinions from federal and state courts across the United States.",
+                url: "https://scholar.google.com/schhp?hl=en&as_sdt=0,44&as_vis=1",
+                type: "Case Law",
+                database: "Google Scholar",
+                relevance: 0.85
+            },
+            {
+                title: "FindLaw Legal Resources",
+                description: "Legal information, lawyer directory, and resources for legal professionals and consumers.",
+                url: "https://www.findlaw.com",
+                type: "Legal Portal",
+                database: "FindLaw",
+                relevance: 0.78
+            },
+            {
+                title: "Justia Legal Resources",
+                description: "Free legal information including case law, codes, regulations, and legal articles.",
+                url: "https://www.justia.com",
+                type: "Legal Portal",
+                database: "Justia",
+                relevance: 0.82
+            }
+        ];
+        
+        // Keywords to resource mapping for demo
+        const KEYWORD_MAPPING = {
+            'contract': [0, 2, 4, 5],
+            'intellectual property': [0, 2, 3],
+            'employment': [0, 2, 4, 5],
+            'corporate': [0, 2, 4],
+            'constitutional': [2, 3],
+            'criminal': [0, 2, 3, 5],
+            'civil': [0, 2, 3, 4, 5],
+            'family': [0, 4, 5],
+            'tax': [0, 2, 4],
+            'business': [0, 4, 5],
+            'litigation': [0, 3, 4],
+            'bankruptcy': [0, 2, 5],
+            'real estate': [0, 2, 4, 5],
+            'privacy': [0, 2, 3, 5],
+            'healthcare': [0, 2, 4, 5]
+        };
+
+        async function performDemoSearch(event) {
+            event.preventDefault();
+            
+            const query = document.getElementById('searchInput').value.trim().toLowerCase();
+            if (!query) return;
+            
+            const searchBtn = document.getElementById('searchBtn');
+            const statusDiv = document.getElementById('statusDiv');
+            const resultsDiv = document.getElementById('resultsDiv');
+            const legalNoticeDiv = document.getElementById('legalNoticeDiv');
+            
+            // Reset UI
+            searchBtn.disabled = true;
+            searchBtn.textContent = '🔄 Searching...';
+            statusDiv.style.display = 'block';
+            statusDiv.className = 'ais-status loading';
+            statusDiv.textContent = 'Demo: Simulating AI search through legal resources...';
+            resultsDiv.innerHTML = '';
+            legalNoticeDiv.style.display = 'none';
+            
+            // Check for legal advice patterns
+            const legalAdvicePattern = /\b(should I|what should|advice|recommend|tell me what to do|help me decide|what's the best|my case|my situation)\b/i;
+            if (legalAdvicePattern.test(query)) {
+                legalNoticeDiv.innerHTML = `
+                    <strong>⚠️ Legal Notice:</strong> This system provides research resources only, not legal advice. 
+                    Please consult with a qualified attorney for specific legal guidance.
+                `;
+                legalNoticeDiv.style.display = 'block';
+            }
+            
+            // Simulate search delay
+            await new Promise(resolve => setTimeout(resolve, 1500));
+            
+            // Find relevant resources based on keywords
+            let relevantIndices = new Set();
+            
+            // Check each keyword mapping
+            for (const [keyword, indices] of Object.entries(KEYWORD_MAPPING)) {
+                if (query.includes(keyword)) {
+                    indices.forEach(index => relevantIndices.add(index));
+                }
+            }
+            
+            // If no specific matches, show some default results
+            if (relevantIndices.size === 0) {
+                relevantIndices = new Set([0, 2, 4]); // Show Westlaw, Cornell, and FindLaw
+            }
+            
+            // Get the relevant resources
+            const results = Array.from(relevantIndices).map(index => ({
+                ...DEMO_RESOURCES[index],
+                relevance: DEMO_RESOURCES[index].relevance * (0.7 + Math.random() * 0.3) // Add some randomness
+            })).sort((a, b) => b.relevance - a.relevance);
+            
+            // Update status
+            statusDiv.textContent = `Demo: Found ${results.length} relevant resources`;
+            statusDiv.className = 'ais-status';
+            
+            // Display results
+            displayDemoResults(results);
+            
+            // Re-enable search
+            searchBtn.disabled = false;
+            searchBtn.textContent = '🔍 Search Demo';
+        }
+        
+        function displayDemoResults(results) {
+            const resultsDiv = document.getElementById('resultsDiv');
+            
+            if (results.length === 0) {
+                resultsDiv.innerHTML = '<p style="text-align: center; color: var(--ais-muted);">No demo results found. Try searching for: contract, intellectual property, employment, corporate law, etc.</p>';
+                return;
+            }
+            
+            resultsDiv.innerHTML = results.map(result => `
+                <div class="ais-result">
+                    <div class="ais-result-title">
+                        <a href="${result.url}" target="_blank">
+                            ${result.title}
+                        </a>
+                    </div>
+                    <div class="ais-result-desc">${result.description}</div>
+                    <div class="ais-result-meta">
+                        <span>📚 ${result.type}</span>
+                        <span>🗄️ ${result.database}</span>
+                        <span>📊 ${Math.round(result.relevance * 100)}% relevant</span>
+                        <span>🔗 Demo Link</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        // Handle Enter key
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performDemoSearch(e);
+            }
+        });
+        
+        // Add example on load
+        window.addEventListener('load', function() {
+            const examples = [
+                'contract law',
+                'intellectual property', 
+                'employment law',
+                'corporate governance',
+                'constitutional law'
+            ];
+            
+            const randomExample = examples[Math.floor(Math.random() * examples.length)];
+            document.getElementById('searchInput').placeholder = `Try: "${randomExample}"`;
+        });
+    </script>
+</body>
+</html>

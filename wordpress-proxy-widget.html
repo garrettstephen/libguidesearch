@@ -1,0 +1,791 @@
+<!-- WordPress Custom HTML Block Version - AI Law Library Search (WordPress Proxy) -->
+<div class="ai-search-container">
+  <style>
+    /* AI Search Container - WordPress-friendly scoped styles */
+    .ai-search-container {
+      --ais-bg: #0f172a;
+      --ais-card: #1e293b;
+      --ais-muted: #94a3b8;
+      --ais-text: #f8fafc;
+      --ais-accent: #0ea5e9;
+      --ais-accent-2: #10b981;
+      --ais-danger: #ef4444;
+      --ais-border: #334155;
+      --ais-input-bg: #1e293b;
+      
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      border-radius: 12px;
+      padding: 16px !important;
+      margin: 0;
+      max-width: 100%;
+      width: 100%;
+      color: var(--ais-text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Reset WordPress theme interference */
+    .ai-search-container {
+      float: none !important;
+      clear: both !important;
+      display: block !important;
+      margin-left: -18% !important;
+      position: relative !important;
+      left: 0 !important;
+    }
+    
+    .ai-search-container * {
+      box-sizing: border-box;
+    }
+    
+    .ai-search-container .ais-wrap { 
+      max-width: 100%; 
+      margin: 0; 
+      padding: 0;
+    }
+    .ai-search-container .ais-brand { 
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+      gap: 12px; 
+      margin-bottom: 16px;
+    }
+    .ai-search-container #ais-health {
+      text-align: center;
+      margin-bottom: 12px;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+    .ai-search-container .ais-logo { 
+      width: 40px; 
+      height: 40px; 
+      border-radius: 12px; 
+      background: linear-gradient(135deg, var(--ais-accent), #3b82f6); 
+      box-shadow: 0 4px 20px rgba(14, 165, 233, 0.3);
+      flex-shrink: 0;
+    }
+    .ai-search-container .ais-title { 
+      font-size: 24px; 
+      margin: 0; 
+      font-weight: 600; 
+      color: var(--ais-text);
+      letter-spacing: -0.025em;
+    }
+    .ai-search-container .ais-card { 
+      background: rgba(30, 41, 59, 0.8); 
+      border: 1px solid var(--ais-border); 
+      border-radius: 8px; 
+      backdrop-filter: blur(10px);
+      margin-bottom: 12px;
+    }
+    .ai-search-container .ais-search { 
+      padding: 16px; 
+      display: flex; 
+      gap: 12px; 
+      flex-wrap: wrap; 
+      align-items: center;
+      justify-content: center;
+    }
+    .ai-search-container .ais-search input[type="text"] { 
+      flex: 1 1 300px; 
+      max-width: 500px;
+      background: var(--ais-input-bg); 
+      color: var(--ais-text); 
+      border: 1px solid var(--ais-border); 
+      border-radius: 8px; 
+      padding: 12px 16px; 
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+    .ai-search-container .ais-search input[type="text"]:focus {
+      border-color: var(--ais-accent);
+      box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+    }
+    .ai-search-container .ais-search button { 
+      background: var(--ais-accent); 
+      color: white; 
+      border: none; 
+      padding: 12px 24px; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .ai-search-container .ais-search button:hover:not(:disabled) { 
+      background: #0284c7;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
+    }
+    .ai-search-container .ais-search button:disabled { 
+      background: var(--ais-muted);
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+    .ai-search-container .ais-row { 
+      padding: 0 16px 16px; 
+      font-size: 12px; 
+      color: var(--ais-muted); 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .ai-search-container .ais-row label { 
+      display: flex; 
+      align-items: center; 
+      gap: 6px; 
+      cursor: pointer;
+      user-select: none;
+    }
+    .ai-search-container .ais-row input[type="checkbox"] {
+      accent-color: var(--ais-accent);
+    }
+    .ai-search-container .ais-item { 
+      background: rgba(30, 41, 59, 0.9) !important; 
+      border: 1px solid #475569 !important; 
+      border-radius: 8px; 
+      padding: 16px; 
+      margin-bottom: 12px;
+      transition: all 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .ai-search-container .ais-item:hover {
+      border-color: var(--ais-accent);
+      box-shadow: 0 4px 20px rgba(14, 165, 233, 0.1);
+    }
+    .ai-search-container .ais-item-title { 
+      margin: 0 0 8px !important; 
+      font-size: 18px !important; 
+      color: var(--ais-text) !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      font-family: inherit !important;
+      text-decoration: none !important;
+      display: block !important;
+    }
+    .ai-search-container .ais-meta { 
+      color: #94a3b8 !important;
+      font-size: 14px !important; 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .ai-search-container .ais-item p {
+      color: #cbd5e1 !important;
+      font-size: 15px !important;
+      line-height: 1.6 !important;
+      margin: 12px 0 0 !important;
+      font-weight: 400 !important;
+    }
+    
+    .ai-search-container span strong {
+      color: #10B983;
+      font-weight: 600;
+    }
+
+    .ai-search-container .ais-bar { 
+      position: relative; 
+      height: 6px; 
+      background: rgba(15, 23, 42, 0.8); 
+      border: 1px solid var(--ais-border); 
+      border-radius: 3px; 
+      overflow: hidden; 
+      margin: 10px 0 0; 
+    }
+    .ai-search-container .ais-bar > i { 
+      display: block; 
+      height: 100%; 
+      width: 0%; 
+      background: linear-gradient(90deg, var(--ais-accent), var(--ais-accent-2));
+      transition: width 0.3s ease;
+    }
+    .ai-search-container .ais-diag { 
+      margin-top: 16px; 
+      padding: 12px; 
+      border: 1px dashed var(--ais-border); 
+      border-radius: 8px; 
+      color: var(--ais-muted); 
+      font-size: 11px; 
+      white-space: pre-wrap; 
+      background: rgba(0, 0, 0, 0.3);
+      font-family: 'Monaco', 'Menlo', monospace;
+      overflow-x: auto;
+    }
+    .ai-search-container .ais-footer { 
+      margin: 12px 0 0; 
+      color: var(--ais-muted); 
+      font-size: 12px; 
+      text-align: center;
+      opacity: 0.8;
+      width: 100%;
+      display: block;
+    }
+    .ai-search-container a { 
+      color: #38bdf8; 
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .ai-search-container a:hover { 
+      text-decoration: underline;
+      color: #0ea5e9;
+    }
+    /* Badge styles for result types */
+    .ai-search-container .ais-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .ai-search-container .ais-badge-guide {
+      background: var(--ais-accent-2) !important;
+      color: #000 !important;
+      font-weight: 700 !important;
+      border: 1px solid #059669;
+      box-shadow: 0 1px 3px rgba(16, 185, 129, 0.3);
+    }
+    .ai-search-container .ais-badge-legal {
+      background: var(--ais-danger) !important;
+      color: #fff !important;
+      font-weight: 700 !important;
+      border: 1px solid #dc2626;
+      box-shadow: 0 1px 3px rgba(239, 68, 68, 0.3);
+    }
+    .ai-search-container .ais-badge-database {
+      background: #fbbf24 !important;
+      color: #000 !important;
+      font-weight: 700 !important;
+      border: 1px solid #f59e0b;
+      box-shadow: 0 1px 3px rgba(251, 191, 36, 0.3);
+    }
+    .ai-search-container .ais-badge-asset {
+      background: #9333ea !important;
+      color: #fff !important;
+      font-weight: 700 !important;
+      border: 1px solid #7c3aed;
+      box-shadow: 0 1px 3px rgba(147, 51, 234, 0.3);
+    }
+    
+    /* Legal notice styling */
+    .ai-search-container .ais-legal-notice {
+      background: linear-gradient(135deg, #7c2d12, #991b1b);
+      border: 2px solid #dc2626;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2);
+    }
+    
+    .ai-search-container .ais-legal-notice-content {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    
+    .ai-search-container .ais-legal-notice-icon {
+      font-size: 24px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    
+    .ai-search-container .ais-legal-notice-text {
+      color: #fecaca;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    
+    .ai-search-container .ais-legal-notice-text strong {
+      color: #fff;
+      font-weight: 600;
+    }
+    
+    /* Pagination styles */
+    .ai-search-container .ais-pagination {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid var(--ais-border);
+      border-radius: 8px;
+      padding: 12px;
+      margin-top: 12px;
+      text-align: center;
+    }
+    
+    .ai-search-container .ais-pagination-info {
+      color: var(--ais-muted);
+      font-size: 14px;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    
+    .ai-search-container .ais-pagination-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    
+    .ai-search-container .ais-pagination-controls button {
+      background: var(--ais-card);
+      color: var(--ais-text);
+      border: 1px solid var(--ais-border);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+    
+    .ai-search-container .ais-pagination-controls button:hover:not(:disabled) {
+      background: var(--ais-accent);
+      border-color: var(--ais-accent);
+      transform: translateY(-1px);
+    }
+    
+    .ai-search-container .ais-pagination-controls button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+    
+    .ai-search-container .ais-page-numbers {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    
+    .ai-search-container .ais-page-num {
+      min-width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+    
+    .ai-search-container .ais-page-num.active {
+      background: var(--ais-accent) !important;
+      border-color: var(--ais-accent) !important;
+      color: white !important;
+      font-weight: 600;
+    }
+    
+    .ai-search-container .ais-page-ellipsis {
+      color: var(--ais-muted);
+      padding: 0 4px;
+      font-size: 14px;
+    }
+    
+    /* Responsive design */
+    @media (max-width: 640px) { 
+      .ai-search-container .ais-row { 
+        font-size: 13px; 
+      }
+      .ai-search-container .ais-search {
+        padding: 12px;
+      }
+      .ai-search-container .ais-search input[type="text"] {
+        flex: 1 1 100%;
+        margin-bottom: 8px;
+      }
+      .ai-search-container .ais-search button {
+        flex: 1;
+      }
+      .ai-search-container {
+        padding: 12px;
+        margin: 0;
+      }
+      .ai-search-container .ais-legal-notice-content {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+      .ai-search-container .ais-legal-notice-text {
+        font-size: 13px;
+      }
+      .ai-search-container .ais-pagination-controls {
+        flex-direction: column;
+        gap: 12px;
+      }
+      
+      .ai-search-container .ais-pagination-controls > button {
+        order: 2;
+        width: 100%;
+      }
+      
+      .ai-search-container .ais-page-numbers {
+        order: 1;
+        justify-content: center;
+      }
+      
+      .ai-search-container .ais-page-num {
+        min-width: 32px;
+        height: 32px;
+        font-size: 13px;
+      }
+    }
+  </style>
+
+  <div class="ais-wrap">
+    <header>
+      <div class="ais-brand">
+        <div class="ais-logo" aria-hidden="true"></div>
+        <div class="ais-title">BYU Law Library Search</div>
+      </div>
+      <div id="ais-health" class="ais-status" title="Server health"></div>
+    </header>
+
+    <section class="ais-card">
+      <form id="ais-form" class="ais-search" autocomplete="off">
+        <input id="ais-q" type="text" placeholder="Try: water law, constitutional law, I need help with..." aria-label="Search query" required />
+        <button id="ais-go" type="submit">Search</button>
+      </form>
+      <div class="ais-row">
+        <label><input type="checkbox" id="ais-debug" /> Debug</label>
+        <span id="ais-status" class="ais-status"></span>
+      </div>
+    </section>
+
+    <section class="ais-results" id="ais-results"></section>
+    <section class="ais-diag" id="ais-diag" hidden></section>
+
+    <footer class="ais-footer">
+      <span>Powered by AI + BYU Law Library Resources</span>
+    </footer>
+  </div>
+
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+
+  <script>
+    (function() {
+      'use strict';
+      
+      // Use WordPress REST API instead of direct server connection
+      const WP_API_BASE = window.location.origin + '/wp-json/ais/v1';
+      
+      const els = {
+        form: document.getElementById('ais-form'),
+        q: document.getElementById('ais-q'),
+        go: document.getElementById('ais-go'),
+        debug: document.getElementById('ais-debug'),
+        status: document.getElementById('ais-status'),
+        results: document.getElementById('ais-results'),
+        diag: document.getElementById('ais-diag'),
+        health: document.getElementById('ais-health'),
+      };
+
+      // Pagination state
+      let allResults = [];
+      let currentPage = 0;
+      const resultsPerPage = 7;
+
+      function setStatus(msg, kind = 'info') {
+        els.status.textContent = msg || '';
+        els.status.style.color = kind === 'error' ? 'var(--ais-danger)' : 'var(--ais-muted)';
+      }
+
+      function scoreBar(el, pct) { 
+        const bar = el.querySelector('i');
+        if (bar) bar.style.width = Math.max(0, Math.min(100, pct)) + '%'; 
+      }
+
+      function render(items, page = 0) {
+        els.results.innerHTML = '';
+        if (!items || !items.length) {
+          els.results.innerHTML = '<div class="ais-item"><div>No results found.</div></div>';
+          return;
+        }
+        
+        // Store all results and current page
+        allResults = items;
+        currentPage = page;
+        
+        // Calculate pagination
+        const startIdx = page * resultsPerPage;
+        const endIdx = startIdx + resultsPerPage;
+        const pageItems = items.slice(startIdx, endIdx);
+        const totalPages = Math.ceil(items.length / resultsPerPage);
+        
+        // Check if this is a legal help response and add notice
+        const hasLegalHelp = pageItems.some(x => x.isLegalHelp);
+        if (hasLegalHelp) {
+          const notice = document.createElement('div');
+          notice.className = 'ais-legal-notice';
+          notice.innerHTML = `
+            <div class="ais-legal-notice-content">
+              <div class="ais-legal-notice-icon">⚖️</div>
+              <div class="ais-legal-notice-text">
+                <strong>Legal Assistance Notice:</strong> BYU Law Library cannot provide legal advice. 
+                The following organizations may be able to provide legal assistance.
+              </div>
+            </div>
+          `;
+          els.results.appendChild(notice);
+        }
+        
+        const frag = document.createDocumentFragment();
+        pageItems.forEach(x => {
+          const li = document.createElement('article');
+          li.className = 'ais-item';
+          
+          // Use description from catalog if available, otherwise use matchReason
+          const desc = x.description || x.matchReason || '';
+          
+          // Create link if URL is available
+          const link = x.url ? `<a href="${escapeHtml(x.url)}" target="_blank" rel="noopener" onclick="trackResultClick('${escapeHtml(x.name)}', '${escapeHtml(x.url)}')">Open source →</a>` : '';
+          
+          // Create badges for different result types
+          const badges = [];
+          if (x.isLocalGuide) badges.push('<span class="ais-badge ais-badge-guide">LIBRARY GUIDE</span>');
+          if (x.isLegalHelp) badges.push('<span class="ais-badge ais-badge-legal">LEGAL REFERRAL</span>');
+          if (x.isExternalDatabase) badges.push('<span class="ais-badge ais-badge-database">A-Z DATABASES</span>');
+          if (x.isLibGuideAsset) badges.push('<span class="ais-badge ais-badge-asset">LIBGUIDE ASSET</span>');
+          const badgeHtml = badges.length ? `<div style="margin:6px 0;">${badges.join(' ')}</div>` : '';
+
+          li.innerHTML = `
+            <div class="ais-item-title">${escapeHtml(x.name)}</div>
+            ${badgeHtml}
+            <div class="ais-meta">
+              <span>Relevance: <strong>${Number(x.relevanceScore || 0)}</strong></span>
+              ${link}
+            </div>
+            ${desc ? `<p style="margin:10px 0 0;color:var(--ais-muted);font-size:14px;line-height:1.5;">${escapeHtml(desc)}</p>` : ''}
+            <div class="ais-bar"><i></i></div>
+          `;
+          frag.appendChild(li);
+          scoreBar(li.querySelector('.ais-bar'), Number(x.relevanceScore || 0));
+        });
+        els.results.appendChild(frag);
+        
+        // Add pagination controls if needed
+        if (totalPages > 1) {
+          const paginationDiv = document.createElement('div');
+          paginationDiv.className = 'ais-pagination';
+          paginationDiv.innerHTML = `
+            <div class="ais-pagination-info">
+              Page ${currentPage + 1} of ${totalPages} • Showing ${pageItems.length} of ${items.length} results
+            </div>
+            <div class="ais-pagination-controls">
+              <button id="prev-page" ${currentPage === 0 ? 'disabled' : ''}>← Previous</button>
+              <span class="ais-page-numbers">
+                ${generatePageNumbers(currentPage, totalPages)}
+              </span>
+              <button id="next-page" ${currentPage >= totalPages - 1 ? 'disabled' : ''}>Next →</button>
+            </div>
+          `;
+          els.results.appendChild(paginationDiv);
+          
+          // Add event listeners for pagination
+          const prevBtn = document.getElementById('prev-page');
+          const nextBtn = document.getElementById('next-page');
+          
+          if (prevBtn) prevBtn.addEventListener('click', () => {
+            if (currentPage > 0) render(allResults, currentPage - 1);
+          });
+          
+          if (nextBtn) nextBtn.addEventListener('click', () => {
+            if (currentPage < totalPages - 1) render(allResults, currentPage + 1);
+          });
+          
+          // Add click handlers for page numbers
+          document.querySelectorAll('.ais-page-num').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+              const pageNum = parseInt(e.target.dataset.page);
+              if (!isNaN(pageNum)) render(allResults, pageNum);
+            });
+          });
+        }
+      }
+      
+      function generatePageNumbers(current, total) {
+        let pages = [];
+        const maxVisible = 5;
+        
+        if (total <= maxVisible) {
+          for (let i = 0; i < total; i++) {
+            pages.push(i);
+          }
+        } else {
+          const start = Math.max(0, current - 2);
+          const end = Math.min(total - 1, start + maxVisible - 1);
+          
+          if (start > 0) pages.push(0, '...');
+          for (let i = Math.max(start, start > 0 ? start + 2 : start); i <= end; i++) {
+            pages.push(i);
+          }
+          if (end < total - 1) pages.push('...', total - 1);
+        }
+        
+        return pages.map(p => {
+          if (p === '...') return '<span class="ais-page-ellipsis">...</span>';
+          const isActive = p === current;
+          return `<button class="ais-page-num ${isActive ? 'active' : ''}" data-page="${p}" ${isActive ? 'disabled' : ''}>${p + 1}</button>`;
+        }).join('');
+      }
+
+      function renderDiag(d) {
+        if (!els.debug.checked) { els.diag.hidden = true; return; }
+        els.diag.hidden = false;
+        els.diag.textContent = JSON.stringify(d, null, 2);
+      }
+
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+      }
+
+      // Track result clicks for Google Analytics
+      window.trackResultClick = function(resultName, resultUrl) {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'click', {
+            event_category: 'AI Library Search',
+            event_label: 'Result Click',
+            custom_parameter_1: resultName,
+            custom_parameter_2: resultUrl
+          });
+        }
+      };
+
+      async function getJSON(url, opts = {}) {
+        const ctrl = new AbortController();
+        const t = setTimeout(() => ctrl.abort(), opts.timeout || 20000);
+        try {
+          const res = await fetch(url, { 
+            signal: ctrl.signal,
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          });
+          if (!res.ok) throw new Error(res.status + ' ' + res.statusText);
+          return await res.json();
+        } finally {
+          clearTimeout(t);
+        }
+      }
+
+      async function loadHealth() {
+        try {
+          const h = await getJSON(WP_API_BASE + '/health', { timeout: 10000 });
+          els.health.textContent = `✅ WordPress API Online • AI Server: ${h.ok ? 'Connected' : 'Offline'} • Model: ${h.model_resolved || h.model || 'n/a'}`;
+          els.health.style.color = '#10b981';
+        } catch (e) {
+          els.health.textContent = '❌ WordPress API Offline (Check functions.php)';
+          els.health.style.color = '#ef4444';
+        }
+      }
+
+      async function doSearch(q) {
+        // Track search event in Google Analytics
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'search', {
+            search_term: q,
+            event_category: 'AI Library Search',
+            event_label: 'WordPress Widget'
+          });
+        }
+        
+        const params = new URLSearchParams({ query: q });
+        if (els.debug.checked) params.append('debug', '1');
+        const url = WP_API_BASE + '/search?' + params.toString();
+
+        setStatus('Searching…');
+        els.go.disabled = true;
+        els.q.disabled = true;
+
+        try {
+          // Increase timeout to 60 seconds for AI queries
+          const json = await getJSON(url, { timeout: 60000 });
+          const results = Array.isArray(json) ? json : (json.results || []);
+          
+          // Reset to first page for new searches
+          render(results, 0);
+          renderDiag(Array.isArray(json) ? {results: results.length, source: 'WordPress API'} : (json.diagnostics || json));
+          
+          let statusMsg;
+          
+          // Handle fallback response
+          if (json.fallback) {
+            statusMsg = json.message || 'AI temporarily unavailable - showing backup recommendations';
+          } else {
+            statusMsg = `Found ${results.length} result${results.length !== 1 ? 's' : ''} via WordPress API`;
+          }
+          
+          setStatus(statusMsg);
+        } catch (e) {
+          render([]);
+          
+          // Better error handling for different error types
+          let errorMsg = String(e);
+          let showFallbackSuggestion = false;
+          
+          if (e.name === 'AbortError' || errorMsg.includes('AbortError')) {
+            errorMsg = 'Search timed out - try a simpler query or check your connection';
+          } else if (errorMsg.includes('NetworkError') || errorMsg.includes('Failed to fetch')) {
+            errorMsg = 'Cannot connect to WordPress API - check if functions.php is uploaded';
+          } else if (errorMsg.includes('500') || errorMsg.includes('502')) {
+            errorMsg = 'WordPress API error - check server connection and functions.php';
+            showFallbackSuggestion = true;
+          } else if (errorMsg.includes('404')) {
+            errorMsg = 'WordPress REST API endpoint not found - check functions.php upload';
+            showFallbackSuggestion = true;
+          }
+          
+          // Show fallback suggestion for API-related errors
+          if (showFallbackSuggestion) {
+            const fallbackNotice = document.createElement('div');
+            fallbackNotice.className = 'ais-item';
+            fallbackNotice.innerHTML = `
+              <div class="ais-item-title">💡 Try Alternative Search</div>
+              <p style="margin:10px 0;color:var(--ais-muted);font-size:14px;">
+                The WordPress API search is currently unavailable. You can search our library guides and databases directly:
+              </p>
+              <p style="margin:10px 0;color:var(--ais-accent);font-size:14px;">
+                • <a href="https://guides.law.byu.edu/research" target="_blank">BYU Law Library Guides</a><br>
+                • <a href="https://guides.law.byu.edu/az.php" target="_blank">A-Z Database List</a><br>
+                • <a href="https://catalog.lib.byu.edu/" target="_blank">Library Catalog</a><br>
+                • <a href="${WP_API_BASE}/health" target="_blank">Test WordPress API</a>
+              </p>
+            `;
+            els.results.appendChild(fallbackNotice);
+          }
+          
+          renderDiag({ error: errorMsg, originalError: String(e), wpApiBase: WP_API_BASE });
+          setStatus('Error: ' + errorMsg, 'error');
+        } finally {
+          els.go.disabled = false;
+          els.q.disabled = false;
+        }
+      }
+
+      els.form.addEventListener('submit', (ev) => {
+        ev.preventDefault();
+        const q = els.q.value.trim();
+        if (!q) return;
+        doSearch(q);
+      });
+
+      // Initial boot
+      loadHealth();
+      // Enter to search focus UX
+      els.q.focus();
+    })();
+  </script>

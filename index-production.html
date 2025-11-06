@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Law Library Search - John Richardson Computer & Business Law</title>
+    <meta name="description" content="AI-powered search for legal resources, databases, and research materials">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+    
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #0ea5e9, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* AI Search Container */
+        .ai-search-container {
+            --ais-bg: #0f172a;
+            --ais-card: #1e293b;
+            --ais-muted: #94a3b8;
+            --ais-text: #f8fafc;
+            --ais-accent: #0ea5e9;
+            --ais-accent-2: #10b981;
+            --ais-danger: #ef4444;
+            --ais-border: #334155;
+            --ais-input-bg: #1e293b;
+            
+            background: var(--ais-card);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 0 auto 40px;
+            max-width: 800px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--ais-border);
+        }
+        
+        .ais-wrap { 
+            max-width: 100%; 
+            margin: 0; 
+            padding: 0;
+        }
+        
+        .ais-brand { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 8px;
+        }
+        
+        .ais-brand .icon { 
+            font-size: 24px; 
+        }
+        
+        .ais-brand .title { 
+            font-size: 1.5rem; 
+            font-weight: 600; 
+            background: linear-gradient(135deg, var(--ais-accent), var(--ais-accent-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .ais-form { 
+            margin-bottom: 20px; 
+        }
+        
+        .ais-input-group { 
+            display: flex; 
+            gap: 8px; 
+        }
+        
+        .ais-input { 
+            flex: 1; 
+            padding: 12px 16px; 
+            background: var(--ais-input-bg); 
+            border: 1px solid var(--ais-border); 
+            border-radius: 8px; 
+            color: var(--ais-text); 
+            font-size: 16px;
+            transition: all 0.2s ease;
+        }
+        
+        .ais-input:focus { 
+            outline: none; 
+            border-color: var(--ais-accent); 
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+        }
+        
+        .ais-input::placeholder { 
+            color: var(--ais-muted); 
+        }
+        
+        .ais-btn { 
+            padding: 12px 24px; 
+            background: linear-gradient(135deg, var(--ais-accent), var(--ais-accent-2)); 
+            color: white; 
+            border: none; 
+            border-radius: 8px; 
+            font-weight: 600; 
+            cursor: pointer; 
+            transition: all 0.2s ease;
+            font-size: 16px;
+        }
+        
+        .ais-btn:hover { 
+            transform: translateY(-1px); 
+            box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+        }
+        
+        .ais-btn:disabled { 
+            opacity: 0.6; 
+            cursor: not-allowed; 
+            transform: none;
+        }
+        
+        .ais-status { 
+            margin-bottom: 16px; 
+            font-size: 14px; 
+            color: var(--ais-muted);
+        }
+        
+        .ais-status.loading { 
+            color: var(--ais-accent); 
+        }
+        
+        .ais-status.error { 
+            color: var(--ais-danger); 
+        }
+        
+        .ais-results { 
+            max-height: 600px; 
+            overflow-y: auto; 
+        }
+        
+        .ais-result { 
+            background: rgba(30, 41, 59, 0.5); 
+            border: 1px solid var(--ais-border); 
+            border-radius: 8px; 
+            padding: 16px; 
+            margin-bottom: 12px; 
+            transition: all 0.2s ease;
+        }
+        
+        .ais-result:hover { 
+            border-color: var(--ais-accent); 
+            transform: translateY(-1px);
+        }
+        
+        .ais-result-title { 
+            font-weight: 600; 
+            margin-bottom: 8px; 
+            color: var(--ais-text);
+        }
+        
+        .ais-result-title a { 
+            color: var(--ais-accent); 
+            text-decoration: none; 
+        }
+        
+        .ais-result-title a:hover { 
+            text-decoration: underline; 
+        }
+        
+        .ais-result-desc { 
+            color: var(--ais-muted); 
+            margin-bottom: 8px; 
+            line-height: 1.5;
+        }
+        
+        .ais-result-meta { 
+            display: flex; 
+            gap: 16px; 
+            font-size: 12px; 
+            color: var(--ais-muted);
+        }
+        
+        .ais-pagination { 
+            display: flex; 
+            justify-content: center; 
+            gap: 8px; 
+            margin-top: 20px;
+        }
+        
+        .ais-page-btn { 
+            padding: 8px 12px; 
+            background: var(--ais-card); 
+            border: 1px solid var(--ais-border); 
+            color: var(--ais-text); 
+            border-radius: 6px; 
+            cursor: pointer; 
+            transition: all 0.2s ease;
+        }
+        
+        .ais-page-btn:hover { 
+            border-color: var(--ais-accent); 
+        }
+        
+        .ais-page-btn.active { 
+            background: var(--ais-accent); 
+            border-color: var(--ais-accent); 
+        }
+        
+        .ais-page-btn:disabled { 
+            opacity: 0.5; 
+            cursor: not-allowed; 
+        }
+        
+        .ais-legal-notice { 
+            background: rgba(239, 68, 68, 0.1); 
+            border: 1px solid rgba(239, 68, 68, 0.3); 
+            border-radius: 8px; 
+            padding: 16px; 
+            margin-bottom: 20px; 
+            font-size: 14px; 
+            color: #fecaca;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--ais-border);
+            margin-top: 60px;
+            color: var(--ais-muted);
+        }
+        
+        .footer a {
+            color: var(--ais-accent);
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .ais-input-group {
+                flex-direction: column;
+            }
+            
+            .ais-result-meta {
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>⚖️ AI Law Library Search</h1>
+            <p>Intelligent search across 10,000+ legal resources, databases, and research materials</p>
+        </header>
+
+        <div class="ai-search-container">
+            <div class="ais-wrap">
+                <div class="ais-brand">
+                    <span class="icon">🤖</span>
+                    <span class="title">AI Legal Research Assistant</span>
+                </div>
+                
+                <form class="ais-form" onsubmit="performSearch(event)">
+                    <div class="ais-input-group">
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="ais-input" 
+                            placeholder="Search legal resources, databases, or ask research questions..."
+                            required
+                        >
+                        <button type="submit" class="ais-btn" id="searchBtn">
+                            🔍 Search
+                        </button>
+                    </div>
+                </form>
+                
+                <div id="statusDiv" class="ais-status" style="display: none;"></div>
+                <div id="legalNoticeDiv" class="ais-legal-notice" style="display: none;"></div>
+                <div id="resultsDiv" class="ais-results"></div>
+                <div id="paginationDiv" class="ais-pagination"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>
+                Powered by AI • 
+                <a href="https://github.com/garrettstephen/libguidesearch" target="_blank">View on GitHub</a> • 
+                John Richardson Computer & Business Law Library
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Configuration - Update this to point to your server
+        const API_BASE = 'https://128.187.43.25:8443'; // Your production server
+        const API_KEY = 'your-api-key-here'; // You'll need to set this
+        
+        let currentPage = 1;
+        let currentResults = [];
+        const resultsPerPage = 6;
+
+        async function performSearch(event) {
+            event.preventDefault();
+            
+            const query = document.getElementById('searchInput').value.trim();
+            if (!query) return;
+            
+            const searchBtn = document.getElementById('searchBtn');
+            const statusDiv = document.getElementById('statusDiv');
+            const resultsDiv = document.getElementById('resultsDiv');
+            const legalNoticeDiv = document.getElementById('legalNoticeDiv');
+            const paginationDiv = document.getElementById('paginationDiv');
+            
+            // Reset UI
+            searchBtn.disabled = true;
+            searchBtn.textContent = '🔄 Searching...';
+            statusDiv.style.display = 'block';
+            statusDiv.className = 'ais-status loading';
+            statusDiv.textContent = 'AI is analyzing your query and searching through 10,000+ legal resources...';
+            resultsDiv.innerHTML = '';
+            paginationDiv.innerHTML = '';
+            legalNoticeDiv.style.display = 'none';
+            
+            try {
+                // Check if this might be a request for legal advice
+                const legalAdvicePattern = /\b(should I|what should|advice|recommend|tell me what to do|help me decide|what's the best|my case|my situation|I have been|happened to me)\b/i;
+                
+                if (legalAdvicePattern.test(query)) {
+                    legalNoticeDiv.innerHTML = `
+                        <strong>⚠️ Legal Notice:</strong> This system provides research resources only, not legal advice. 
+                        Please consult with a qualified attorney for specific legal guidance regarding your situation.
+                    `;
+                    legalNoticeDiv.style.display = 'block';
+                }
+                
+                const response = await fetch(`${API_BASE}/search`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${API_KEY}`
+                    },
+                    body: JSON.stringify({ query })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+                
+                currentResults = data.results || [];
+                currentPage = 1;
+                
+                statusDiv.textContent = `Found ${currentResults.length} relevant resources`;
+                statusDiv.className = 'ais-status';
+                
+                displayResults();
+                
+            } catch (error) {
+                console.error('Search error:', error);
+                statusDiv.textContent = `Search failed: ${error.message}. Please try again.`;
+                statusDiv.className = 'ais-status error';
+            } finally {
+                searchBtn.disabled = false;
+                searchBtn.textContent = '🔍 Search';
+            }
+        }
+        
+        function displayResults() {
+            const resultsDiv = document.getElementById('resultsDiv');
+            const paginationDiv = document.getElementById('paginationDiv');
+            
+            if (currentResults.length === 0) {
+                resultsDiv.innerHTML = '<p style="text-align: center; color: var(--ais-muted);">No results found. Try rephrasing your query or using different keywords.</p>';
+                return;
+            }
+            
+            const startIndex = (currentPage - 1) * resultsPerPage;
+            const endIndex = startIndex + resultsPerPage;
+            const pageResults = currentResults.slice(startIndex, endIndex);
+            
+            resultsDiv.innerHTML = pageResults.map(result => `
+                <div class="ais-result">
+                    <div class="ais-result-title">
+                        <a href="${result.url || '#'}" target="_blank" onclick="trackResultClick('${result.title}', '${result.url}')">
+                            ${result.title || 'Untitled Resource'}
+                        </a>
+                    </div>
+                    <div class="ais-result-desc">${result.description || 'No description available.'}</div>
+                    <div class="ais-result-meta">
+                        <span>📚 ${result.type || 'Resource'}</span>
+                        ${result.database ? `<span>🗄️ ${result.database}</span>` : ''}
+                        ${result.relevance ? `<span>📊 ${Math.round(result.relevance * 100)}% relevant</span>` : ''}
+                    </div>
+                </div>
+            `).join('');
+            
+            // Create pagination
+            const totalPages = Math.ceil(currentResults.length / resultsPerPage);
+            if (totalPages > 1) {
+                const paginationHTML = [];
+                
+                // Previous button
+                paginationHTML.push(`
+                    <button class="ais-page-btn" onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>
+                        ← Previous
+                    </button>
+                `);
+                
+                // Page numbers
+                for (let i = 1; i <= totalPages; i++) {
+                    paginationHTML.push(`
+                        <button class="ais-page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">
+                            ${i}
+                        </button>
+                    `);
+                }
+                
+                // Next button
+                paginationHTML.push(`
+                    <button class="ais-page-btn" onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>
+                        Next →
+                    </button>
+                `);
+                
+                paginationDiv.innerHTML = paginationHTML.join('');
+            }
+        }
+        
+        function changePage(newPage) {
+            const totalPages = Math.ceil(currentResults.length / resultsPerPage);
+            if (newPage >= 1 && newPage <= totalPages) {
+                currentPage = newPage;
+                displayResults();
+                document.getElementById('resultsDiv').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        function trackResultClick(title, url) {
+            // Google Analytics tracking (if available)
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'result_click', {
+                    'result_title': title,
+                    'result_url': url,
+                    'page_number': currentPage
+                });
+            }
+        }
+        
+        // Handle Enter key in search input
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch(e);
+            }
+        });
+        
+        // Add some example searches on page load
+        window.addEventListener('load', function() {
+            const examples = [
+                'contract law resources',
+                'intellectual property databases', 
+                'employment law research',
+                'corporate governance materials',
+                'privacy law guides'
+            ];
+            
+            const randomExample = examples[Math.floor(Math.random() * examples.length)];
+            document.getElementById('searchInput').placeholder = `Try searching: "${randomExample}"`;
+        });
+    </script>
+    
+    <!-- Google Analytics (optional) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+</body>
+</html>

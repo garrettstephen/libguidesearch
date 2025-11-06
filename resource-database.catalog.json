@@ -1,0 +1,971 @@
+[
+  {
+    "name": "ABA/Bloomberg Law Lawyers' Manual on Professional Conduct",
+    "url": "https://www.bloomberglaw.com/product/mopc/page/mopc_home",
+    "description": "Includes current reports, practice guides, model rules and ethics opinions."
+  },
+  {
+    "name": "ABI/INFORM (ProQuest)",
+    "url": "https://dbs.lib.byu.edu/abi-inform-1",
+    "description": "For business and industry research. ABI/INFORM provides coverage of hundreds of periodicals including The Economist and The Wall Street Journal (1984-present). It also has market and industry reports, business cases, and conference proceedi"
+  },
+  {
+    "name": "Academic Search Ultimate (EBSCO)",
+    "url": "http://dbs.lib.byu.edu/premier-ebsco",
+    "description": "A multi-disciplinary database providing full text for more than 4,500 journals, including full text for more than 3,700 peer-reviewed titles. PDF backfiles to 1975 or further are available for well over one hundred journals, and searchable"
+  },
+  {
+    "name": "AccessLex Law School Scholarship Databank - Writing Competitions",
+    "url": "https://www.accesslex.org/scholarship/writing-competitions",
+    "description": "This website contains information about legal writing contests open to law students.",
+    "aliases": [
+      "Directories",
+      "Legal Research and Writing"
+    ]
+  },
+  {
+    "name": "ACLU (American Civil Liberties Union) Papers 1912-1990",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://gdc.gale.com/gdc/artemis?p=ACLU&u=byu_hunter",
+    "description": "Contains digital copies of newspaper clippings, scrapbooks, court files, and more from the files of the ACLU. Topics include free speech, citizenship, race, discrimination, immigration, and more."
+  },
+  {
+    "name": "AILALink",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://ailalink.aila.org/",
+    "description": "AILALink is an online research database created an maintained by the American Immigration Lawyers Association (AILA) and designed specifically for legal professionals who need quick access to reliable and up-to-date immigration law informat"
+  },
+  {
+    "name": "Almanac of the Federal Judiciary",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://almanacofthefederaljudiciary.com",
+    "description": "Directory of federal judges with biographical information."
+  },
+  {
+    "name": "American Bench",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://bench.forster-long.com/search",
+    "description": "American Bench is a directory of federal and state judges in the United States. It includes biographical information."
+  },
+  {
+    "name": "American Indians and the American West 1809-1971",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://hv.proquest.com/historyvault/hv.jsp?pageid=advanced_ui&module=7410",
+    "description": "Documents from the U.S. National archives and other repositories focusing on interactions between Native peoples, the federal government, and white settlers, along with records from the Bureau of Indian Affairs and Major Council Meetings of",
+    "aliases": [
+      "Indian Law"
+    ]
+  },
+  {
+    "name": "APA PsycInfo (EBSCO)",
+    "url": "https://dbs.lib.byu.edu/psycinfo",
+    "description": "Index of over one million journal articles, book chapters, books, and dissertations from over 50 countries in the field of psychology and the psychological aspects of related disciplines, such as medicine, psychiatry, nursing, sociology, ed"
+  },
+  {
+    "name": "Aspen Learning Library",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://aspenlearninglibrary.com",
+    "description": "Ebook versions of popular law school study aids, including the Examples & Explanations series, Emmanuel CrunchTime, Glannon Guides, and Friedman's Practice Series. BYU Law School students and alumni who have BYU Law email addresses can crea"
+  },
+  {
+    "name": "Atla Religion Database (EBSCO)",
+    "url": "https://dbs.lib.byu.edu/atla-database",
+    "description": "Search for journal articles on topics such as biblical studies, world religions, church history, and religion in social issues."
+  },
+  {
+    "name": "Atlantic, The",
+    "url": "https://accounts.theatlantic.com/institutional-login/?redirect=%2Faccounts%2Fdetails%2F",
+    "description": "Access instructions: Click \\\"Sign In,\\\" then \\\"Sign in through your institution\\\" at the bottom of the box. Type BYU and select \\\"BYU Law School.\\\" Log in with your BYU Law School Okta credentials. The Atlantic is a magazine with stories and comm"
+  },
+  {
+    "name": "AudioCaseFiles",
+    "url": "https://courtroomcast.lexisnexis.com/acf_product",
+    "description": "AudioCaseFiles offers downloadable MP3 files of prominent cases from law school courses. Users may search by course or casebook. To create an account with your law school email address, click \\\"register.\\\""
+  },
+  {
+    "name": "Bankruptcy Data",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://app.bankruptcydata.com/home",
+    "description": "A database of PACER filings and other bankruptcy information for companies that goes back to the 1980s with lots of data analysis tools and extra features. If you are part of the law community and interested in using Bankruptcy Data for lar",
+    "aliases": [
+      "Bankruptcy Law"
+    ]
+  },
+  {
+    "name": "Bloomberg Law",
+    "url": "http://www.bloomberglaw.com/",
+    "description": "BYU Law students and faculty can register for a password here. https://www.bloomberglaw.com/activate"
+  },
+  {
+    "name": "Bloomberg Law News",
+    "url": "https://www.bloomberglaw.com/product/blaw/bloomberglawnews",
+    "description": "Broad coverage of U.S. and global legal news organized by topics ranging from banking law to IP, and environmental & energy law to securities."
+  },
+  {
+    "name": "Bloomberg Tax",
+    "url": "https://dbs.lib.byu.edu/bna-tax",
+    "description": "Excellent resource for tax attorneys with access to primary and secondary sources for federal, state, international, and payroll tax law topics. Includes BNA's Tax Management Portfolios."
+  },
+  {
+    "name": "Border and Migration Studies Online (Alexander Street)",
+    "url": "https://search.alexanderstreet.com/bord",
+    "description": "A diverse collection of resources, including maps, manuscripts, letters, videos, books, and related web resources organized by geographical border areas such as the Middle East, the European Union, the Mexico/U.S. border, and more. Research"
+  },
+  {
+    "name": "Business Source Ultimate (EBSCO)",
+    "url": "http://dbs.lib.byu.edu/business-ebsco",
+    "description": "Scholarly articles on business topics back to 1990."
+  },
+  {
+    "name": "CALI",
+    "url": "https://www.cali.org/",
+    "description": "Over 1,000 interactive tutorials for law students. Registration requires an authorization code; contact Iantha Haight."
+  },
+  {
+    "name": "Cheetah (Now VitalLaw)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://my.vitallaw.com",
+    "description": "Primary and secondary sources including treatises, cases, statutes, regulations, and chart builders on a variety of topics including federal and state securities law, litigation, transportation, and more. Formerly known as Cheetah. From pub"
+  },
+  {
+    "name": "Chicago Manual of Style Online",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.chicagomanualofstyle.org",
+    "description": "Online version of the most current edition of The Chicago Manual of Style"
+  },
+  {
+    "name": "Chronicle of Higher Education",
+    "url": "https://dbs.lib.byu.edu/higher-education",
+    "description": "The Chronicle of Higher Education is a news and job-information source for college and university faculty members, administrators, and staff."
+  },
+  {
+    "name": "Climatewire (Politico/E&E News)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://subscriber.politicopro.com/eenews/pub/climatewire",
+    "description": "Climatewire is a news publication focusing on climate change issues globally."
+  },
+  {
+    "name": "Cold War Intelligence (Brill)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://primarysources.brillonline.com/browse/cold-war-intelligence",
+    "description": "Collection of over 2,300 formerly classified U.S. government documents related to U.S. intelligence community efforts to spy on the Soviet Union during the Cold War. Most documents are from 1945-1991."
+  },
+  {
+    "name": "CourtLink (Lexis+)",
+    "url": "https://advance.lexis.com/courtlinkhome/?pdmfid=1519217&crid=8f71fa9a-2663-4fe1-85fd-bb5ff863ec50&ecomp=nfh5k",
+    "description": "Federal and state docket search tool."
+  },
+  {
+    "name": "Courtroom Cast",
+    "url": "http://courtroomcast.lexisnexis.com/",
+    "description": "Listen to assigned cases. See real courtroom video. Watch video clips and learn key litigation skills. To create an account with your law school email address, click \\\"register.\\\""
+  },
+  {
+    "name": "CQ Magazine",
+    "url": "https://dbs.lib.byu.edu/cq-weekly",
+    "description": "News and policy analysis of the current issues facing the United States Congress. Archives go back to 1983."
+  },
+  {
+    "name": "CQ Researcher",
+    "url": "https://dbs.lib.byu.edu/cq-researcher",
+    "description": "Analysis of a single \\\"hot\\\" issue in the news in depth each week. Topics include the environment, health, education, and science and technology. Reports go back to 1923."
+  },
+  {
+    "name": "Data and Statistics (USA.gov)",
+    "url": "https://www.usa.gov/statistics",
+    "description": "This resource provides information about data and statistics available for free from the United States federal government. The focus is on U.S. Census data and links to the most popular data sets. This Web site also provides links to data s"
+  },
+  {
+    "name": "Dennis Sears Collection (International Law)",
+    "url": "https://guides.law.byu.edu/fcil",
+    "description": "A collection of information on international law."
+  },
+  {
+    "name": "Diversity, Equity & Belonging Collection (LexisNexis Digital Library)",
+    "url": "https://lexisdl.com/library/byuls/browse/curated-1168192/page-1",
+    "description": "Audiobook and e-book versions of popular titles on diversity, equity and inclusion."
+  },
+  {
+    "name": "Documentary History of the Ratification of the Constitution",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://rotunda.upress.virginia.edu/founders/RNCN",
+    "description": "Traces the Constitution’s progress through each of the thirteen states’ conventions with convention debates, newspaper articles, speeches, letters, and more.",
+    "aliases": [
+      "Constitutional Law",
+      "Legal History"
+    ]
+  },
+  {
+    "name": "Early American Imprints, Series 1: Evans (Readex/Newsbank)",
+    "url": "https://dbs.lib.byu.edu/evans-biblio",
+    "description": "Also known as Evans American Bibliography. This database contains almost every book and pamphlet published in American in the 17th and 18th centuries, including legal materials such as colonial law and justice of the peace manuals."
+  },
+  {
+    "name": "Early American Newspapers, 1830-1869 (Readex/Newsbank)",
+    "url": "https://infoweb.newsbank.com/apps/readex/welcome?p=EANX",
+    "description": "Historical newspapers from the United States, covering the years 1830-1869. Click \\\"Browse Publications\\\" to view available newspapers in the collection."
+  },
+  {
+    "name": "Early American Newspapers, Series 18: Racial Awakening in the Northeast, 1825-1879",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://infoweb.newsbank.com/apps/readex/welcome?p=EANX",
+    "description": "This databases contains more than 100 newspapers printed in New England spanning the years 1825-1879 and shaping the national discourse on abolishing slavery and extending civil rights."
+  },
+  {
+    "name": "EconLit (EBSCO)",
+    "url": "https://dbs.lib.byu.edu/econlit-ebsco",
+    "description": "Search hundreds of academic journals, plus dissertations and conference proceedings, related to economics."
+  },
+  {
+    "name": "Economist, The",
+    "url": "https://www.economist.com",
+    "description": "The digital version of the weekly magazine discussing current events, international business, politics, and culture. Podcasts and email newsletters are included with our subscription. Law school students and employees can register for an ac"
+  },
+  {
+    "name": "Elgar Encyclopedia of Comparative Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.elgaronline.com/display/book/9781839105609/9781839105609.xml",
+    "description": "This encyclopedia published in December 2023 contains over 225 entries written by more than 260 experts from 50 countries on topics ranging from abortion, to privacy and cybersecurity, to Russian law. This encyclopedia is a great starting p"
+  },
+  {
+    "name": "Elgar Encyclopedia of Environmental Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.elgaronline.com/view/nlm-book/9781786436986/9781786436986.xml",
+    "description": "An overview of international environmental law topics written by global experts; topics include climate change, bio diversity, treaties, compliance and enforcement, and human rights."
+  },
+  {
+    "name": "Elgar Encyclopedia of Human Rights",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.elgaronline.com/view/nlm-book/9781789903614/9781789903614.xml",
+    "description": "Hundreds of entries by experts covering the study and practice of human rights. Examples of entries include refugees, sexual orientation, human dignity, and the Declaration on the Rights on Indigenous Peoples (UNDRIP)."
+  },
+  {
+    "name": "Elgar Encyclopedia of Intellectual Property Law",
+    "url": "https://www.elgaronline.com/display/book/9781800886933/9781800886933.xml?rskey=KE4ax3&result=1",
+    "description": "Full encyclopedia will be published in August 2025, but some articles are available now. Articles from over 350 scholars on intellectual property issues around the world."
+  },
+  {
+    "name": "Elgar Encyclopedia of International Economic Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.elgaronline.com/view/nlm-book/9781784713539/9781784713539.xml",
+    "description": "Entries fall under four main themes: the foundations and architecture of international economic law; principles; main regulatory areas; and future challenges."
+  },
+  {
+    "name": "Elgaronline Ebooks",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.elgaronline.com",
+    "description": "A collection of ebooks published by Edward Elgar Publishing focused on a diverse array of international law topics, including corporate governance, environmental law, cybersecurity, and more."
+  },
+  {
+    "name": "Encyclopedia of Law and Economics",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.elgaronline.com/view/nlm-book/9781782547457/9781782547457.xml",
+    "description": "156 entries written by experts on topics related to law and economics."
+  },
+  {
+    "name": "Encyclopedia of Law and Religion (Brill)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://referenceworks.brillonline.com/browse/encyclopedia-of-law-and-religion",
+    "description": "Entries are organized by country and discuss the position of religion in the nation's legal system, the legal status of religious communities, religious laws, and more."
+  },
+  {
+    "name": "Encyclopedia of Private International Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.elgaronline.com/view/nlm-book/9781782547228/9781782547228.xml",
+    "description": "Provides descriptions of the private international law regime of 80 countries, English translations of national provisions and codifications of private international law, and discusses topics ranging from adoption to UNCITRAL."
+  },
+  {
+    "name": "Environmental Law Reporter",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.elr.info",
+    "description": "Contains primary and secondary materials related to environmental law."
+  },
+  {
+    "name": "Factiva",
+    "url": "http://dbs.lib.byu.edu/factiva",
+    "description": "Global news and business information including Dow Jones and Reuters newswires, The Wall Street Journal, and thousands of other national and international newspapers in multiple languages. Also provides financial market data and company inf"
+  },
+  {
+    "name": "Fastcase",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://apps.fastcase.com/PartnerBenefits/?IPKey=SJBO7PtVOCLZCXe3yKgaY5lJipkQjDHg4WgA654sVYnH9XBcOo6FMXPnyLojhiXuQVBLHNHnHlGb2fNrMednKVeTsIlA1y5kLm%2fEDssplx0r3SWeWUwCQItwKyPC527T&LogoutUrl=http://www.byu.edu",
+    "description": "Fastcase is a low-cost alternative to Westlaw and LexisNexis. This legal research system provides access to federal and state case law, statutes, regulations, court rules and constitutions. Several state bar associations offer Fastcase free"
+  },
+  {
+    "name": "Financial Times (UK)",
+    "url": "https://www.ft.com",
+    "description": "Based in London, the Financial Times is a premier global newspaper with a focus on business and finance. Join with your law school email address: https://join.ft.com/8aca1bf6-5b30-42f8-9bd2-5448ae545d41?linkOrigin=enterprise-tools"
+  },
+  {
+    "name": "Findlaw",
+    "url": "http://www.findlaw.com/",
+    "description": "Findlaw is a free resource for attorneys and students that includes online case law, free state codes, free federal codes, free legal forms, and other useful materials."
+  },
+  {
+    "name": "Foreign and International Law Directory (Dennis Sears)",
+    "url": "https://guides.law.byu.edu/fcil",
+    "description": "A collection of information on international law."
+  },
+  {
+    "name": "Foundation for Natural Resources and Energy Law (FNREL)",
+    "url": "https://byulaw.idm.oclc.org/login?url=https://apps.fastcase.com/PartnerBenefits/?CompanyUID=4bfc5468-0c9e-4664-b042-a5b7f062b7f2&Username=BRIGHAMYOUNGDefaultUser&Firstname=Brigham%20Young&Lastname=University&LogoutURL=http%3a%2f%2fwww.byu.edu",
+    "description": "Formerly known as the Rocky Mountain Mineral Law Foundation, the Foundation for Natural Resources and Energy Law (FNREL) is a collection of annual institute proceedings and journal articles hosted on the Fastcase database. To locate the mat"
+  },
+  {
+    "name": "Gale Encyclopedia of American Law, 3rd ed.",
+    "url": "https://lib.byu.edu/remoteauth/?url=http://find.galegroup.com/openurl/openurl?url_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&req_dat=info:sid/gale:ugnid:byuprovo&res_id=info:sid/gale:GVRL&ctx_enc=info:ofi:enc:UTF-8&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft_id=info:sid/gale:bmcode:recid/1XGZ",
+    "description": "Hundreds of entries on legal concepts and terms, major statutes and cases, and notable people. Topics include the Americans with Disabilities Act, capital punishment, domestic violence, physician-assisted suicide, and more."
+  },
+  {
+    "name": "Gale OneFile: LegalTrac",
+    "url": "https://go.gale.com/ps/start.do?p=LT&u=byu_hunter",
+    "description": "An index of articles in hundreds of law reviews, legal newspapers, and bar association journals in the U.S. and abroad since 1980. Search by subject or keyword."
+  },
+  {
+    "name": "GLIN (Global Legal Information Network)",
+    "url": "http://www.glinf.org/",
+    "description": "Database of laws, regulations, judicial decisions, and other complementary legal sources contributed by governmental agencies and international organizations."
+  },
+  {
+    "name": "Global Newsstream (ProQuest)",
+    "url": "http://dbs.lib.byu.edu/newspapers",
+    "description": "Access to major global news sources with coverage extending back to the 1980s."
+  },
+  {
+    "name": "Global-Regulation",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.global-regulation.com/search.php?open",
+    "description": "Search millions of laws from 103 countries."
+  },
+  {
+    "name": "GreenFILE (EBSCO)",
+    "url": "http://dbs.lib.byu.edu/greenfile-ebsco",
+    "description": "Free database of journal articles, books, and reports about the environment."
+  },
+  {
+    "name": "Greenwire (Politico/E&E News)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://subscriber.politicopro.com/eenews/pub/greenwire",
+    "description": "News coverage of environmental issues including energy, natural resources, endangered species, and government regulation."
+  },
+  {
+    "name": "Grotius Collection Online: Printed Works",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://primarysources.brillonline.com/browse/grotius-collection-online-printed-works",
+    "description": "Digital access to 267 works published between 1609-1941 by and about Hugo Grotius, the founder of international law."
+  },
+  {
+    "name": "HeinOnline",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://heinonline.org/HOL/Welcome",
+    "description": "Large database of legal materials. HeinOnline is known for its extensive collection of law journals, but it also contains many primary law and legislative history sources such as state and federal session laws, the United States Code, Supre"
+  },
+  {
+    "name": "Human Rights Studies Online (Alexander Street)",
+    "url": "https://search.alexanderstreet.com/huri",
+    "description": ""
+  },
+  {
+    "name": "ICLR (Law Reports of England and Wales)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.iclr.co.uk/",
+    "description": "Case law from England and Wales dating back to 1865 and case reports from The Court of Justice of the European Union. The Incorporated Council of Law Reporting for England and Wales (ICLR) is the publisher of the official series of The Law",
+    "aliases": [
+      "FCIL European Union",
+      "FCIL United Kingdom"
+    ]
+  },
+  {
+    "name": "Immigration Records of the INS, 1880-1930 (ProQuest History Vault)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://hv.proquest.com/historyvault/hv.jsp?pageid=advanced_ui&module=48990",
+    "description": "Historical INS records covering immigration as well as INS’s regulation of prostitution, white slavery, corruption, and sabotage.",
+    "aliases": [
+      "Immigration Law"
+    ]
+  },
+  {
+    "name": "Index to Foreign Legal Periodicals (HeinOnline)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.heinonline.org/HOL/Index?collection=iflp&set_as_cursor=clear",
+    "description": "A subject index to selected international and comparative law journals and essays. Covers 1984 to present."
+  },
+  {
+    "name": "Index to Legal Periodicals Retrospective: 1908-1981 (Wilson's)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?authtype=ip,uid&custid=s8440629&groupid=main&profile=ehost&defaultdb=lpr",
+    "description": "A searchable index of hundreds of thousands of articles published in legal periodicals in the United States, United Kingdom, Canada, New Zealand, Ireland, and Australia between 1908 and 1981, very useful when searching for older law review"
+  },
+  {
+    "name": "Intelligize",
+    "url": "https://signin.lexisnexis.com/lnaccess/app/signin?back=https%3A%2F%2Fapps.intelligize.com%3A443%2F&aci=igz",
+    "description": "Intelligize is a powerful regulatory and compliance research tool for SEC filings and deals documents. Intelligize now incorporates Securities Mosaic. Law School faculty and students are eligible for an account: email Iantha Haight to set u"
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Civil Procedure",
+    "url": "https://kluwerlawonline.com/Encyclopedias/IEL+Civil+Procedure/706",
+    "description": "Organized by country, each entry discusses the covered nation's rules of civil procedure including legal costs and legal aid, admissibility of evidence, actions and claims, and alternative dispute resolution."
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Commercial and Economic Law",
+    "url": "https://kluwerlawonline.com/Encyclopedias/IEL+Commercial+and+Economic+Law/710",
+    "description": "Each country report in this encyclopedia discusses the country's law competition (antitrust) law, taxation incentives, credit, and much more."
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Constitutional Law",
+    "url": "https://kluwerlawonline.com/Encyclopedias/IEL+Constitutional+Law/711",
+    "description": "Organized by country, entries discuss each jurisdiction's sources of constitutional law, organization of the government, and issues such as foreign relations, taxing and spending, military powers, and the relationship between church and sta"
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Contracts",
+    "url": "https://kluwerlawonline.com/Encyclopedias/IEL+Contracts/712",
+    "description": "Organized by country, this encyclopedia discusses each covered country's laws related to public contracts, agency, termination, compromise, suretyship, loans, and more."
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Corporations and Partnerships",
+    "url": "https://kluwerlawonline.com/Encyclopedias/IEL+Corporations+and+Partnerships/713",
+    "description": "Organized by country, each entry discusses the covered country's laws pertaining to mergers, labor and employment, stock, and more for business entities including limited liability companies, public and closed corporations, multinational co"
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Criminal Law",
+    "url": "https://kluwerlawonline.com/Encyclopedias/IEL+Criminal+Law/731",
+    "description": "Each country report in this encyclopedia discusses criminal law and procedures in the covered country such as criminal offenses, investigations, pre-trial proceedings, trials, appeals, and punishment or sanctions."
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Environmental Law",
+    "url": "https://kluwerlawonline.com/Encyclopedias/IEL+Environmental+Law/732",
+    "description": "Organized by country, each entry discusses the environmental laws of the covered nation, including laws related to pollution, conservation, land use, liability, and more."
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Family and Succession Law",
+    "url": "https://kluwerlawonline.com/Encyclopedias/IEL+Family+and+Succession+Law/717",
+    "description": "Organized by country (and including entries on the European Union, Council of Europe, and International Commission on Civil Status), each entry discusses the marital property and success law including assets housed involved in a divorce tha"
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Migration Law",
+    "url": "https://kluwerlawonline.com/Encyclopedias/IEL+Migration+Law/719",
+    "description": "Provides detailed immigration information and procedures for 19 countries, including Canada, China, Germany, Italy, and the United States."
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Privacy and Technology Law (formerly Cyber Law)",
+    "url": "https://kluwerlawonline.com/Encyclopedias/IEL+Privacy+and+Technology+Law/714",
+    "description": "Organized by country, entries in this encyclopedia discuss privacy rights, data protection and access, including health data, regulation of digital markets and digital markets, digital financial services, telecommunications, cybersecurity,"
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Property and Trust Law",
+    "url": "https://kluwerlawonline.com/Encyclopedias/IEL+Property+and+Trust+Law/726",
+    "description": "Organized by country, each entry discusses the covered country's property and trust law legal regimes, including security interests in personal property, immovable property, the administration of property, and so forth."
+  },
+  {
+    "name": "International Encyclopaedia of Laws (IEL) Religion",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://kluwerlawonline.com/Encyclopedias/IEL+Religion/728",
+    "description": "A basic description of laws about religion in a wide variety of countries, including Australia, China, Spain, and many more."
+  },
+  {
+    "name": "International Encyclopedia of Comparative Law Online",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://referenceworks.brillonline.com/browse/international-encyclopedia-of-comparative-law-online",
+    "description": "Hundreds of articles on international comparative law. Subjects covered include world legal systems, private international law, commercial transactions, families, tort, intellectual property, civil procedure, and many more."
+  },
+  {
+    "name": "JSTOR",
+    "url": "http://dbs.lib.byu.edu/jstor",
+    "description": "Journal articles and e-books. Excellent source for older articles, but articles from the most recent 3-5 years may not be available."
+  },
+  {
+    "name": "Jus Mundi",
+    "url": "https://jusmundi.com/en",
+    "description": "Research database for international arbitration decisions."
+  },
+  {
+    "name": "Law.com",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.law.com",
+    "description": "Legal news website that includes The National Law Journal, The American Lawyer, New York Lawyer, and Legaltech News, among others. Extensive coverage of law firms and legal education. BYU students and faculty can register for individual acc"
+  },
+  {
+    "name": "Law360",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.law360.com/",
+    "description": "News and analysis on legal developments affecting every area of law organized by topic."
+  },
+  {
+    "name": "Legal Collection (EBSCO)",
+    "url": "https://dbs.lib.byu.edu/legal-collection",
+    "description": "EBSCO's Legal Collection contains almost 250 prestigious, full-text academic legal journals and law reviews, as well as indexing for hundreds more additional journals. If you locate an article you wish to read but the full-text is not avail"
+  },
+  {
+    "name": "Legal Information Source",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://research.ebsco.com/c/mqx4aq?db=lir",
+    "description": "Legal Information Source focuses on legal self-help resources including state and federal practice forms as well as the Nolo guides series."
+  },
+  {
+    "name": "LegalTrac (Gale OneFile)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://go.gale.com/ps/start.do?p=LT&u=byu_hunter",
+    "description": "An index of articles in hundreds of law reviews, legal newspapers, and bar association journals in the U.S. and abroad since 1980. Search by subject or keyword."
+  },
+  {
+    "name": "Legislative Insight (ProQuest)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://li.proquest.com/legislativeinsight/",
+    "description": "ProQuest Legislative Insight provides compiled legislative histories for many federal laws, which may include committee reports, hearings, debates, and multiple draft versions of bills."
+  },
+  {
+    "name": "Lex Machina",
+    "url": "https://law.lexmachina.com",
+    "description": "Sophisticated legal analytics tool. BYU Law students and faculty can register for an account at https://law.lexmachina.com/enterprise/law.byu.edu."
+  },
+  {
+    "name": "Lexis+",
+    "url": "http://www.lexisnexis.com/lawschool/",
+    "description": "LexisNexis is an online resource that features access to legal, business, and news sources. A researcher can search Cases, Court Records, Legislative Codes, Legal News, Wire Services, Newspapers, Public Records, and more through LexisNexis."
+  },
+  {
+    "name": "LexisNexis Digital Library",
+    "url": "https://lexisdl.com/library/byulaw",
+    "description": "E-book versions of respected legal treatises and some popular audiobooks and e-books related to diversity, leadership, and business."
+  },
+  {
+    "name": "Lincoln at the Bar",
+    "url": "https://dbs.lib.byu.edu/lincoln-bar",
+    "description": "This database contains all extent records for 122 cases in which Lincoln served as counsel in the federal district and circuit courts in Illinois from 1855-1861. Earlier records were destroyed in the Great Chicago Fire of 1871. Part of Gale",
+    "aliases": [
+      "Legal History"
+    ]
+  },
+  {
+    "name": "LLMC Digital (Law Library Microform Consortium)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://discover.llmc.com",
+    "description": "Digital copies of old legal texts and government documents."
+  },
+  {
+    "name": "Making of Modern Law: ACLU Papers 1912-1990",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://link.gale.com/apps/ACLU?u=byu_hunter",
+    "description": "Digitized documents from the ACLU: newspaper clippings, scrapbooks, court files, memorandums, telegrams, minutes, and legal case records. Topics include free speech, citizenship, race, discrimination, immigration, labor, and radicalism."
+  },
+  {
+    "name": "Making of Modern Law: Foreign Primary Sources, 1600-1970",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://link.gale.com/apps/MLFP?u=byu_hunter",
+    "description": "Four hundred years worth (1600-1970) of superseded legal codes from Europe, India, South America, Egypt, and more. This collection also includes Making of Modern Law, Foreign Primary Sources Part II."
+  },
+  {
+    "name": "Making of Modern Law: Foreign, Comparative, and International Law, 1600-1926",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://link.gale.com/apps/MMLF?u=byu_hunter",
+    "description": "Over 2,700 titles focusing primarily on international law covering a broad range of topics, from commercial law to criminal law. Some foreign law sources are included."
+  },
+  {
+    "name": "Making of Modern Law: Landmark Records and Briefs of the U.S. Courts of Appeals, 1891-1983",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://link.gale.com/apps/MMLR?u=byu_hunter",
+    "description": "Briefs, petitions, transcripts, and more from influential courts of appeals decisions that were never reviewed by the U.S. Supreme Court from 1890 though 1980. This database includes the most recent installment released by the publisher, Pa"
+  },
+  {
+    "name": "Making of Modern Law: Legal Treatises, 1800-1926",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://link.gale.com/apps/MOML?u=byu_hunter",
+    "description": "More than 21,000 American and British legal works: casebooks, local practice manuals, form books, works for lay readers, pamphlets, letters, speeches, and more — organized into 99 subject areas."
+  },
+  {
+    "name": "Making of Modern Law: Primary Sources, 1620-1979",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://link.gale.com/apps/MMLP?u=byu_hunter",
+    "description": "Over 3 million pages of primary legal documents such as constitutional conventions, city charters, law dictionaries, and state codes, ranging from the years 1620-1979."
+  },
+  {
+    "name": "Making of Modern Law: Trials, 1600-1926",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://link.gale.com/apps/MMLT?u=byu_hunter",
+    "description": "Official and unofficial (and often salacious and colorful) accounts and records of trials from the United States, the United Kingdom, and Canada, and accounts published in English from non-English speaking countries such as France. Document"
+  },
+  {
+    "name": "Making of Modern Law: U.S. Supreme Court Records and Briefs, 1832-1978",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://link.gale.com/apps/SCRB?u=byu_hunter",
+    "description": "Contains documents from most but not all cases from that time period. The records and briefs are searchable by case name, case citation, author and full text, and are available in PDF format."
+  },
+  {
+    "name": "Max Planck Encyclopedia of Comparative Constitutional Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://oxcon.ouplaw.com/home/MPECCOL",
+    "description": "Contains hundreds of focused articles on comparative constitutional law topics."
+  },
+  {
+    "name": "Max Planck Encyclopedias of Public International Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://opil.ouplaw.com/home/MPIL",
+    "description": "This Encyclopedia contains two modules: Max Planck Encyclopedia of Public International Law and Max Planck Encyclopedia of International Procedural Law."
+  },
+  {
+    "name": "NAACP Papers: The NAACP's Major Campaigns--Legal Department Files",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://hv.proquest.com/historyvault/hv.jsp?pageid=advanced_ui&module=91549",
+    "description": "The digitized case files of the NAACP’s general counsel and legal department staff for the period from 1956 to 1972. The files document the NAACP’s aggressive campaign to desegregate the United States. The cases pertain to school desegregat",
+    "aliases": [
+      "Constitutional Law",
+      "Legal History"
+    ]
+  },
+  {
+    "name": "National Law Journal",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.law.com/nationallawjournal/",
+    "description": "Broad news coverage of stories that interest attorneys, including the practice of law, the business of law, and legal education. Part of Law.com."
+  },
+  {
+    "name": "New York Times digital edition",
+    "url": "https://www.nytimes.com",
+    "description": "All BYU Law students, faculty, and staff can create a personal account for access. To create your account, go to nytimes.com, click the \\\"LOG IN\\\" button. Enter your law school email address. Click \\\"Forgot Password\\\" and create a new password."
+  },
+  {
+    "name": "Newspaper Source Plus (EBSCO)",
+    "url": "http://dbs.lib.byu.edu/news-source-ebsco",
+    "description": "Digital coverage of more than 1,200 newspapers and newswires including the Associated Press, The New York Daily News, The Chicago Tribune, and The Boston Globe, and many international news sources. This database also includes transcripts fo"
+  },
+  {
+    "name": "Omnitax (CCH AnswerConnect)",
+    "url": "https://dbs.lib.byu.edu/cchinternet",
+    "description": "Federal, state, and international tax law, with special sections for accounting and audit, financial and estate planning, and health care compliance and reimbursement. This database is known for the Standard Federal Tax Reporter state tax r"
+  },
+  {
+    "name": "Oxford Constitutional Law (OXCON)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://oxcon.ouplaw.com",
+    "description": "Search across all of Oxford's constitutional law resources simultaneously, including Oxford Constitutions of the World, US Constitutional Law, and the Max Planck Encyclopedia of Comparative Constitutional Law."
+  },
+  {
+    "name": "Oxford Constitutions of the World",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://oxcon.ouplaw.com/home/OCW",
+    "description": "Contains English-language versions of all of the world's constitutions with commentaries, historical versions, related documents, amendments, and more. NOTE: The \\\"Jurisdictions\\\" tab on the top menu bar is not functional. Instead, click on \\\""
+  },
+  {
+    "name": "Oxford Encyclopedia of EU Law",
+    "url": "https://opil.ouplaw.com/home/OEEUL",
+    "description": "This encyclopedia provides expert high-level analysis of the foundations and concepts of EU law, ranging from aviation, to national parliaments in the EU, to pesticides. The encyclopedia launched in 2022 with 95 articles; over 1000 articles"
+  },
+  {
+    "name": "Oxford English Dictionary (OED) Online",
+    "url": "https://dbs.lib.byu.edu/oxford-oed-online",
+    "description": "The accepted authority on the English language, this dictionary traces the history of word usage with quotations, etymological analysis, variant spellings, and pronunciation. Updated quarterly."
+  },
+  {
+    "name": "Oxford Handbook of Comparative Constitutional Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199578610.001.0001/oxfordhb-9780199578610?rskey=pw8BNP&result=8",
+    "description": "Discusses the history, methodologies, and future of comparative constitutional law as well as constitutional rights, institutions, and interpretation."
+  },
+  {
+    "name": "Oxford Handbook of Comparative Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199296064.001.0001/oxfordhb-9780199296064?rskey=pw8BNP&result=1",
+    "description": "Discusses the development and approaches to comparative law and various subjects of comparative law, including comparative tort law, constitutional law, antitrust law, and more."
+  },
+  {
+    "name": "Oxford Handbook of Empirical Legal Research",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199542475.001.0001/oxfordhb-9780199542475?rskey=pw8BNP&result=2",
+    "description": "Describes methodologies of empirical legal research and its application in various fields of law."
+  },
+  {
+    "name": "Oxford Handbook of International Environmental Law (2d ed.)",
+    "url": "https://opil.ouplaw.com/view/10.1093/law/9780198849155.001.0001/law-9780198849155",
+    "description": "Describes the general issues, analytical tools, key concepts, actors, institutions, implementation, and enforcement of international environmental law."
+  },
+  {
+    "name": "Oxford Handbook of International Investment Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199231386.001.0001/oxfordhb-9780199231386?rskey=pw8BNP&result=4",
+    "description": "Examines the economic and institutional context of the world trading system, its substantive law (including regional trade regimes) and the settlement of disputes. The final part of the book explores the wider framework of the world trading"
+  },
+  {
+    "name": "Oxford Handbook of International Trade Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199231928.001.0001/oxfordhb-9780199231928?rskey=pw8BNP&result=5",
+    "description": "The Oxford Handbook of International Trade Law contains articles on the world trading system, treaties pertaining to trade, dispute settlement, and the relationship of trade with other issues, including human rights, the environment, and in"
+  },
+  {
+    "name": "Oxford Handbook of Jurisprudence and Philosophy of Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199270972.001.0001/oxfordhb-9780199270972?rskey=pw8BNP&result=6",
+    "description": "Articles on legal theory, philosophy, and current jurisprudential thinking, such as natural law, formalism, and the philosophy of the common law. It offers an overview of the contending theories and debates alongside original analysis."
+  },
+  {
+    "name": "Oxford Handbook of Legal Studies",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199248179.001.0001/oxfordhb-9780199248179?rskey=pw8BNP&result=7",
+    "description": "The Oxford Handbook of Legal Studies provides an overview of legal scholarship at the start of the twenty-first century. The forty-three articles offer original and interpretative accounts of the nature, themes, and trends of research and w"
+  },
+  {
+    "name": "Oxford Law Journals",
+    "url": "https://academic.oup.com/journals/search-results?q=&tax=AcademicSubjects/LAW00010",
+    "description": "Online access to academic journals published by Oxford University Press. Topics include but are not limited to: international law, constitutional law, human rights, immigration, competition law, the European Union, history of law, informati"
+  },
+  {
+    "name": "Oxford Public International Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://opil.ouplaw.com/home/ORIL",
+    "description": "Access to Oxford Reports on International Law and Max Planck Encyclopedia of Public International Law. Oxford Reports on International Law contain the text of international court decisions with headnotes, commentary, and English translation"
+  },
+  {
+    "name": "Oxford Reports on International Courts of General Jurisdiction",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://opil.ouplaw.com/page/ICGJ/oxford-reports-on-international-courts-of-general-jurisdiction-of-general-jurisdiction",
+    "description": "All contentious and advisory cases from the International Court of Justice and Permanent Court of International Justice, excluding basic orders regarding the setting of time limits for the filing of written and/or oral submissions by the pa"
+  },
+  {
+    "name": "Oxford Reports on International Human Rights Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://opil.ouplaw.com/page/IHRL/oxford-reports-on-international-human-rights-law",
+    "description": "IHRL covers international decisions on human rights from a variety of global and regional courts."
+  },
+  {
+    "name": "Oxford Reports on International Law in Domestic Courts",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://opil.ouplaw.com/page/ILDC/oxford-reports-on-international-law-in-domestic-courts",
+    "description": "The full text of court decisions in which domestic courts applied international law for about 70 jurisdictions."
+  },
+  {
+    "name": "Oxford Scholarly Authorities on International Law (OSAIL)",
+    "url": "https://opil.ouplaw.com/home/OSAIL",
+    "description": "OSAIL contains over 180 reference books and treatises on international law."
+  },
+  {
+    "name": "Oxford Scholarship Online - Law",
+    "url": "https://academic.oup.com/oxford-scholarship-online/search-results?q=&tax=AcademicSubjects/LAW00010",
+    "description": "E-book versions of Oxford University Press's law titles."
+  },
+  {
+    "name": "Oxford’s U.S Constitutional Law",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://oxcon.ouplaw.com/home/usc",
+    "description": "The full text of current & historical state and Federal constitutions as well as commentaries and analysis of state constitutions of the United States."
+  },
+  {
+    "name": "PACER",
+    "url": "http://pacer.psc.uscourts.gov/",
+    "description": "Public Access to Court Electronic Records (PACER) provides federal court docket information and filings. BYU Law faculty and students can obtain the password from Iantha Haight but should generally use Bloomberg Law or Lexis Courtlink for d"
+  },
+  {
+    "name": "PAIS International Index",
+    "url": "https://dbs.lib.byu.edu/pais-cas",
+    "description": "Useful for foreign and international research. Originally the Public Affairs Information Service, the PAIS International database indexes publications from more than 120 countries on topics like human rights, government, economics, politics"
+  },
+  {
+    "name": "Philip C. Jessup International Law Moot Court Compendium (HeinOnline)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://heinonline.org/HOL/Index?index=jessup/philcj&collection=jessup",
+    "description": "The problem, judges' bench memorandum, rules, results, and best memorials of each year's Jessup Moot Court Competition from 1960 to the present."
+  },
+  {
+    "name": "PitchBook",
+    "url": "http://dbs.lib.byu.edu/pitchbook",
+    "description": "Information about private companies and investment data. You must use an @byu.net email address to create an account. Use the Email Alias Manager in myBYU to create an @byu.net address."
+  },
+  {
+    "name": "PLI PLUS - Practising Law Institute",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://plus.pli.edu",
+    "description": "The Practising Law Institute's complete collection of treatises, forms, CLE program transcripts, checklists, course handbooks, and more. Content is written by attorneys at top law firms and geared toward practicing attorneys."
+  },
+  {
+    "name": "Preqin Insights+",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.preqin.com/login.aspx?al=true&userid=296053&c=594105",
+    "description": "Annual and quarterly global reports with data on private equity, venture capital, hedge funds, private debt, and more."
+  },
+  {
+    "name": "Preqin Private Equity",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.preqin.com/login.aspx?al=true&userid=296053&c=594105",
+    "description": "Industry-leading database of hard-to-find private equity information, including information on funds, fund managers, and performance."
+  },
+  {
+    "name": "PrivCo",
+    "url": "https://dbs.lib.byu.edu/privco",
+    "description": "Excellent source for business and financial data on major private corporations, including family owned, private equity owned, venture backed, and international unlisted companies. First-time users must create a username."
+  },
+  {
+    "name": "ProQuest Congressional Legislative & Executive Publications",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://search.proquest.com/congressional",
+    "description": "Excellent resource for U.S. federal congressional and executive documents including Congressional bills, hearings, CRS reports, executive orders, presidential proclamations, and more."
+  },
+  {
+    "name": "ProQuest Criminal Justice",
+    "url": "https://dbs.lib.byu.edu/pq-cj",
+    "description": "Reports, scholarly journals, blogs, and dissertations and theses for the study of crime, its causes and impacts, litigation, and trends.",
+    "aliases": [
+      "Criminal Law"
+    ]
+  },
+  {
+    "name": "ProQuest Indian Claims Insight",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://indianclaims.proquest.com/indianclaims/search/basic/IciBasicSearch",
+    "description": "U.S. Indian claims from 1789 to the present, along with briefs, decisions, transcripts, settlements, and related congressional publications."
+  },
+  {
+    "name": "ProQuest Legislative Insight",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://li.proquest.com/legislativeinsight/",
+    "description": "Excellent resource for compiled legislative histories for many federal laws, which may include committee reports, hearings, debates, and multiple draft versions of bills."
+  },
+  {
+    "name": "ProQuest One Business",
+    "url": "http://dbs.lib.byu.edu/pq-business",
+    "description": "Scholarly and news articles related to business, economics, accounting, finance, entrepreneurship, and market research. Also company, industry, and country reports. Has company pages gathering articles and resources about a single company i"
+  },
+  {
+    "name": "ProQuest Statistical Abstract of the U.S.",
+    "url": "http://dbs.lib.byu.edu/stat-abstract-us",
+    "description": "Statistics on social, political, and economic conditions in the United States."
+  },
+  {
+    "name": "ProQuest Supreme Court Insight",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://supremecourt.proquest.com/supremecourt",
+    "description": "U.S. Supreme Court opinions, dockets, oral arguments, joint appendices, and briefs, including amicus briefs. Covers cases from the 1975/1976 term to the present."
+  },
+  {
+    "name": "Psychology and Behavioral Sciences Collection (EBSCO)",
+    "url": "https://dbs.lib.byu.edu/psychology-ebsco",
+    "description": "Scholarly articles from hundreds of journals on topics relating to emotional and behavioral characteristics, psychiatry & psychology, mental processes, anthropology, and observational and experimental methods."
+  },
+  {
+    "name": "Quimbee",
+    "url": "https://www.quimbee.com/",
+    "description": "Law school study aids including flashcards, outlines, practice exams, and videos. BYU Law students and faculty should contact Iantha Haight to receive an email invitation to join Quimbee. Also available to alumni."
+  },
+  {
+    "name": "Reconstruction, Jim Crow, and the Enforcement of Federal Law in the South, 1871-1884",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://link.gale.com/apps/collection/8SSN/GDSC?u=byu_hunter&id=law",
+    "description": "Part of Gale Primary Sources' Archives Unbound series, this collection contains documents from the south (former Confederate and Border States) about efforts to enforce federal laws relating to former enslaved people. The documents primaril"
+  },
+  {
+    "name": "RIA Checkpoint Edge Tax Service",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://checkpoint.riag.com/login?iploc=BYU-LAWSCHOOL",
+    "description": "Tax database with tax law, expert analysis, treatises, news, cases and rulings, etc. Covers federal, state, local and international issues. Includes Bittker & Eustice: Federal Income Taxation of Corporation & Shareholders, the Journal of Ta"
+  },
+  {
+    "name": "Rocky Mountain Mineral Law Foundation - now the Foundation for Natural Resources and Energy Law (in Fastcase)",
+    "url": "https://byulaw.idm.oclc.org/login?url=https://apps.fastcase.com/PartnerBenefits/?CompanyUID=4bfc5468-0c9e-4664-b042-a5b7f062b7f2&Username=BRIGHAMYOUNGDefaultUser&Firstname=Brigham%20Young&Lastname=University&LogoutURL=http%3a%2f%2fwww.byu.edu",
+    "description": "Formerly known as the Rocky Mountain Mineral Law Foundation, the Foundation for Natural Resources and Energy Law (FNREL) is a collection of annual institute proceedings and journal articles hosted on the Fastcase database. To locate the mat"
+  },
+  {
+    "name": "Sabin Americana: History of the Americas, 1500-1926",
+    "url": "https://dbs.lib.byu.edu/sabin-archive-gale",
+    "description": "Historical works, including legal commentaries, about the Americas published throughout the world from 1500-1926. Topics include exploration, trade, colonialism, slavery and abolition, the western movement, Native Americans, military action"
+  },
+  {
+    "name": "Security Issues Online (Alexander Street)",
+    "url": "https://search.alexanderstreet.com/secu",
+    "description": "A diverse collection of resources, including maps, manuscripts, letters, videos, books, and related web resources organized by security events and areas such as the Cuban Missile Crisis, the Iran-Contra Affair, and China and International R"
+  },
+  {
+    "name": "Slavery and Anti-Slavery: A Transnational Archive",
+    "url": "https://dbs.lib.byu.edu/sas",
+    "description": "Documents including court records, legal documents, books, maps, essays, and newspaper articles dealing with slavery, the slave trade, the abolition movement, and emancipation throughout the world from the 17th to the 19th centuries."
+  },
+  {
+    "name": "Slavery and the Law",
+    "url": "https://dbs.lib.byu.edu/slavery-law",
+    "description": "Legislation, petitions, and judicial cases involving slaves and slavery in the southern United States from 1775-1867.",
+    "aliases": [
+      "Legal History"
+    ]
+  },
+  {
+    "name": "Slavery, Abolition & Social Justice",
+    "url": "https://dbs.lib.byu.edu/slavery-abolition",
+    "description": "Documents chronicling the history of slavery, abolition, and social justice including court documents, essays, and maps. Includes an interactive map and a chronology."
+  },
+  {
+    "name": "Slavery, the Slave Trade, and Law and Order in 19th Century America, 1636-1880",
+    "url": "https://hv.proquest.com/historyvault/hv.jsp?pageid=advanced_ui&module=52143",
+    "description": "This ProQuest History Vault module contains primary source documentation of the slave trade in the British colonies and the United States, as well as letters received by the U.S. Attorney General regarding runaway slaves, slave trades, and"
+  },
+  {
+    "name": "Social Science Premium Collection (ProQuest)",
+    "url": "https://dbs.lib.byu.edu/social-science-csa",
+    "description": "Journal articles covering a wide range of social science topics including criminal justice, education, linguistics and language behavior, political science, psychology, social services, and sociology."
+  },
+  {
+    "name": "Social Sciences Citation Index (SSCI): Web of Science",
+    "url": "https://dbs.lib.byu.edu/ssci-web-science",
+    "description": "The Web of Science accesses the Science Citation Index (SCI), Social Science Citation Index (SSCI), and Arts and Humanitites Citation Index (AHCI) databases, gathered from over 8,500 scholarly journals. Searches for records by topic, author"
+  },
+  {
+    "name": "SSRN (Social Science Research Network)",
+    "url": "http://papers.ssrn.com/sol3/DisplayAbstractSearch.cfm",
+    "description": "Valuable resource for the most current legal and other scholarly literature because it has draft versions of many articles before their official publication, as well as published articles."
+  },
+  {
+    "name": "Statistical Abstract of the U.S. (ProQuest)",
+    "url": "http://dbs.lib.byu.edu/stat-abstract-us",
+    "description": "A comprehensive summary of statistics on the social, political, and economic conditions of the United States."
+  },
+  {
+    "name": "Supreme Court Insight (ProQuest)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=http://supremecourt.proquest.com/supremecourt",
+    "description": "U.S. Supreme Court opinions, dockets, oral arguments, joint appendices, and briefs, including amicus briefs. Covers cases from the 1975/1976 term to the present."
+  },
+  {
+    "name": "Tax Management Portfolios (Bloomberg Tax)",
+    "url": "https://dbs.lib.byu.edu/bna-tax",
+    "description": "This well-respected series of handbooks written by practicing tax attorneys and accountants provides detailed analysis of tax issues for practitioners with charts, forms, sample documents, and client letters."
+  },
+  {
+    "name": "Tax Notes",
+    "url": "https://www.taxnotes.com",
+    "description": "Digital version of Tax Analysts’ Tax Notes magazine with coverage and analysis of legislative tax proposals, court decisions, regulatory pronouncements, and new trends in the administration of federal, state, and international tax law. BYU"
+  },
+  {
+    "name": "Trends & Policy: U.S. Civil Rights (ProQuest)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://trendspolicy.proquest.com/civilrights",
+    "description": "The U.S. Civil Rights module of ProQuest's Trends & Policy series collects primary legal sources, news, statistics, academic articles, and more and organizes them by event and topic. This collection contains topic modules including the Amer"
+  },
+  {
+    "name": "Trends & Policy: U.S. Criminal Justice (ProQuest)",
+    "url": "https://dbs.lib.byu.edu/criminal",
+    "description": "The ProQuest Trends and Policy series presents sources like news, documents, data, and legislation into a timeline format by topic. Topics include"
+  },
+  {
+    "name": "Trends & Policy: U.S. Environment (ProQuest)",
+    "url": "https://dbs.lib.byu.edu/environ-trends",
+    "description": "The ProQuest Trends and Policy series presents sources like news, documents, data, and legislation into a timeline format by topic. Topics include Fracking and Oil Production, Native Americans and Natural Resources, Environmental Justice, a"
+  },
+  {
+    "name": "Trends & Policy: U.S. Healthcare (ProQuest)",
+    "url": "https://dbs.lib.byu.edu/pq-trends-health",
+    "description": "The ProQuest Trends and Policy series presents sources like news, documents, data, and legislation into a timeline format by topic. Topics include Epidemics and Pandemics, Pharmaceuticals, Mental Health, and Reproductive Rights"
+  },
+  {
+    "name": "Trends & Policy: U.S. Immigration (ProQuest)",
+    "url": "https://byulaw.idm.oclc.org/login?url=https://trendspolicy.proquest.com/immigration",
+    "description": "Resources about immigration in the United States including news, timelines, legal documents, scholarly articles and data organized by topic or event."
+  },
+  {
+    "name": "U.S. Congressional Serial Set (Readex/Newsbank)",
+    "url": "https://dbs.lib.byu.edu/congress-serial",
+    "description": "Digital versions of the bound volumes containing the reports, documents, and journals of the U.S. Senate and House of Representatives from 1817-1994."
+  },
+  {
+    "name": "U.S. Intelligence on Europe, 1945-1995",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://primarysources.brillonline.com/browse/us-intelligence-on-europe",
+    "description": "Thousands of formerly classified U.S. government documents detailing the U.S. intelligence community’s activities in Europe, including Eastern Europe, Turkey and Cyprus, covering the time period from the end of World War II to the fall of t"
+  },
+  {
+    "name": "U.S. Law Week (Bloomberg Law)",
+    "url": "https://www.bloomberglaw.com/bloomberglawnews/us-law-week",
+    "description": "News coverage of the nation's most significant legal events, featuring significant cases and key legislative, regulatory, and pre-decisional developments across all areas of the law."
+  },
+  {
+    "name": "U.S. Newsstream (ProQuest)",
+    "url": "https://search.proquest.com/usnews",
+    "description": "Current newspapers (national, regional, and local) from across the United States. Archived news content goes back to the 1980s."
+  },
+  {
+    "name": "UniCourt",
+    "url": "https://unicourt.com",
+    "description": "A docket research and analytics tool for federal and state docket information. BYU Law School faculty and students can sign up for an account. For more information, contact librarian Iantha Haight, haighti@law.byu.edu."
+  },
+  {
+    "name": "Utah Legislative History Resources - Utah Office of Legislative Research & General Counsel",
+    "url": "https://le.utah.gov/lrgc/legislativehistoryresources.htm",
+    "description": "Utah legislative history resources including a research guide, bill drafting and research files, floor debates, and interim committee histories. Some resources go back to the 1980s."
+  },
+  {
+    "name": "Vault Law (free registration for BYU Law students required)",
+    "url": "https://firsthand.co/library/themes/vault-law",
+    "description": "Contains Vault guidebooks, law firm profiles, industry and occupation profiles, and career advice. Now part of the Firsthand website."
+  },
+  {
+    "name": "VitalLaw (Formerly Cheetah)",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://my.vitallaw.com",
+    "description": "Primary and secondary sources including treatises, cases, statutes, regulations, and chart builders on a variety of topics including federal and state securities law, litigation, transportation, and more. Formerly known as Cheetah. From pub"
+  },
+  {
+    "name": "vLex Justis",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://vlex.com/account/login_ip",
+    "description": "Database for foreign law research."
+  },
+  {
+    "name": "Wall Street Journal",
+    "url": "https://www.wsj.com",
+    "description": "BYU Law students and faculty can create a personal account using this link: http://wsj.com/BYULaw."
+  },
+  {
+    "name": "Washington Post",
+    "url": "https://login.byulaw.idm.oclc.org/login?url=https://www.washingtonpost.com",
+    "description": "Major U.S. newspaper with a special focus on American politics and government in addition to significant coverage of international events and cultural topics. Law students and faculty can sign up for an individual account at https://www.was"
+  },
+  {
+    "name": "Web of Science",
+    "url": "http://dbs.lib.byu.edu/web-science-isi",
+    "description": "Locate citations to scholarly articles. The Web of Science has the Science Citation Index (SCI), Social Science Citation Index (SSCI), and Arts and Humanities Citation Index (AHCI) databases, gathered from over 9,300 scholarly journals from"
+  },
+  {
+    "name": "Westlaw",
+    "url": "http://www.lawschool.westlaw.com/",
+    "description": "Online legal research service providing access to a large collection of statutes, case law, treatises, and journal articles, as well as current news articles and business information. A personal username and password are necessary for this"
+  },
+  {
+    "name": "Women and Social Movements in the United States, 1600-2000 (Alexander Street)",
+    "url": "https://dbs.lib.byu.edu/women-us-1600-2000",
+    "description": "Offers the second quarterly publication of new document projects and documents on Women and Social Movements in the United States. Currently includes 52 document projects, 30 lesson plans or document-based questions, and 18,500 pages of add"
+  },
+  {
+    "name": "WomensLaw.org",
+    "url": "https://www.womenslaw.org/",
+    "description": "Information about resources for victims of domestic violence."
+  },
+  {
+    "name": "World Religion Database",
+    "url": "https://dbs.lib.byu.edu/world-religion-brill",
+    "description": "Detailed statistics on religious affiliation for every country in the world."
+  },
+  {
+    "name": "WorldCat (FirstSearch)",
+    "url": "https://dbs.lib.byu.edu/firstsearch",
+    "description": "Library catalog for libraries across the country. Find books that BYU might not have and request through Inter-library loan. Not a full text search."
+  },
+  {
+    "name": "Xchange Case Search (Utah Trial Courts)",
+    "url": "https://pubapps.utcourts.gov/XchangeWEB/",
+    "description": "Xchange provides access to Utah state district court dockets and documents. Available to BYU Law School faculty and students for educational use only (including info needed for bar exam applications). Contact haighti@law.byu.edu for access"
+  }
+]
