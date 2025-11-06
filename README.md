@@ -473,5 +473,3 @@ For questions, issues, or feature requests:
 - Check documentation in `/docs` folder
 
 ---
-
-**Made with ❤️ for legal researchers and students**
