@@ -461,6 +461,127 @@ const CANDIDATES = [
   "gemini-1.5-flash-8b",
 ].filter(Boolean);
 
+// ============================================================================
+// ENHANCED API MANAGEMENT: CACHING, QUEUING, RETRY LOGIC
+// ============================================================================
+
+// Response caching system to reduce API calls
+const responseCache = new Map();
+const CACHE_TTL = 5 * 60 * 1000; // 5 minutes cache TTL
+const MAX_CACHE_SIZE = 1000; // Maximum cached responses
+
+// Rate limit tracking per model
+const modelRateLimits = new Map();
+const RATE_LIMIT_COOLDOWN = 60 * 1000; // 1 minute cooldown after hitting rate limit
+
+// Request queue to manage concurrent API calls
+const requestQueue = [];
+let activeRequests = 0;
+const MAX_CONCURRENT_REQUESTS = 3; // Limit concurrent API calls
+
+function getCacheKey(query, model) {
+  return `${model}:${crypto.createHash('md5').update(query).digest('hex')}`;
+}
+
+function getCachedResponse(query, model) {
+  const key = getCacheKey(query, model);
+  const cached = responseCache.get(key);
+  
+  if (!cached) return null;
+  
+  // Check if cache is still valid
+  if (Date.now() - cached.timestamp > CACHE_TTL) {
+    responseCache.delete(key);
+    return null;
+  }
+  
+  console.log(`📦 Using cached response for query: "${query.substring(0, 50)}..."`);
+  return cached.data;
+}
+
+function setCachedResponse(query, model, data) {
+  const key = getCacheKey(query, model);
+  
+  // Implement simple LRU eviction if cache is full
+  if (responseCache.size >= MAX_CACHE_SIZE) {
+    const oldestKey = responseCache.keys().next().value;
+    responseCache.delete(oldestKey);
+  }
+  
+  responseCache.set(key, {
+    data,
+    timestamp: Date.now()
+  });
+  
+  console.log(`💾 Cached response for future use: "${query.substring(0, 50)}..."`);
+}
+
+function isModelInCooldown(model) {
+  const cooldownInfo = modelRateLimits.get(model);
+  if (!cooldownInfo) return false;
+  
+  if (Date.now() - cooldownInfo.timestamp < RATE_LIMIT_COOLDOWN) {
+    console.log(`⏰ Model ${model} still in cooldown for ${Math.ceil((RATE_LIMIT_COOLDOWN - (Date.now() - cooldownInfo.timestamp)) / 1000)}s`);
+    return true;
+  }
+  
+  // Cooldown expired, remove from tracking
+  modelRateLimits.delete(model);
+  return false;
+}
+
+function markModelRateLimited(model) {
+  modelRateLimits.set(model, { timestamp: Date.now() });
+  console.log(`🚫 Marked model ${model} as rate limited - cooldown for ${RATE_LIMIT_COOLDOWN / 1000}s`);
+}
+
+// Sleep helper for delays
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Enhanced exponential backoff with jitter
+async function exponentialBackoff(attempt, baseDelay = 1000, maxDelay = 30000) {
+  const delay = Math.min(baseDelay * Math.pow(2, attempt), maxDelay);
+  const jitter = delay * 0.1 * Math.random(); // Add up to 10% jitter
+  const finalDelay = delay + jitter;
+  
+  console.log(`⏳ Exponential backoff: waiting ${Math.round(finalDelay)}ms (attempt ${attempt + 1})`);
+  await sleep(finalDelay);
+}
+
+// Request queue management
+async function queueRequest(requestFn) {
+  return new Promise((resolve, reject) => {
+    const queueItem = { requestFn, resolve, reject };
+    requestQueue.push(queueItem);
+    processQueue();
+  });
+}
+
+async function processQueue() {
+  if (activeRequests >= MAX_CONCURRENT_REQUESTS || requestQueue.length === 0) {
+    return;
+  }
+  
+  const queueItem = requestQueue.shift();
+  activeRequests++;
+  
+  try {
+    const result = await queueItem.requestFn();
+    queueItem.resolve(result);
+  } catch (error) {
+    queueItem.reject(error);
+  } finally {
+    activeRequests--;
+    
+    // Process next item in queue
+    if (requestQueue.length > 0) {
+      setTimeout(processQueue, 100); // Small delay between requests
+    }
+  }
+}
+
 async function firstWorkingModel() {
   // Try known candidates
   for (const m of CANDIDATES) {
@@ -943,7 +1064,88 @@ User Query: ${JSON.stringify(userQuery)}
 `.trim();
 }
 async function queryGemini(prompt, wantRaw = false) {
-  const model = await getModel();  // <— use resolved model
+  // Check cache first
+  const initialModel = await getModel();
+  let cachedResponse = getCachedResponse(prompt, initialModel);
+  if (cachedResponse) {
+    return cachedResponse;
+  }
+  
+  // Queue the request to manage concurrency
+  return await queueRequest(async () => {
+    return await queryGeminiWithRetry(prompt, wantRaw);
+  });
+}
+
+async function queryGeminiWithRetry(prompt, wantRaw = false, modelsToTry = null) {
+  const modelsQueue = modelsToTry || [...CANDIDATES];
+  const maxRetries = 3;
+  let lastError = null;
+  
+  // Try each available model
+  for (const model of modelsQueue) {
+    // Skip models in cooldown
+    if (isModelInCooldown(model)) {
+      console.log(`⏭️ Skipping model ${model} - in rate limit cooldown`);
+      continue;
+    }
+    
+    console.log(`🤖 Trying model: ${model}`);
+    
+    // Try with exponential backoff for 429 errors
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+      try {
+        const result = await makeGeminiRequest(model, prompt, wantRaw);
+        
+        // Cache successful response
+        setCachedResponse(prompt, model, result);
+        
+        console.log(`✅ Success with model ${model} on attempt ${attempt + 1}`);
+        return result;
+        
+      } catch (error) {
+        lastError = error;
+        const errorMsg = error.message || String(error);
+        
+        // Check if it's a rate limit error (429 or quota exceeded)
+        const isRateLimit = error.message && (
+          error.message.includes('429') || 
+          error.message.includes('RESOURCE_EXHAUSTED') ||
+          error.message.includes('quota') ||
+          error.message.includes('rate limit') ||
+          errorMsg.includes('Resource exhausted')
+        );
+        
+        if (isRateLimit) {
+          console.log(`⚠️ Rate limit hit for model ${model}: ${errorMsg}`);
+          
+          // Mark model as rate limited
+          markModelRateLimited(model);
+          
+          // If we have more attempts, wait with exponential backoff
+          if (attempt < maxRetries - 1) {
+            await exponentialBackoff(attempt);
+            console.log(`🔄 Retrying model ${model} (attempt ${attempt + 2}/${maxRetries})`);
+            continue;
+          } else {
+            console.log(`❌ Model ${model} exhausted all retry attempts`);
+            break; // Move to next model
+          }
+        } else {
+          // Non-rate-limit error, log and try next model immediately
+          console.log(`❌ Model ${model} failed with non-rate-limit error: ${errorMsg}`);
+          break; // Move to next model
+        }
+      }
+    }
+  }
+  
+  // If we get here, all models failed
+  console.error(`💥 All models failed. Last error: ${lastError?.message}`);
+  throw lastError || new Error('All Gemini models exhausted');
+}
+
+async function makeGeminiRequest(model, prompt, wantRaw = false) {
   const url = `https://generativelanguage.googleapis.com/v1/models/${encodeURIComponent(model)}:generateContent?key=${GEMINI_API_KEY}`;
 
   const payload = {
@@ -971,27 +1173,22 @@ async function queryGemini(prompt, wantRaw = false) {
     clearTimeout(timeoutId);
 
     if (!resp.ok) {
-    // if we hit 404 once, re-resolve model and retry once
-    if (resp.status === 404) {
-      RESOLVED_MODEL = null;
-      const retryModel = await getModel();
-      const retryUrl = `https://generativelanguage.googleapis.com/v1/models/${encodeURIComponent(retryModel)}:generateContent?key=${GEMINI_API_KEY}`;
-      const retry = await fetch(retryUrl, { method: "POST", headers: {"Content-Type":"application/json"}, body: JSON.stringify(payload) });
-      if (!retry.ok) {
-        const t = await retry.text().catch(() => "");
-        throw new Error(`Gemini HTTP ${retry.status}: ${t.slice(0, 400)}`);
+      const responseText = await resp.text().catch(() => "");
+      
+      // Handle 404 by trying to re-resolve model
+      if (resp.status === 404) {
+        RESOLVED_MODEL = null;
+        console.log(`🔄 Model ${model} not found (404), will try next model`);
+        throw new Error(`Model ${model} not found (404)`);
       }
-      const d2 = await retry.json();
-      const t2 = d2?.candidates?.[0]?.content?.parts?.map(p => p?.text || "").join("") ?? "[]";
-      return wantRaw ? { text: t2, data: d2 } : { text: t2, data: null };
+      
+      throw new Error(`Gemini HTTP ${resp.status}: ${responseText.slice(0, 400)}`);
     }
-    const t = await resp.text().catch(() => "");
-    throw new Error(`Gemini HTTP ${resp.status}: ${t.slice(0, 400)}`);
-  }
 
     const data = await resp.json();
     const text = data?.candidates?.[0]?.content?.parts?.map(p => p?.text || "").join("") ?? "[]";
     return wantRaw ? { text, data } : { text, data: null };
+    
   } catch (error) {
     clearTimeout(timeoutId);
     
