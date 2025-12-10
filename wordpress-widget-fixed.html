@@ -511,12 +511,15 @@
         
         // If it has a results property that's an object, convert to array
         if (json && json.results && typeof json.results === 'object') {
-          return Object.values(json.results);
+          return Object.values(json.results).filter(item => item && typeof item === 'object' && item.name);
         }
         
         // If it's an object with numbered keys (like "0", "1", "2"), convert to array
+        // Filter out non-result properties (like wp_debug, elapsed_ms, etc.)
         if (json && typeof json === 'object' && Object.keys(json).some(key => /^\d+$/.test(key))) {
-          return Object.values(json);
+          return Object.entries(json)
+            .filter(([key, val]) => /^\d+$/.test(key) && val && typeof val === 'object' && val.name)
+            .map(([_, val]) => val);
         }
         
         return [];
