@@ -31,16 +31,13 @@
       transform: translateX(0) !important;
     }
 
-    /* Hide sidebar/aside that interferes with layout */
-    .page-template-default .aside,
-    .page-template-default aside,
-    aside.widget-area,
-    aside,
-    .sidebar,
-    #secondary,
-    .widget-area,
-    [class*="sidebar"],
-    [id*="sidebar"] {
+    /* Hide sidebar/aside that interferes with layout - but not footer */
+    .page .aside:not(footer):not(footer *),
+    .page aside:not(footer):not(footer *),
+    aside.widget-area:not(footer):not(footer *),
+    .sidebar:not(footer):not(footer *),
+    #secondary:not(footer):not(footer *),
+    .widget-area:not(footer):not(footer *) {
       display: none !important;
       visibility: hidden !important;
       width: 0 !important;
