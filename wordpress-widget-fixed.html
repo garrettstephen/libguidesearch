@@ -30,6 +30,26 @@
       right: auto !important;
       transform: translateX(0) !important;
     }
+
+    /* Hide sidebar/aside that interferes with layout */
+    .page-template-default .aside,
+    .page-template-default aside,
+    aside.widget-area,
+    .sidebar,
+    #secondary {
+      display: none !important;
+    }
+    
+    /* Force full width layout */
+    .page-template-default .site-main,
+    .page-template-default main,
+    .content-area,
+    #primary {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 auto !important;
+      float: none !important;
+    }
     
     /* Reset WordPress theme interference - more aggressive */
     .ai-search-container {
@@ -392,6 +412,8 @@
       }
       .ai-search-container .ais-search button {
         flex: 1;
+      }
+      
       .ai-search-container {
         padding: 20px 16px !important;
         margin: 10px auto !important;
@@ -402,8 +424,8 @@
       .ai-search-container .ais-search input[type="text"] {
         max-width: 100%;
         min-width: 200px;
-      } max-width: 100% !important;
       }
+    }
       .ai-search-container .ais-legal-notice-content {
         flex-direction: column;
         gap: 8px;
