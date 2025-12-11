@@ -856,8 +856,22 @@
         doSearch(q);
       });
 
+      // Check URL for search query on page load
+      function checkUrlForQuery() {
+        const path = window.location.pathname;
+        const match = path.match(/\/librarysearch\/(.+)$/i);
+        
+        if (match && match[1]) {
+          // Decode URL and replace + with spaces
+          const query = decodeURIComponent(match[1]).replace(/\+/g, ' ');
+          els.q.value = query;
+          doSearch(query);
+        }
+      }
+
       // Initial boot
       loadHealth();
+      checkUrlForQuery(); // Check for URL query parameter
       // Enter to search focus UX
       els.q.focus();
     })();
