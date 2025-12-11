@@ -150,7 +150,7 @@
     }
     .ai-search-container .ais-search input[type="text"] { 
       flex: 1 1 400px; 
-      max-width: 800px;
+      max-width: 90%;
       min-width: 300px;
       background: var(--ais-input-bg); 
       color: var(--ais-text); 
@@ -218,10 +218,12 @@
       transition: all 0.2s ease;
       position: relative;
       overflow: hidden;
+      cursor: pointer;
     }
     .ai-search-container .ais-item:hover {
       border-color: var(--ais-accent);
       box-shadow: 0 4px 20px rgba(14, 165, 233, 0.1);
+      transform: translateY(-2px);
     }
     .ai-search-container .ais-item-title { 
       margin: 0 0 8px !important; 
@@ -651,6 +653,16 @@
             ${desc ? `<p style="margin:10px 0 0;color:var(--ais-muted);font-size:14px;line-height:1.5;">${escapeHtml(desc)}</p>` : ''}
             <div class="ais-bar"><i></i></div>
           `;
+          
+          // Make entire item clickable if URL exists
+          if (x.url) {
+            li.addEventListener('click', (e) => {
+              // Don't trigger if clicking on a link directly
+              if (e.target.tagName === 'A') return;
+              window.open(x.url, '_blank', 'noopener,noreferrer');
+            });
+          }
+          
           frag.appendChild(li);
           scoreBar(li.querySelector('.ais-bar'), Number(x.relevanceScore || 0));
         });
