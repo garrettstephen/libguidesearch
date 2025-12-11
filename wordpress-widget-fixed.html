@@ -453,7 +453,6 @@
         <button id="ais-go" type="submit">Search</button>
       </form>
       <div class="ais-row">
-        <label><input type="checkbox" id="ais-debug" /> Debug</label>
         <span id="ais-status" class="ais-status"></span>
       </div>
     </section>
@@ -477,7 +476,6 @@
         form: document.getElementById('ais-form'),
         q: document.getElementById('ais-q'),
         go: document.getElementById('ais-go'),
-        debug: document.getElementById('ais-debug'),
         status: document.getElementById('ais-status'),
         results: document.getElementById('ais-results'),
         diag: document.getElementById('ais-diag'),
@@ -660,9 +658,8 @@
       }
 
       function renderDiag(d) {
-        if (!els.debug.checked) { els.diag.hidden = true; return; }
-        els.diag.hidden = false;
-        els.diag.textContent = JSON.stringify(d, null, 2);
+        // Debug display removed for cleaner UI
+        els.diag.hidden = true;
       }
 
       function escapeHtml(s) {
@@ -700,7 +697,6 @@
 
       async function doSearch(q) {
         const params = new URLSearchParams({ query: q });
-        if (els.debug.checked) params.append('debug', '1');
         const url = WP_API_BASE + '/search?' + params.toString();
 
         setStatus('Searching…');

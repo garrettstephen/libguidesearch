@@ -28,9 +28,7 @@ add_action('rest_api_init', function () {
       if (is_wp_error($resp)) {
         return new WP_REST_Response([
           'ok' => false,
-          'error' => $resp->get_error_message(),
-          'elapsed_ms' => $elapsed,
-          'wp_debug' => true
+          'error' => $resp->get_error_message()
         ], 502);
       }
 
@@ -38,13 +36,7 @@ add_action('rest_api_init', function () {
       $body = wp_remote_retrieve_body($resp);
       $json = json_decode($body, true);
       
-      // Add debug info
-      if ($json) {
-        $json['wp_debug'] = true;
-        $json['elapsed_ms'] = $elapsed;
-      }
-      
-      return new WP_REST_Response($json ?? ['raw' => $body, 'elapsed_ms' => $elapsed, 'wp_debug' => true], $code);
+      return new WP_REST_Response($json ?? ['raw' => $body], $code);
     },
   ]);
 
@@ -77,8 +69,6 @@ add_action('rest_api_init', function () {
         return new WP_REST_Response([
           'ok' => false,
           'error' => $resp->get_error_message(),
-          'elapsed_ms' => $elapsed,
-          'wp_debug' => true,
           'requested_url' => $url
         ], 502);
       }
@@ -87,13 +77,7 @@ add_action('rest_api_init', function () {
       $body = wp_remote_retrieve_body($resp);
       $json = json_decode($body, true);
       
-      // Add debug info
-      if ($json) {
-        $json['wp_debug'] = true;
-        $json['elapsed_ms'] = $elapsed;
-      }
-      
-      return new WP_REST_Response($json ?? ['raw' => $body, 'elapsed_ms' => $elapsed, 'wp_debug' => true], $code);
+      return new WP_REST_Response($json ?? ['raw' => $body], $code);
     },
   ]);
 });
