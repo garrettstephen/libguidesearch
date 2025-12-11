@@ -858,23 +858,23 @@
 
       // Check URL for search query on page load (supports both query params and path)
       function checkUrlForQuery() {
-        // Method 1: Check query parameter (?q=search+terms)
-        const urlParams = new URLSearchParams(window.location.search);
-        const queryParam = urlParams.get('q');
+        // Method 1: Check path segment first (/librarysearch/search+terms)
+        const path = window.location.pathname;
+        const pathMatch = path.match(/\/librarysearch\/(.+)$/i);
         
-        if (queryParam) {
-          const query = queryParam.replace(/\+/g, ' ');
+        if (pathMatch && pathMatch[1]) {
+          const query = decodeURIComponent(pathMatch[1]).replace(/\+/g, ' ');
           els.q.value = query;
           doSearch(query);
           return;
         }
         
-        // Method 2: Check path segment (legacy support)
-        const path = window.location.pathname;
-        const pathMatch = path.match(/\/(?:search|librarysearch)\/(.+)$/i);
+        // Method 2: Check query parameter (?q=search+terms) as fallback
+        const urlParams = new URLSearchParams(window.location.search);
+        const queryParam = urlParams.get('q');
         
-        if (pathMatch && pathMatch[1]) {
-          const query = decodeURIComponent(pathMatch[1]).replace(/\+/g, ' ');
+        if (queryParam) {
+          const query = queryParam.replace(/\+/g, ' ');
           els.q.value = query;
           doSearch(query);
         }
