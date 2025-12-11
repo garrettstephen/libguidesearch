@@ -1,4 +1,31 @@
 <!-- WordPress Custom HTML Block Version - AI Law Library Search (WordPress Proxy) - Fixed Legal Help -->
+<style>
+  /* CRITICAL: Force all WordPress containers to full width */
+  body .site,
+  body .site-content,
+  body .content-area,
+  body #primary,
+  body #content,
+  body main,
+  body .entry-content,
+  body .wp-block-html {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  /* Hide all sidebars */
+  body aside:not(footer *),
+  body .sidebar,
+  body #secondary,
+  body .widget-area {
+    display: none !important;
+  }
+</style>
+
 <div class="ai-search-container">
   <style>
     /* Match homepage styling - semi-transparent dark container */
