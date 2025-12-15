@@ -1,13 +1,5 @@
 [
   {
-    "name": "Accounting Law",
-    "url": "https://guides.law.byu.edu/accounting",
-    "description": "Accounting Law",
-    "aliases": [
-      "Accounting Law"
-    ]
-  },
-  {
     "id": 315239,
     "name": "Accounting Law",
     "url": "https://guides.law.byu.edu/c.php?g=315239",
@@ -16,14 +8,6 @@
     "owner": "Hickman Pierson, Annalee",
     "updated": "2025-06-06 16:51:18",
     "isLocalGuide": true
-  },
-  {
-    "name": "Administrative Law",
-    "url": "https://guides.law.byu.edu/adminlaw",
-    "description": "Legal resources for researching administrative law.",
-    "aliases": [
-      "Administrative Law"
-    ]
   },
   {
     "id": 315237,
@@ -36,14 +20,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Afghanistan",
-    "url": "https://guides.law.byu.edu/Afghanistan",
-    "description": "Sources of Primary Law for Afghanistan, available to the general public.",
-    "aliases": [
-      "Afghanistan"
-    ]
-  },
-  {
     "id": 617205,
     "name": "Afghanistan",
     "url": "https://guides.law.byu.edu/c.php?g=617205",
@@ -52,14 +28,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-11-19 21:05:01",
     "isLocalGuide": true
-  },
-  {
-    "name": "Albania",
-    "url": "https://guides.law.byu.edu/Albania",
-    "description": "Sources of Primary Law for Albania, available to the general public.",
-    "aliases": [
-      "Albania"
-    ]
   },
   {
     "id": 623238,
@@ -72,14 +40,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Algeria",
-    "url": "https://guides.law.byu.edu/Algeria",
-    "description": "Sources of Primary Law for Algeria, available to the general public.",
-    "aliases": [
-      "Algeria"
-    ]
-  },
-  {
     "id": 627266,
     "name": "Algeria",
     "url": "https://guides.law.byu.edu/c.php?g=627266",
@@ -88,14 +48,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-11-25 22:05:34",
     "isLocalGuide": true
-  },
-  {
-    "name": "American Samoa",
-    "url": "https://guides.law.byu.edu/American_Samoa",
-    "description": "Sources of Primary Law for American Samoa, available to the general public.",
-    "aliases": [
-      "American Samoa"
-    ]
   },
   {
     "id": 630823,
@@ -108,14 +60,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Andorra",
-    "url": "https://guides.law.byu.edu/Andorra",
-    "description": "Sources of Primary Law for Andorra, available to the general public.",
-    "aliases": [
-      "Andorra"
-    ]
-  },
-  {
     "id": 631439,
     "name": "Andorra",
     "url": "https://guides.law.byu.edu/c.php?g=631439",
@@ -124,14 +68,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-03 23:17:25",
     "isLocalGuide": true
-  },
-  {
-    "name": "Angola",
-    "url": "https://guides.law.byu.edu/Angola",
-    "description": "Sources of Primary Law for Angola, available to the general public.",
-    "aliases": [
-      "Angola"
-    ]
   },
   {
     "id": 666403,
@@ -144,14 +80,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Anguilla",
-    "url": "https://guides.law.byu.edu/Anguilla",
-    "description": "Sources of Primary Law for Anguilla, available to the general public.",
-    "aliases": [
-      "Anguilla"
-    ]
-  },
-  {
     "id": 666428,
     "name": "Anguilla",
     "url": "https://guides.law.byu.edu/c.php?g=666428",
@@ -160,14 +88,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-10 21:48:16",
     "isLocalGuide": true
-  },
-  {
-    "name": "Antarctica",
-    "url": "https://guides.law.byu.edu/antarctica",
-    "description": "Sources of Primary Law for Antarctica, available to the general public.",
-    "aliases": [
-      "Antarctica"
-    ]
   },
   {
     "id": 671778,
@@ -180,14 +100,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Antigua and Barbuda",
-    "url": "https://guides.law.byu.edu/antigua_and_barbuda",
-    "description": "Sources of Primary Law for Antigua and Barbuda, available to the general public.",
-    "aliases": [
-      "Antigua and Barbuda"
-    ]
-  },
-  {
     "id": 671890,
     "name": "Antigua and Barbuda",
     "url": "https://guides.law.byu.edu/c.php?g=671890",
@@ -196,14 +108,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:32:05",
     "isLocalGuide": true
-  },
-  {
-    "name": "Antitrust & Competition Law",
-    "url": "https://guides.law.byu.edu/c.php?g=1404836",
-    "description": "Resources for research and study held at the BYU Law School on the topic of Antitrust Law.",
-    "aliases": [
-      "Antitrust & Competition Law"
-    ]
   },
   {
     "id": 1404836,
@@ -216,14 +120,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Argentina",
-    "url": "https://guides.law.byu.edu/argentina",
-    "description": "Sources of Primary Law for Argentina, available to the general public.",
-    "aliases": [
-      "Argentina"
-    ]
-  },
-  {
     "id": 672075,
     "name": "Argentina",
     "url": "https://guides.law.byu.edu/c.php?g=672075",
@@ -232,14 +128,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-03 17:18:13",
     "isLocalGuide": true
-  },
-  {
-    "name": "Armenia",
-    "url": "https://guides.law.byu.edu/armenia",
-    "description": "Sources of Primary Law for Armenia, available to the general public.",
-    "aliases": [
-      "Armenia"
-    ]
   },
   {
     "id": 673541,
@@ -252,14 +140,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Aruba",
-    "url": "https://guides.law.byu.edu/aruba",
-    "description": "Sources of Primary Law for Aruba, available to the general public.",
-    "aliases": [
-      "Aruba"
-    ]
-  },
-  {
     "id": 673565,
     "name": "Aruba",
     "url": "https://guides.law.byu.edu/c.php?g=673565",
@@ -268,14 +148,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:32:48",
     "isLocalGuide": true
-  },
-  {
-    "name": "Ashmore and Cartier Islands",
-    "url": "https://guides.law.byu.edu/ashmore_and_cartier_islands",
-    "description": "Sources of Primary Law for Ashmore and Cartier Islands, available to the general public.",
-    "aliases": [
-      "Ashmore and Cartier Islands"
-    ]
   },
   {
     "id": 673696,
@@ -288,14 +160,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Australia",
-    "url": "https://guides.law.byu.edu/australia",
-    "description": "Sources of Primary Law for Australia, available to the general public.",
-    "aliases": [
-      "Australia"
-    ]
-  },
-  {
     "id": 673973,
     "name": "Australia",
     "url": "https://guides.law.byu.edu/c.php?g=673973",
@@ -304,14 +168,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-01 19:46:00",
     "isLocalGuide": true
-  },
-  {
-    "name": "Austria",
-    "url": "https://guides.law.byu.edu/austria",
-    "description": "Sources of Primary Law for Austria, available to the general public.",
-    "aliases": [
-      "Austria"
-    ]
   },
   {
     "id": 673983,
@@ -324,14 +180,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Azerbaijan",
-    "url": "https://guides.law.byu.edu/azerbaijan",
-    "description": "Sources of Primary Law for Azerbaijan, available to the general public.",
-    "aliases": [
-      "Azerbaijan"
-    ]
-  },
-  {
     "id": 673990,
     "name": "Azerbaijan",
     "url": "https://guides.law.byu.edu/c.php?g=673990",
@@ -340,14 +188,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:33:50",
     "isLocalGuide": true
-  },
-  {
-    "name": "Bahrain",
-    "url": "https://guides.law.byu.edu/bahrain",
-    "description": "Sources of Primary Law for Bahrain, available to the general public.",
-    "aliases": [
-      "Bahrain"
-    ]
   },
   {
     "id": 674003,
@@ -360,14 +200,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Bangladesh",
-    "url": "https://guides.law.byu.edu/bangladesh",
-    "description": "Sources of Primary Law for Bangladesh, available to the general public.",
-    "aliases": [
-      "Bangladesh"
-    ]
-  },
-  {
     "id": 674008,
     "name": "Bangladesh",
     "url": "https://guides.law.byu.edu/c.php?g=674008",
@@ -376,14 +208,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-03 21:33:35",
     "isLocalGuide": true
-  },
-  {
-    "name": "Banking Law",
-    "url": "https://guides.law.byu.edu/banking_law",
-    "description": "A research guide to resources for banking law.",
-    "aliases": [
-      "Banking Law"
-    ]
   },
   {
     "id": 1108619,
@@ -396,14 +220,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Bankruptcy Law",
-    "url": "https://guides.law.byu.edu/bankruptcy",
-    "description": "Library Guides: Bankruptcy Law: Bankruptcy Law Home",
-    "aliases": [
-      "Bankruptcy Law"
-    ]
-  },
-  {
     "id": 315252,
     "name": "Bankruptcy Law",
     "url": "https://guides.law.byu.edu/c.php?g=315252",
@@ -412,14 +228,6 @@
     "owner": "Haight, Iantha",
     "updated": "2024-08-22 23:20:23",
     "isLocalGuide": true
-  },
-  {
-    "name": "Barbados",
-    "url": "https://guides.law.byu.edu/barbados",
-    "description": "Sources of Primary Law for Barbados, available to the general public.",
-    "aliases": [
-      "Barbados"
-    ]
   },
   {
     "id": 674015,
@@ -432,14 +240,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Belarus",
-    "url": "https://guides.law.byu.edu/belarus",
-    "description": "Sources of Primary Law for Belarus, available to the general public.",
-    "aliases": [
-      "Belarus"
-    ]
-  },
-  {
     "id": 674017,
     "name": "Belarus",
     "url": "https://guides.law.byu.edu/c.php?g=674017",
@@ -448,14 +248,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:34:59",
     "isLocalGuide": true
-  },
-  {
-    "name": "Belgium",
-    "url": "https://guides.law.byu.edu/belgium",
-    "description": "Sources of Primary Law for Belgium, available to the general public.",
-    "aliases": [
-      "Belgium"
-    ]
   },
   {
     "id": 674018,
@@ -468,14 +260,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Belize",
-    "url": "https://guides.law.byu.edu/belize",
-    "description": "Sources of Primary Law for Belize, available to the general public.",
-    "aliases": [
-      "Belize"
-    ]
-  },
-  {
     "id": 674022,
     "name": "Belize",
     "url": "https://guides.law.byu.edu/c.php?g=674022",
@@ -484,14 +268,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:35:26",
     "isLocalGuide": true
-  },
-  {
-    "name": "Benin",
-    "url": "https://guides.law.byu.edu/benin",
-    "description": "Sources of Primary Law for Benin, available to the general public.",
-    "aliases": [
-      "Benin"
-    ]
   },
   {
     "id": 674027,
@@ -504,14 +280,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Bermuda",
-    "url": "https://guides.law.byu.edu/bermuda",
-    "description": "Sources of Primary Law for Bermuda, available to the general public.",
-    "aliases": [
-      "Bermuda"
-    ]
-  },
-  {
     "id": 674030,
     "name": "Bermuda",
     "url": "https://guides.law.byu.edu/c.php?g=674030",
@@ -520,14 +288,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:37:50",
     "isLocalGuide": true
-  },
-  {
-    "name": "Bhutan",
-    "url": "https://guides.law.byu.edu/bhutan",
-    "description": "Sources of Primary Law for Bhutan, available to the general public.",
-    "aliases": [
-      "Bhutan"
-    ]
   },
   {
     "id": 674034,
@@ -540,14 +300,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Bolivia",
-    "url": "https://guides.law.byu.edu/bolivia",
-    "description": "Sources of Primary Law for Bolivia, available to the general public.",
-    "aliases": [
-      "Bolivia"
-    ]
-  },
-  {
     "id": 674036,
     "name": "Bolivia",
     "url": "https://guides.law.byu.edu/c.php?g=674036",
@@ -556,14 +308,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-03 17:18:31",
     "isLocalGuide": true
-  },
-  {
-    "name": "Bosnia and Herzegovina",
-    "url": "https://guides.law.byu.edu/bosniaandherzegovina",
-    "description": "Sources of Primary Law for Bosnia and Herzegovina, available to the general public.",
-    "aliases": [
-      "Bosnia and Herzegovina"
-    ]
   },
   {
     "id": 674047,
@@ -576,14 +320,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Botswana",
-    "url": "https://guides.law.byu.edu/botswana",
-    "description": "Sources of Primary Law for Botswana, available to the general public.",
-    "aliases": [
-      "Botswana"
-    ]
-  },
-  {
     "id": 674052,
     "name": "Botswana",
     "url": "https://guides.law.byu.edu/c.php?g=674052",
@@ -592,14 +328,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-02 18:11:15",
     "isLocalGuide": true
-  },
-  {
-    "name": "Brazil",
-    "url": "https://guides.law.byu.edu/c.php?g=1484062",
-    "description": "Sources of Primary Law for Brazil, available to the general public.",
-    "aliases": [
-      "Brazil"
-    ]
   },
   {
     "id": 1484062,
@@ -612,14 +340,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "British Indian Ocean",
-    "url": "https://guides.law.byu.edu/britishindianocean",
-    "description": "Sources of Primary Law for British Indian Ocean, available to the general public.",
-    "aliases": [
-      "British Indian Ocean"
-    ]
-  },
-  {
     "id": 674067,
     "name": "British Indian Ocean",
     "url": "https://guides.law.byu.edu/c.php?g=674067",
@@ -628,14 +348,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:39:03",
     "isLocalGuide": true
-  },
-  {
-    "name": "British Virgin Islands",
-    "url": "https://guides.law.byu.edu/britishvirginislands",
-    "description": "Sources of Primary Law for British Virgin Islands, available to the general public.",
-    "aliases": [
-      "British Virgin Islands"
-    ]
   },
   {
     "id": 674070,
@@ -648,14 +360,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Brunei",
-    "url": "https://guides.law.byu.edu/brunei",
-    "description": "Sources of Primary Law for Brunei, available to the general public.",
-    "aliases": [
-      "Brunei"
-    ]
-  },
-  {
     "id": 674073,
     "name": "Brunei",
     "url": "https://guides.law.byu.edu/c.php?g=674073",
@@ -664,14 +368,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:39:34",
     "isLocalGuide": true
-  },
-  {
-    "name": "Bulgaria",
-    "url": "https://guides.law.byu.edu/bulgaria",
-    "description": "Sources of Primary Law for Bulgaria, available to the general public.",
-    "aliases": [
-      "Bulgaria"
-    ]
   },
   {
     "id": 674077,
@@ -684,14 +380,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Burkina Faso",
-    "url": "https://guides.law.byu.edu/burkinafaso",
-    "description": "Sources of Primary Law for Burkina Faso, available to the general public.",
-    "aliases": [
-      "Burkina Faso"
-    ]
-  },
-  {
     "id": 674079,
     "name": "Burkina Faso",
     "url": "https://guides.law.byu.edu/c.php?g=674079",
@@ -700,14 +388,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:40:01",
     "isLocalGuide": true
-  },
-  {
-    "name": "Burundi",
-    "url": "https://guides.law.byu.edu/burundi",
-    "description": "Sources of Primary Law for Burundi, available to the general public.",
-    "aliases": [
-      "Burundi"
-    ]
   },
   {
     "id": 674080,
@@ -720,14 +400,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Business &amp; Company Research",
-    "url": "https://guides.law.byu.edu/c.php?g=1110470",
-    "description": "A guide about researching company information.",
-    "aliases": [
-      "Business &amp; Company Research"
-    ]
-  },
-  {
     "id": 1110470,
     "name": "Business &amp; Company Research",
     "url": "https://guides.law.byu.edu/c.php?g=1110470",
@@ -736,14 +408,6 @@
     "owner": "Haight, Iantha",
     "updated": "2025-05-29 01:22:29",
     "isLocalGuide": true
-  },
-  {
-    "name": "Business Association Law",
-    "url": "https://guides.law.byu.edu/associations",
-    "description": "Library Guides: Business Association Law: Business Association Law Home",
-    "aliases": [
-      "Business Association Law"
-    ]
   },
   {
     "id": 315254,
@@ -756,14 +420,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Cambodia",
-    "url": "https://guides.law.byu.edu/cambodia",
-    "description": "Sources of Primary Law for Cambodia, available to the general public.",
-    "aliases": [
-      "Cambodia"
-    ]
-  },
-  {
     "id": 674084,
     "name": "Cambodia",
     "url": "https://guides.law.byu.edu/c.php?g=674084",
@@ -772,14 +428,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-01 21:43:49",
     "isLocalGuide": true
-  },
-  {
-    "name": "Cameroon",
-    "url": "https://guides.law.byu.edu/cameroon",
-    "description": "Sources of Primary Law for Cameroon, available to the general public.",
-    "aliases": [
-      "Cameroon"
-    ]
   },
   {
     "id": 674093,
@@ -792,14 +440,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Canada",
-    "url": "https://guides.law.byu.edu/canada",
-    "description": "Sources of Primary Law for Canada, available to the general public.",
-    "aliases": [
-      "Canada"
-    ]
-  },
-  {
     "id": 674094,
     "name": "Canada",
     "url": "https://guides.law.byu.edu/c.php?g=674094",
@@ -808,14 +448,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-01 20:17:30",
     "isLocalGuide": true
-  },
-  {
-    "name": "Cape Verde",
-    "url": "https://guides.law.byu.edu/capeverde",
-    "description": "Sources of Primary Law for Cape Verde, available to the general public.",
-    "aliases": [
-      "Cape Verde"
-    ]
   },
   {
     "id": 674097,
@@ -828,14 +460,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Cayman Islands",
-    "url": "https://guides.law.byu.edu/caymanislands",
-    "description": "Sources of Primary Law for Cayman Islands, available to the general public.",
-    "aliases": [
-      "Cayman Islands"
-    ]
-  },
-  {
     "id": 674101,
     "name": "Cayman Islands",
     "url": "https://guides.law.byu.edu/c.php?g=674101",
@@ -844,14 +468,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:41:20",
     "isLocalGuide": true
-  },
-  {
-    "name": "Central African Republic",
-    "url": "https://guides.law.byu.edu/centralafricanrepublic",
-    "description": "Sources of Primary Law for Central African Republic, available to the general public.",
-    "aliases": [
-      "Central African Republic"
-    ]
   },
   {
     "id": 674108,
@@ -864,14 +480,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Chad",
-    "url": "https://guides.law.byu.edu/chad",
-    "description": "Sources of Primary Law for Chad, available to the general public.",
-    "aliases": [
-      "Chad"
-    ]
-  },
-  {
     "id": 674109,
     "name": "Chad",
     "url": "https://guides.law.byu.edu/c.php?g=674109",
@@ -880,14 +488,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-02 18:11:15",
     "isLocalGuide": true
-  },
-  {
-    "name": "Chechnya",
-    "url": "https://guides.law.byu.edu/chechnya",
-    "description": "Sources of Primary Law for Chechnya",
-    "aliases": [
-      "Chechnya"
-    ]
   },
   {
     "id": 674114,
@@ -900,14 +500,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Chile",
-    "url": "https://guides.law.byu.edu/chile",
-    "description": "Sources of Primary Law for Chile, available to the general public.",
-    "aliases": [
-      "Chile"
-    ]
-  },
-  {
     "id": 675048,
     "name": "Chile",
     "url": "https://guides.law.byu.edu/c.php?g=675048",
@@ -916,14 +508,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:42:17",
     "isLocalGuide": true
-  },
-  {
-    "name": "China",
-    "url": "https://guides.law.byu.edu/china",
-    "description": "Sources of Primary Law for China, available to the general public.",
-    "aliases": [
-      "China"
-    ]
   },
   {
     "id": 675056,
@@ -936,14 +520,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Christmas Island",
-    "url": "https://guides.law.byu.edu/christmasisland",
-    "description": "Sources of Primary Law for Christmas Island, available to the general public.",
-    "aliases": [
-      "Christmas Island"
-    ]
-  },
-  {
     "id": 675060,
     "name": "Christmas Island",
     "url": "https://guides.law.byu.edu/c.php?g=675060",
@@ -952,14 +528,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:42:40",
     "isLocalGuide": true
-  },
-  {
-    "name": "Civil Procedure",
-    "url": "https://guides.law.byu.edu/civpro",
-    "description": "Library Guides: Civil Procedure: Civil Procedure Law Home",
-    "aliases": [
-      "Civil Procedure"
-    ]
   },
   {
     "id": 315256,
@@ -972,14 +540,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Civil Rights",
-    "url": "https://guides.law.byu.edu/c.php?g=1455079",
-    "description": "Library Guides: Civil Rights: Home",
-    "aliases": [
-      "Civil Rights"
-    ]
-  },
-  {
     "id": 1455079,
     "name": "Civil Rights",
     "url": "https://guides.law.byu.edu/c.php?g=1455079",
@@ -988,14 +548,6 @@
     "owner": "Staheli, Kory",
     "updated": "2025-04-02 19:59:38",
     "isLocalGuide": true
-  },
-  {
-    "name": "Colombia",
-    "url": "https://guides.law.byu.edu/colombia",
-    "description": "Sources of Primary Law for Colombia, available to the general public.",
-    "aliases": [
-      "Colombia"
-    ]
   },
   {
     "id": 675067,
@@ -1008,14 +560,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Commercial Law",
-    "url": "https://guides.law.byu.edu/commercial",
-    "description": "Library Guides: Commercial Law: Commercial Law Home",
-    "aliases": [
-      "Commercial Law"
-    ]
-  },
-  {
     "id": 315258,
     "name": "Commercial Law",
     "url": "https://guides.law.byu.edu/c.php?g=315258",
@@ -1024,14 +568,6 @@
     "owner": "Haight, Iantha",
     "updated": "2024-04-18 23:32:42",
     "isLocalGuide": true
-  },
-  {
-    "name": "Communications Law",
-    "url": "https://guides.law.byu.edu/communications",
-    "description": "Library Guides: Communications Law: Communications Law Home",
-    "aliases": [
-      "Communications Law"
-    ]
   },
   {
     "id": 315260,
@@ -1044,14 +580,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Comoros",
-    "url": "https://guides.law.byu.edu/comoros",
-    "description": "Sources of Primary Law for Comoros, available to the general public.",
-    "aliases": [
-      "Comoros"
-    ]
-  },
-  {
     "id": 675075,
     "name": "Comoros",
     "url": "https://guides.law.byu.edu/c.php?g=675075",
@@ -1060,14 +588,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:43:05",
     "isLocalGuide": true
-  },
-  {
-    "name": "Conflict of Laws",
-    "url": "https://guides.law.byu.edu/conflicts",
-    "description": "This research guide covers choice of law resources (online and print), plus private international law and Lynn Wardle articles.",
-    "aliases": [
-      "Conflict of Laws"
-    ]
   },
   {
     "id": 315262,
@@ -1080,14 +600,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Congo, Democratic Republic of the",
-    "url": "https://guides.law.byu.edu/congodemocraticrepublicofthe",
-    "description": "Sources of Primary Law for Democratic Republic of the Congo, available to the general public.",
-    "aliases": [
-      "Congo, Democratic Republic of the"
-    ]
-  },
-  {
     "id": 675078,
     "name": "Congo, Democratic Republic of the",
     "url": "https://guides.law.byu.edu/c.php?g=675078",
@@ -1096,14 +608,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-03 20:31:47",
     "isLocalGuide": true
-  },
-  {
-    "name": "Congo, Republic of",
-    "url": "https://guides.law.byu.edu/congorepublicof",
-    "description": "Sources of Primary Law for Republic of Congo, available to the general public.",
-    "aliases": [
-      "Congo, Republic of"
-    ]
   },
   {
     "id": 675105,
@@ -1116,14 +620,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Constitutional Law",
-    "url": "https://guides.law.byu.edu/conlaw",
-    "description": "Databases and print materials for researching U.S. federal and state constitutional law",
-    "aliases": [
-      "Constitutional Law"
-    ]
-  },
-  {
     "id": 315264,
     "name": "Constitutional Law",
     "url": "https://guides.law.byu.edu/c.php?g=315264",
@@ -1132,14 +628,6 @@
     "owner": "Haight, Iantha",
     "updated": "2024-10-11 23:16:42",
     "isLocalGuide": true
-  },
-  {
-    "name": "Constitutional Legal History",
-    "url": "https://guides.law.byu.edu/const_hist",
-    "description": "Covers online and print resources for early United States constitutional law and history. Databases &amp; Websites Relevant to U.S. Constitutional Legal History",
-    "aliases": [
-      "Constitutional Legal History"
-    ]
   },
   {
     "id": 315324,
@@ -1152,14 +640,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Construction Law",
-    "url": "https://guides.law.byu.edu/construction",
-    "description": "Library Guides: Construction Law: Construction Law Home",
-    "aliases": [
-      "Construction Law"
-    ]
-  },
-  {
     "id": 315267,
     "name": "Construction Law",
     "url": "https://guides.law.byu.edu/c.php?g=315267",
@@ -1168,14 +648,6 @@
     "owner": "Staheli, Kory",
     "updated": "2024-08-22 23:20:23",
     "isLocalGuide": true
-  },
-  {
-    "name": "Cook Islands",
-    "url": "https://guides.law.byu.edu/cookislands",
-    "description": "Sources of Primary Law for Cook Islands, available to the general public.",
-    "aliases": [
-      "Cook Islands"
-    ]
   },
   {
     "id": 675107,
@@ -1188,14 +660,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Copyright Law",
-    "url": "https://guides.law.byu.edu/copyright",
-    "description": "Selected resources useful for general IP and Copyright research.",
-    "aliases": [
-      "Copyright Law"
-    ]
-  },
-  {
     "id": 315225,
     "name": "Copyright Law",
     "url": "https://guides.law.byu.edu/c.php?g=315225",
@@ -1204,14 +668,6 @@
     "owner": "Assistants, Reference",
     "updated": "2025-11-12 21:32:05",
     "isLocalGuide": true
-  },
-  {
-    "name": "Costa Rica",
-    "url": "https://guides.law.byu.edu/costarica",
-    "description": "Sources of Primary Law for Costa Rica, available to the general public.",
-    "aliases": [
-      "Costa Rica"
-    ]
   },
   {
     "id": 675112,
@@ -1224,14 +680,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Cote d'Ivoire",
-    "url": "https://guides.law.byu.edu/cotedivoire",
-    "description": "Sources of Primary Law for Cote d&#039;Ivoire, available to the general public.",
-    "aliases": [
-      "Cote d"
-    ]
-  },
-  {
     "id": 675116,
     "name": "Cote d'Ivoire",
     "url": "https://guides.law.byu.edu/c.php?g=675116",
@@ -1240,14 +688,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:44:20",
     "isLocalGuide": true
-  },
-  {
-    "name": "Criminal Law",
-    "url": "https://guides.law.byu.edu/criminal_law",
-    "description": "A research guide to resources for criminal law.",
-    "aliases": [
-      "Criminal Law"
-    ]
   },
   {
     "id": 1107754,
@@ -1260,14 +700,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Croatia",
-    "url": "https://guides.law.byu.edu/croatia",
-    "description": "Sources of Primary Law for Croatia, available to the general public.",
-    "aliases": [
-      "Croatia"
-    ]
-  },
-  {
     "id": 675120,
     "name": "Croatia",
     "url": "https://guides.law.byu.edu/c.php?g=675120",
@@ -1276,14 +708,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:44:34",
     "isLocalGuide": true
-  },
-  {
-    "name": "Cuba",
-    "url": "https://guides.law.byu.edu/cuba",
-    "description": "Sources of Primary Law for Cuba, available to the general public.",
-    "aliases": [
-      "Cuba"
-    ]
   },
   {
     "id": 675121,
@@ -1296,14 +720,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Cyprus",
-    "url": "https://guides.law.byu.edu/cyprus",
-    "description": "Sources of Primary Law for Cyprus, available to the general public.",
-    "aliases": [
-      "Cyprus"
-    ]
-  },
-  {
     "id": 675122,
     "name": "Cyprus",
     "url": "https://guides.law.byu.edu/c.php?g=675122",
@@ -1312,14 +728,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:44:55",
     "isLocalGuide": true
-  },
-  {
-    "name": "Czechia",
-    "url": "https://guides.law.byu.edu/czechrepublic",
-    "description": "Sources of Primary Law for Czechia, available to the general public.",
-    "aliases": [
-      "Czechia"
-    ]
   },
   {
     "id": 675125,
@@ -1332,14 +740,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Denmark",
-    "url": "https://guides.law.byu.edu/denmark",
-    "description": "Sources of Primary Law for Denmark, available to the general public.",
-    "aliases": [
-      "Denmark"
-    ]
-  },
-  {
     "id": 675126,
     "name": "Denmark",
     "url": "https://guides.law.byu.edu/c.php?g=675126",
@@ -1348,14 +748,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:45:21",
     "isLocalGuide": true
-  },
-  {
-    "name": "Djibouti",
-    "url": "https://guides.law.byu.edu/djibouti",
-    "description": "Sources of Primary Law for Djibouti, available to the general public.",
-    "aliases": [
-      "Djibouti"
-    ]
   },
   {
     "id": 675127,
@@ -1368,14 +760,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Dominica",
-    "url": "https://guides.law.byu.edu/dominica",
-    "description": "Sources of Primary Law for Dominica, available to the general public.",
-    "aliases": [
-      "Dominica"
-    ]
-  },
-  {
     "id": 675128,
     "name": "Dominica",
     "url": "https://guides.law.byu.edu/c.php?g=675128",
@@ -1384,14 +768,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:50:58",
     "isLocalGuide": true
-  },
-  {
-    "name": "Dominican Republic",
-    "url": "https://guides.law.byu.edu/dominicanrepublic",
-    "description": "Sources of Primary Law for Dominican Republic, available to the general public.",
-    "aliases": [
-      "Dominican Republic"
-    ]
   },
   {
     "id": 675157,
@@ -1404,14 +780,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Ecuador",
-    "url": "https://guides.law.byu.edu/ecuador",
-    "description": "Sources of Primary Law for Ecuador, available to the general public.",
-    "aliases": [
-      "Ecuador"
-    ]
-  },
-  {
     "id": 675158,
     "name": "Ecuador",
     "url": "https://guides.law.byu.edu/c.php?g=675158",
@@ -1420,14 +788,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:51:18",
     "isLocalGuide": true
-  },
-  {
-    "name": "Education Law",
-    "url": "https://guides.law.byu.edu/edlaw",
-    "description": "Library Guides: Education Law: Education Law Home",
-    "aliases": [
-      "Education Law"
-    ]
   },
   {
     "id": 315277,
@@ -1440,14 +800,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Egypt",
-    "url": "https://guides.law.byu.edu/egypt",
-    "description": "Sources of Primary Law for Egypt, available to the general public.",
-    "aliases": [
-      "Egypt"
-    ]
-  },
-  {
     "id": 675159,
     "name": "Egypt",
     "url": "https://guides.law.byu.edu/c.php?g=675159",
@@ -1456,14 +808,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-02 18:11:15",
     "isLocalGuide": true
-  },
-  {
-    "name": "El Salvador",
-    "url": "https://guides.law.byu.edu/elsalvador",
-    "description": "Sources of Primary Law for El Salvador, available to the general public.",
-    "aliases": [
-      "El Salvador"
-    ]
   },
   {
     "id": 675160,
@@ -1476,14 +820,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Entertainment Law",
-    "url": "https://guides.law.byu.edu/entertain",
-    "description": "Library Guides: Entertainment Law: Entertainment Law Home",
-    "aliases": [
-      "Entertainment Law"
-    ]
-  },
-  {
     "id": 315279,
     "name": "Entertainment Law",
     "url": "https://guides.law.byu.edu/c.php?g=315279",
@@ -1492,14 +828,6 @@
     "owner": "Hickman Pierson, Annalee",
     "updated": "2025-05-29 01:32:15",
     "isLocalGuide": true
-  },
-  {
-    "name": "Environmental Law",
-    "url": "https://guides.law.byu.edu/environment",
-    "description": "Library Guides: Environmental Law: Environmental Law Home",
-    "aliases": [
-      "Environmental Law"
-    ]
   },
   {
     "id": 315281,
@@ -1512,14 +840,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Equatorial Guinea",
-    "url": "https://guides.law.byu.edu/equatorialguinea",
-    "description": "Sources of Primary Law for Equatorial Guinea, available to the general public.",
-    "aliases": [
-      "Equatorial Guinea"
-    ]
-  },
-  {
     "id": 675162,
     "name": "Equatorial Guinea",
     "url": "https://guides.law.byu.edu/c.php?g=675162",
@@ -1528,14 +848,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:51:54",
     "isLocalGuide": true
-  },
-  {
-    "name": "Eritrea",
-    "url": "https://guides.law.byu.edu/eritrea",
-    "description": "Sources of Primary Law for Eritrea, available to the general public.",
-    "aliases": [
-      "Eritrea"
-    ]
   },
   {
     "id": 675163,
@@ -1548,14 +860,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Estonia",
-    "url": "https://guides.law.byu.edu/estonia",
-    "description": "Sources of Primary Law for Estonia, available to the general public.",
-    "aliases": [
-      "Estonia"
-    ]
-  },
-  {
     "id": 675164,
     "name": "Estonia",
     "url": "https://guides.law.byu.edu/c.php?g=675164",
@@ -1564,14 +868,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:52:15",
     "isLocalGuide": true
-  },
-  {
-    "name": "Eswatini (Swaziland)",
-    "url": "https://guides.law.byu.edu/swaziland",
-    "description": "Sources of Primary Law for Swaziland, available to the general public.",
-    "aliases": [
-      "Eswatini (Swaziland)"
-    ]
   },
   {
     "id": 678054,
@@ -1584,14 +880,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Ethiopia",
-    "url": "https://guides.law.byu.edu/ethiopia",
-    "description": "Sources of Primary Law for Ethiopia, available to the general public.",
-    "aliases": [
-      "Ethiopia"
-    ]
-  },
-  {
     "id": 675165,
     "name": "Ethiopia",
     "url": "https://guides.law.byu.edu/c.php?g=675165",
@@ -1600,14 +888,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-02 18:11:15",
     "isLocalGuide": true
-  },
-  {
-    "name": "Evidence Law",
-    "url": "https://guides.law.byu.edu/c.php?g=1410148",
-    "description": "A research guide to resources for evidence law.",
-    "aliases": [
-      "Evidence Law"
-    ]
   },
   {
     "id": 1410148,
@@ -1620,14 +900,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Family Law",
-    "url": "https://guides.law.byu.edu/family_law",
-    "description": "A research guide to resources for family law.",
-    "aliases": [
-      "Family Law"
-    ]
-  },
-  {
     "id": 1107995,
     "name": "Family Law",
     "url": "https://guides.law.byu.edu/c.php?g=1107995",
@@ -1636,14 +908,6 @@
     "owner": "Staheli, Kory",
     "updated": "2024-07-11 16:40:52",
     "isLocalGuide": true
-  },
-  {
-    "name": "Federated States of Micronesia",
-    "url": "https://guides.law.byu.edu/micronesia",
-    "description": "Sources of Primary Law for the Federated States of Micronesia, available to the general public.",
-    "aliases": [
-      "Federated States of Micronesia"
-    ]
   },
   {
     "id": 676865,
@@ -1656,14 +920,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Fiji",
-    "url": "https://guides.law.byu.edu/fiji",
-    "description": "Sources of Primary Law for Fiji, available to the general public.",
-    "aliases": [
-      "Fiji"
-    ]
-  },
-  {
     "id": 675166,
     "name": "Fiji",
     "url": "https://guides.law.byu.edu/c.php?g=675166",
@@ -1672,14 +928,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-05-27 22:53:03",
     "isLocalGuide": true
-  },
-  {
-    "name": "Finland",
-    "url": "https://guides.law.byu.edu/finland",
-    "description": "Sources of Primary Law for Finland, available to the general public.",
-    "aliases": [
-      "Finland"
-    ]
   },
   {
     "id": 675167,
@@ -1692,14 +940,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Foreign & International Law",
-    "url": "https://guides.law.byu.edu/intl",
-    "description": "Library Guides: Foreign &amp; International Law: Foreign Law",
-    "aliases": [
-      "Foreign & International Law"
-    ]
-  },
-  {
     "id": 315290,
     "name": "Foreign & International Law",
     "url": "https://guides.law.byu.edu/c.php?g=315290",
@@ -1708,14 +948,6 @@
     "owner": "Kellems, Kristen",
     "updated": "2025-11-04 17:20:50",
     "isLocalGuide": true
-  },
-  {
-    "name": "France",
-    "url": "https://guides.law.byu.edu/france",
-    "description": "Sources of Primary Law for France, available to the general public.",
-    "aliases": [
-      "France"
-    ]
   },
   {
     "id": 675168,
@@ -1728,14 +960,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Free and Low-Cost Legal Research",
-    "url": "https://guides.law.byu.edu/freelowcost",
-    "description": "Library Guides: Free and Low-Cost Legal Research: Home",
-    "aliases": [
-      "Free and Low-Cost Legal Research"
-    ]
-  },
-  {
     "id": 315322,
     "name": "Free and Low-Cost Legal Research",
     "url": "https://guides.law.byu.edu/c.php?g=315322",
@@ -1744,14 +968,6 @@
     "owner": "Nevers, Shawn",
     "updated": "2025-02-06 16:01:32",
     "isLocalGuide": true
-  },
-  {
-    "name": "Free and Low-Cost Legal Resources in Utah",
-    "url": "https://guides.law.byu.edu/legal-resources",
-    "description": "Library Guides: Free and Low-Cost Legal Resources in Utah: Home Page",
-    "aliases": [
-      "Free and Low-Cost Legal Resources in Utah"
-    ]
   },
   {
     "id": 602326,
@@ -1764,14 +980,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Freedom of Religion",
-    "url": "https://guides.law.byu.edu/freedom-of-religion",
-    "description": "Library Guides: Freedom of Religion: Home",
-    "aliases": [
-      "Freedom of Religion"
-    ]
-  },
-  {
     "id": 1475087,
     "name": "Freedom of Religion",
     "url": "https://guides.law.byu.edu/c.php?g=1475087",
@@ -1780,14 +988,6 @@
     "owner": "Campbell, Bree",
     "updated": "2025-12-03 21:39:31",
     "isLocalGuide": true
-  },
-  {
-    "name": "French Polynesia",
-    "url": "https://guides.law.byu.edu/frenchpolynesia",
-    "description": "Sources of Primary Law for French Polynesia, available to the general public.",
-    "aliases": [
-      "French Polynesia"
-    ]
   },
   {
     "id": 675169,
@@ -1800,14 +1000,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Gabon",
-    "url": "https://guides.law.byu.edu/gabon",
-    "description": "Sources of Primary Law for Gabon, available to the general public.",
-    "aliases": [
-      "Gabon"
-    ]
-  },
-  {
     "id": 675170,
     "name": "Gabon",
     "url": "https://guides.law.byu.edu/c.php?g=675170",
@@ -1816,14 +1008,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 15:51:27",
     "isLocalGuide": true
-  },
-  {
-    "name": "Gambia, The",
-    "url": "https://guides.law.byu.edu/c.php?g=1484515",
-    "description": "Sources of Primary Law for the Gambia, available to the general public.",
-    "aliases": [
-      "Gambia, The"
-    ]
   },
   {
     "id": 1484515,
@@ -1836,14 +1020,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Gaza Strip",
-    "url": "https://guides.law.byu.edu/gazastrip",
-    "description": "Sources of Primary Law for Gaza Strip, available to the general public.",
-    "aliases": [
-      "Gaza Strip"
-    ]
-  },
-  {
     "id": 675172,
     "name": "Gaza Strip",
     "url": "https://guides.law.byu.edu/c.php?g=675172",
@@ -1852,14 +1028,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 15:52:02",
     "isLocalGuide": true
-  },
-  {
-    "name": "Gender and the Law",
-    "url": "https://guides.law.byu.edu/genderandthelaw",
-    "description": "Library Guides: Gender and the Law: Home",
-    "aliases": [
-      "Gender and the Law"
-    ]
   },
   {
     "id": 780151,
@@ -1872,14 +1040,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Georgia",
-    "url": "https://guides.law.byu.edu/georgia",
-    "description": "Sources of Primary Law for Georgia, available to the general public.",
-    "aliases": [
-      "Georgia"
-    ]
-  },
-  {
     "id": 675174,
     "name": "Georgia",
     "url": "https://guides.law.byu.edu/c.php?g=675174",
@@ -1888,14 +1048,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 15:52:27",
     "isLocalGuide": true
-  },
-  {
-    "name": "Germany",
-    "url": "https://guides.law.byu.edu/germany",
-    "description": "Sources of Primary Law for Germany, available to the general public.",
-    "aliases": [
-      "Germany"
-    ]
   },
   {
     "id": 675175,
@@ -1908,14 +1060,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Ghana",
-    "url": "https://guides.law.byu.edu/ghana",
-    "description": "Sources of Primary Law for Ghana, available to the general public.",
-    "aliases": [
-      "Ghana"
-    ]
-  },
-  {
     "id": 675176,
     "name": "Ghana",
     "url": "https://guides.law.byu.edu/c.php?g=675176",
@@ -1924,14 +1068,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-02 18:11:15",
     "isLocalGuide": true
-  },
-  {
-    "name": "Gibraltar",
-    "url": "https://guides.law.byu.edu/gibraltar",
-    "description": "Sources of Primary Law for Gibraltar, available to the general public.",
-    "aliases": [
-      "Gibraltar"
-    ]
   },
   {
     "id": 675177,
@@ -1944,14 +1080,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Greece",
-    "url": "https://guides.law.byu.edu/greece",
-    "description": "Sources of Primary Law for Greece, available to the general public.",
-    "aliases": [
-      "Greece"
-    ]
-  },
-  {
     "id": 675178,
     "name": "Greece",
     "url": "https://guides.law.byu.edu/c.php?g=675178",
@@ -1960,14 +1088,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 15:53:30",
     "isLocalGuide": true
-  },
-  {
-    "name": "Greenland",
-    "url": "https://guides.law.byu.edu/greenland",
-    "description": "Sources of Primary Law for Greenland, available to the general public.",
-    "aliases": [
-      "Greenland"
-    ]
   },
   {
     "id": 675180,
@@ -1980,14 +1100,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Grenada",
-    "url": "https://guides.law.byu.edu/grenada",
-    "description": "Sources of Primary Law for Grenada, available to the general public.",
-    "aliases": [
-      "Grenada"
-    ]
-  },
-  {
     "id": 675181,
     "name": "Grenada",
     "url": "https://guides.law.byu.edu/c.php?g=675181",
@@ -1996,14 +1108,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 15:55:56",
     "isLocalGuide": true
-  },
-  {
-    "name": "Guadeloupe",
-    "url": "https://guides.law.byu.edu/guadeloupe",
-    "description": "Sources of Primary Law for Guadeloupe, available to the general public.",
-    "aliases": [
-      "Guadeloupe"
-    ]
   },
   {
     "id": 675182,
@@ -2016,14 +1120,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Guatemala",
-    "url": "https://guides.law.byu.edu/guatemala",
-    "description": "Sources of Primary Law for Guatemala, available to the general public.",
-    "aliases": [
-      "Guatemala"
-    ]
-  },
-  {
     "id": 675183,
     "name": "Guatemala",
     "url": "https://guides.law.byu.edu/c.php?g=675183",
@@ -2032,14 +1128,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 15:56:37",
     "isLocalGuide": true
-  },
-  {
-    "name": "Guernsey",
-    "url": "https://guides.law.byu.edu/guernsey",
-    "description": "Sources of Primary Law for Guernsey, available to the general public.",
-    "aliases": [
-      "Guernsey"
-    ]
   },
   {
     "id": 675184,
@@ -2052,14 +1140,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Guinea",
-    "url": "https://guides.law.byu.edu/guinea",
-    "description": "Sources of Primary Law for Guinea, available to the general public.",
-    "aliases": [
-      "Guinea"
-    ]
-  },
-  {
     "id": 675185,
     "name": "Guinea",
     "url": "https://guides.law.byu.edu/c.php?g=675185",
@@ -2068,14 +1148,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 15:57:22",
     "isLocalGuide": true
-  },
-  {
-    "name": "Guinea-Bissau",
-    "url": "https://guides.law.byu.edu/guinea-bissau",
-    "description": "Sources of Primary Law for Guinea-Bissau, available to the general public.",
-    "aliases": [
-      "Guinea-Bissau"
-    ]
   },
   {
     "id": 675645,
@@ -2088,14 +1160,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Guyana",
-    "url": "https://guides.law.byu.edu/guyana",
-    "description": "Sources of Primary Law for Guyana, available to the general public.",
-    "aliases": [
-      "Guyana"
-    ]
-  },
-  {
     "id": 675675,
     "name": "Guyana",
     "url": "https://guides.law.byu.edu/c.php?g=675675",
@@ -2104,14 +1168,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 15:58:01",
     "isLocalGuide": true
-  },
-  {
-    "name": "Haiti",
-    "url": "https://guides.law.byu.edu/haiti",
-    "description": "Sources of Primary Law for Haiti, available to the general public.",
-    "aliases": [
-      "Haiti"
-    ]
   },
   {
     "id": 675693,
@@ -2124,14 +1180,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Health Law",
-    "url": "https://guides.law.byu.edu/health",
-    "description": "Library Guides: Health Law: Health Law Home",
-    "aliases": [
-      "Health Law"
-    ]
-  },
-  {
     "id": 315294,
     "name": "Health Law",
     "url": "https://guides.law.byu.edu/c.php?g=315294",
@@ -2140,14 +1188,6 @@
     "owner": "Assistants, Reference",
     "updated": "2024-08-22 23:20:24",
     "isLocalGuide": true
-  },
-  {
-    "name": "Holy See (Vatican City)",
-    "url": "https://guides.law.byu.edu/Holy_See",
-    "description": "Sources of Primary Law for Holy See, available to the general public.",
-    "aliases": [
-      "Holy See (Vatican City)"
-    ]
   },
   {
     "id": 675717,
@@ -2160,14 +1200,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Honduras",
-    "url": "https://guides.law.byu.edu/honduras",
-    "description": "Sources of Primary Law for Honduras, available to the general public.",
-    "aliases": [
-      "Honduras"
-    ]
-  },
-  {
     "id": 675730,
     "name": "Honduras",
     "url": "https://guides.law.byu.edu/c.php?g=675730",
@@ -2176,14 +1208,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 15:58:45",
     "isLocalGuide": true
-  },
-  {
-    "name": "Hong Kong",
-    "url": "https://guides.law.byu.edu/Hong_Kong",
-    "description": "Sources of Primary Law for Hong Kong, available to the general public.",
-    "aliases": [
-      "Hong Kong"
-    ]
   },
   {
     "id": 675734,
@@ -2196,14 +1220,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Human Rights",
-    "url": "https://guides.law.byu.edu/c.php?g=1474477",
-    "description": "Library Guides: Human Rights: Human Rights Law",
-    "aliases": [
-      "Human Rights"
-    ]
-  },
-  {
     "id": 1474477,
     "name": "Human Rights",
     "url": "https://guides.law.byu.edu/c.php?g=1474477",
@@ -2212,14 +1228,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-03 20:18:36",
     "isLocalGuide": true
-  },
-  {
-    "name": "Hungary",
-    "url": "https://guides.law.byu.edu/hungary",
-    "description": "Sources of Primary Law for Hungary, available to the general public.",
-    "aliases": [
-      "Hungary"
-    ]
   },
   {
     "id": 675736,
@@ -2232,14 +1240,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Iceland",
-    "url": "https://guides.law.byu.edu/iceland",
-    "description": "Sources of Primary Law for Iceland, available to the general public.",
-    "aliases": [
-      "Iceland"
-    ]
-  },
-  {
     "id": 675744,
     "name": "Iceland",
     "url": "https://guides.law.byu.edu/c.php?g=675744",
@@ -2248,14 +1248,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 15:59:39",
     "isLocalGuide": true
-  },
-  {
-    "name": "Immigration Law",
-    "url": "https://guides.law.byu.edu/immigration",
-    "description": "This guide provides information about resources related to U.S.  immigration law.",
-    "aliases": [
-      "Immigration Law"
-    ]
   },
   {
     "id": 463803,
@@ -2268,14 +1260,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "India",
-    "url": "https://guides.law.byu.edu/india",
-    "description": "Sources of Primary Law for India, available to the general public.",
-    "aliases": [
-      "India"
-    ]
-  },
-  {
     "id": 675750,
     "name": "India",
     "url": "https://guides.law.byu.edu/c.php?g=675750",
@@ -2284,14 +1268,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-03 20:20:20",
     "isLocalGuide": true
-  },
-  {
-    "name": "Indian Law",
-    "url": "https://guides.law.byu.edu/indian_law",
-    "description": "A research guide to resources for Indian law.",
-    "aliases": [
-      "Indian Law"
-    ]
   },
   {
     "id": 1109023,
@@ -2304,14 +1280,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Indonesia",
-    "url": "https://guides.law.byu.edu/indonesia",
-    "description": "Sources of Primary Law for Indonesia, available to the general public.",
-    "aliases": [
-      "Indonesia"
-    ]
-  },
-  {
     "id": 675783,
     "name": "Indonesia",
     "url": "https://guides.law.byu.edu/c.php?g=675783",
@@ -2320,14 +1288,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-01 21:45:28",
     "isLocalGuide": true
-  },
-  {
-    "name": "Intellectual Property",
-    "url": "https://guides.law.byu.edu/ip",
-    "description": "Selected resources useful for general IP research.",
-    "aliases": [
-      "Intellectual Property"
-    ]
   },
   {
     "id": 315323,
@@ -2340,14 +1300,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "International Arbitration",
-    "url": "https://guides.law.byu.edu/c.php?g=1299620",
-    "description": "A guide to researching legal issues pertaining to international arbitration",
-    "aliases": [
-      "International Arbitration"
-    ]
-  },
-  {
     "id": 1299620,
     "name": "International Arbitration",
     "url": "https://guides.law.byu.edu/c.php?g=1299620",
@@ -2356,14 +1308,6 @@
     "owner": "Haight, Iantha",
     "updated": "2025-08-15 22:35:01",
     "isLocalGuide": true
-  },
-  {
-    "name": "Iran",
-    "url": "https://guides.law.byu.edu/iran",
-    "description": "Sources of Primary Law for Iran, available to the general public.",
-    "aliases": [
-      "Iran"
-    ]
   },
   {
     "id": 675788,
@@ -2376,14 +1320,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Iraq",
-    "url": "https://guides.law.byu.edu/iraq",
-    "description": "Sources of Primary Law for Iraq, available to the general public.",
-    "aliases": [
-      "Iraq"
-    ]
-  },
-  {
     "id": 675789,
     "name": "Iraq",
     "url": "https://guides.law.byu.edu/c.php?g=675789",
@@ -2392,14 +1328,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:01:00",
     "isLocalGuide": true
-  },
-  {
-    "name": "Ireland",
-    "url": "https://guides.law.byu.edu/ireland",
-    "description": "Sources of Primary Law for Ireland, available to the general public.",
-    "aliases": [
-      "Ireland"
-    ]
   },
   {
     "id": 675791,
@@ -2412,14 +1340,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Isle of Man",
-    "url": "https://guides.law.byu.edu/isle_of_man",
-    "description": "Sources of Primary Law for Isle of Man, available to the general public.",
-    "aliases": [
-      "Isle of Man"
-    ]
-  },
-  {
     "id": 675793,
     "name": "Isle of Man",
     "url": "https://guides.law.byu.edu/c.php?g=675793",
@@ -2428,14 +1348,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:01:33",
     "isLocalGuide": true
-  },
-  {
-    "name": "Israel",
-    "url": "https://guides.law.byu.edu/c.php?g=1484076",
-    "description": "Sources of Primary Law for Israel, available to the general public.",
-    "aliases": [
-      "Israel"
-    ]
   },
   {
     "id": 1484076,
@@ -2448,14 +1360,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Italy",
-    "url": "https://guides.law.byu.edu/italy",
-    "description": "Sources of Primary Law for Italy, available to the general public.",
-    "aliases": [
-      "Italy"
-    ]
-  },
-  {
     "id": 675801,
     "name": "Italy",
     "url": "https://guides.law.byu.edu/c.php?g=675801",
@@ -2464,14 +1368,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:02:09",
     "isLocalGuide": true
-  },
-  {
-    "name": "Jamaica",
-    "url": "https://guides.law.byu.edu/jamaica",
-    "description": "Sources of Primary Law for Jamaica, available to the general public.",
-    "aliases": [
-      "Jamaica"
-    ]
   },
   {
     "id": 675804,
@@ -2484,14 +1380,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Jan Mayen",
-    "url": "https://guides.law.byu.edu/jan_mayen",
-    "description": "Sources of Primary Law for Jan Mayen, available to the general public.",
-    "aliases": [
-      "Jan Mayen"
-    ]
-  },
-  {
     "id": 675808,
     "name": "Jan Mayen",
     "url": "https://guides.law.byu.edu/c.php?g=675808",
@@ -2500,14 +1388,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:04:08",
     "isLocalGuide": true
-  },
-  {
-    "name": "Japan",
-    "url": "https://guides.law.byu.edu/japan",
-    "description": "Sources of Primary Law for Japan, available to the general public.",
-    "aliases": [
-      "Japan"
-    ]
   },
   {
     "id": 675811,
@@ -2520,14 +1400,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Jersey",
-    "url": "https://guides.law.byu.edu/jersey",
-    "description": "Sources of Primary Law for Jersey, available to the general public.",
-    "aliases": [
-      "Jersey"
-    ]
-  },
-  {
     "id": 675813,
     "name": "Jersey",
     "url": "https://guides.law.byu.edu/c.php?g=675813",
@@ -2536,14 +1408,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:04:37",
     "isLocalGuide": true
-  },
-  {
-    "name": "Jordan",
-    "url": "https://guides.law.byu.edu/c.php?g=1484490",
-    "description": "Sources of Primary Law for Jordan, available to the general public.",
-    "aliases": [
-      "Jordan"
-    ]
   },
   {
     "id": 1484490,
@@ -2556,14 +1420,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Kazakhstan",
-    "url": "https://guides.law.byu.edu/kazakhstan",
-    "description": "Sources of Primary Law for Kazakhstan, available to the general public.",
-    "aliases": [
-      "Kazakhstan"
-    ]
-  },
-  {
     "id": 675820,
     "name": "Kazakhstan",
     "url": "https://guides.law.byu.edu/c.php?g=675820",
@@ -2572,14 +1428,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:05:42",
     "isLocalGuide": true
-  },
-  {
-    "name": "Kenya",
-    "url": "https://guides.law.byu.edu/kenya",
-    "description": "Sources of Primary Law for Kenya, available to the general public.",
-    "aliases": [
-      "Kenya"
-    ]
   },
   {
     "id": 675826,
@@ -2592,14 +1440,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Kiribati",
-    "url": "https://guides.law.byu.edu/kiribati",
-    "description": "Sources of Primary Law for Kiribati, available to the general public.",
-    "aliases": [
-      "Kiribati"
-    ]
-  },
-  {
     "id": 675829,
     "name": "Kiribati",
     "url": "https://guides.law.byu.edu/c.php?g=675829",
@@ -2608,14 +1448,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:06:20",
     "isLocalGuide": true
-  },
-  {
-    "name": "Kuwait",
-    "url": "https://guides.law.byu.edu/kuwait",
-    "description": "Sources of Primary Law for Kuwait, available to the general public.",
-    "aliases": [
-      "Kuwait"
-    ]
   },
   {
     "id": 675832,
@@ -2628,14 +1460,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Kyrgyzstan",
-    "url": "https://guides.law.byu.edu/kyrgyzstan",
-    "description": "Sources of Primary Law for Kyrgyzstan, available to the general public.",
-    "aliases": [
-      "Kyrgyzstan"
-    ]
-  },
-  {
     "id": 675838,
     "name": "Kyrgyzstan",
     "url": "https://guides.law.byu.edu/c.php?g=675838",
@@ -2644,14 +1468,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:08:00",
     "isLocalGuide": true
-  },
-  {
-    "name": "Labor and Employment Law",
-    "url": "https://guides.law.byu.edu/labor",
-    "description": "Library Guides: Labor and Employment Law: Labor and Employment Law Home",
-    "aliases": [
-      "Labor and Employment Law"
-    ]
   },
   {
     "id": 315303,
@@ -2664,14 +1480,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Laos",
-    "url": "https://guides.law.byu.edu/laos",
-    "description": "Sources of Primary Law for Laos, available to the general public.",
-    "aliases": [
-      "Laos"
-    ]
-  },
-  {
     "id": 676355,
     "name": "Laos",
     "url": "https://guides.law.byu.edu/c.php?g=676355",
@@ -2680,14 +1488,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:08:16",
     "isLocalGuide": true
-  },
-  {
-    "name": "Latvia",
-    "url": "https://guides.law.byu.edu/latvia",
-    "description": "Sources of Primary Law for Latvia, available to the general public.",
-    "aliases": [
-      "Latvia"
-    ]
   },
   {
     "id": 676361,
@@ -2700,14 +1500,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Law and Religion",
-    "url": "https://guides.law.byu.edu/law-and-religion",
-    "description": "Library Guides: Law and Religion: Law and Religion Home",
-    "aliases": [
-      "Law and Religion"
-    ]
-  },
-  {
     "id": 1448042,
     "name": "Law and Religion",
     "url": "https://guides.law.byu.edu/c.php?g=1448042",
@@ -2716,14 +1508,6 @@
     "owner": "Campbell, Bree",
     "updated": "2025-12-03 21:35:54",
     "isLocalGuide": true
-  },
-  {
-    "name": "Lebanon",
-    "url": "https://guides.law.byu.edu/lebanon",
-    "description": "Sources of Primary Law for Lebanon, available to the general public.",
-    "aliases": [
-      "Lebanon"
-    ]
   },
   {
     "id": 676366,
@@ -2736,14 +1520,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Legal Directories",
-    "url": "https://guides.law.byu.edu/directories",
-    "description": "Library Guides: Legal Directories: Legal Directories Home",
-    "aliases": [
-      "Legal Directories"
-    ]
-  },
-  {
     "id": 315275,
     "name": "Legal Directories",
     "url": "https://guides.law.byu.edu/c.php?g=315275",
@@ -2752,14 +1528,6 @@
     "owner": "Nevers, Shawn",
     "updated": "2024-08-22 23:15:51",
     "isLocalGuide": true
-  },
-  {
-    "name": "Legal History",
-    "url": "https://guides.law.byu.edu/history",
-    "description": "Library Guides: Legal History: Legal History Home",
-    "aliases": [
-      "Legal History"
-    ]
   },
   {
     "id": 315304,
@@ -2772,14 +1540,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Legal Research Sources, Guides, and Subject Call Numbers",
-    "url": "https://guides.law.byu.edu/legalresearch",
-    "description": "Basic legal research resources and guides.",
-    "aliases": [
-      "Legal Research Sources, Guides, and Subject Call Numbers"
-    ]
-  },
-  {
     "id": 315227,
     "name": "Legal Research Sources, Guides, and Subject Call Numbers",
     "url": "https://guides.law.byu.edu/c.php?g=315227",
@@ -2788,14 +1548,6 @@
     "owner": "Kellems, Kristen",
     "updated": "2025-01-22 17:57:19",
     "isLocalGuide": true
-  },
-  {
-    "name": "Legal Scholarship",
-    "url": "https://guides.law.byu.edu/legalscholarship",
-    "description": "Legal research help for Professor Moore&#039;s Legal Scholarship Seminar.",
-    "aliases": [
-      "Legal Scholarship"
-    ]
   },
   {
     "id": 315231,
@@ -2808,14 +1560,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Legal Tech Resources for Students and Faculty",
-    "url": "https://guides.law.byu.edu/c.php?g=1386257",
-    "description": "Library Guides: Legal Tech Resources for Students and Faculty: Home",
-    "aliases": [
-      "Legal Tech Resources for Students and Faculty"
-    ]
-  },
-  {
     "id": 1386257,
     "name": "Legal Tech Resources for Students and Faculty",
     "url": "https://guides.law.byu.edu/c.php?g=1386257",
@@ -2824,14 +1568,6 @@
     "owner": "Hafen, Nick",
     "updated": "2025-11-13 21:17:24",
     "isLocalGuide": true
-  },
-  {
-    "name": "Legislative History - Federal",
-    "url": "https://guides.law.byu.edu/legislativehistoryfederal",
-    "description": "Helpful tips and resources for researching legislative history.",
-    "aliases": [
-      "Legislative History - Federal"
-    ]
   },
   {
     "id": 315337,
@@ -2844,14 +1580,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Lesotho",
-    "url": "https://guides.law.byu.edu/lesotho",
-    "description": "Sources of Primary Law for Lesotho, available to the general public.",
-    "aliases": [
-      "Lesotho"
-    ]
-  },
-  {
     "id": 676378,
     "name": "Lesotho",
     "url": "https://guides.law.byu.edu/c.php?g=676378",
@@ -2860,14 +1588,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:15:12",
     "isLocalGuide": true
-  },
-  {
-    "name": "Liberia",
-    "url": "https://guides.law.byu.edu/liberia",
-    "description": "Sources of Primary Law for Liberia, available to the general public.",
-    "aliases": [
-      "Liberia"
-    ]
   },
   {
     "id": 676384,
@@ -2880,14 +1600,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Libya",
-    "url": "https://guides.law.byu.edu/libya",
-    "description": "Sources of Primary Law for Libya, available to the general public.",
-    "aliases": [
-      "Libya"
-    ]
-  },
-  {
     "id": 676389,
     "name": "Libya",
     "url": "https://guides.law.byu.edu/c.php?g=676389",
@@ -2896,14 +1608,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-02 18:11:15",
     "isLocalGuide": true
-  },
-  {
-    "name": "Liechtenstein",
-    "url": "https://guides.law.byu.edu/liechtenstein",
-    "description": "Sources of Primary Law for Liechtenstein, available to the general public.",
-    "aliases": [
-      "Liechtenstein"
-    ]
   },
   {
     "id": 676393,
@@ -2916,14 +1620,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Lithuania",
-    "url": "https://guides.law.byu.edu/lithuania",
-    "description": "Sources of Primary Law for Lithuania, available to the general public.",
-    "aliases": [
-      "Lithuania"
-    ]
-  },
-  {
     "id": 676401,
     "name": "Lithuania",
     "url": "https://guides.law.byu.edu/c.php?g=676401",
@@ -2932,14 +1628,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:16:12",
     "isLocalGuide": true
-  },
-  {
-    "name": "Locating Legal Information in Primary and Secondary Resources",
-    "url": "https://guides.law.byu.edu/ResourceGuides",
-    "description": "How to use specific legal resources.",
-    "aliases": [
-      "Locating Legal Information in Primary and Secondary Resources"
-    ]
   },
   {
     "id": 315332,
@@ -2952,14 +1640,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Luxembourg",
-    "url": "https://guides.law.byu.edu/luxembourg",
-    "description": "Sources of Primary Law for Luxembourg, available to the general public.",
-    "aliases": [
-      "Luxembourg"
-    ]
-  },
-  {
     "id": 676403,
     "name": "Luxembourg",
     "url": "https://guides.law.byu.edu/c.php?g=676403",
@@ -2968,14 +1648,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:16:25",
     "isLocalGuide": true
-  },
-  {
-    "name": "Macau",
-    "url": "https://guides.law.byu.edu/c.php?g=1484549",
-    "description": "Sources of Primary Law for Macau, available to the general public.",
-    "aliases": [
-      "Macau"
-    ]
   },
   {
     "id": 1484549,
@@ -2988,14 +1660,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Macedonia, The Former Yugoslav Republic of",
-    "url": "https://guides.law.byu.edu/c.php?g=1484552",
-    "description": "Sources of Primary Law for Macedonia, available to the general public.",
-    "aliases": [
-      "Macedonia, The Former Yugoslav Republic of"
-    ]
-  },
-  {
     "id": 1484552,
     "name": "Macedonia, The Former Yugoslav Republic of",
     "url": "https://guides.law.byu.edu/c.php?g=1484552",
@@ -3004,14 +1668,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-11-26 15:58:50",
     "isLocalGuide": true
-  },
-  {
-    "name": "Madagascar",
-    "url": "https://guides.law.byu.edu/c.php?g=1487386",
-    "description": "Sources of Primary Law for Madagascar, available to the general public.",
-    "aliases": [
-      "Madagascar"
-    ]
   },
   {
     "id": 1487386,
@@ -3024,14 +1680,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Malawi",
-    "url": "https://guides.law.byu.edu/c.php?g=1487404",
-    "description": "Sources of Primary Law for Malawi, available to the general public.",
-    "aliases": [
-      "Malawi"
-    ]
-  },
-  {
     "id": 1487404,
     "name": "Malawi",
     "url": "https://guides.law.byu.edu/c.php?g=1487404",
@@ -3040,14 +1688,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-11-27 00:30:34",
     "isLocalGuide": true
-  },
-  {
-    "name": "Malaysia",
-    "url": "https://guides.law.byu.edu/c.php?g=1487409",
-    "description": "Sources of Primary Law for Malaysia, available to the general public.",
-    "aliases": [
-      "Malaysia"
-    ]
   },
   {
     "id": 1487409,
@@ -3060,14 +1700,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Maldives",
-    "url": "https://guides.law.byu.edu/c.php?g=1487419",
-    "description": "Sources of Primary Law for Maldives, available to the general public.",
-    "aliases": [
-      "Maldives"
-    ]
-  },
-  {
     "id": 1487419,
     "name": "Maldives",
     "url": "https://guides.law.byu.edu/c.php?g=1487419",
@@ -3076,14 +1708,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-11-27 00:54:32",
     "isLocalGuide": true
-  },
-  {
-    "name": "Mali",
-    "url": "https://guides.law.byu.edu/c.php?g=1487524",
-    "description": "Sources of Primary Law for Mali, available to the general public.",
-    "aliases": [
-      "Mali"
-    ]
   },
   {
     "id": 1487524,
@@ -3096,14 +1720,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Malta",
-    "url": "https://guides.law.byu.edu/c.php?g=1488188",
-    "description": "Sources of Primary Law for Malta, available to the general public.",
-    "aliases": [
-      "Malta"
-    ]
-  },
-  {
     "id": 1488188,
     "name": "Malta",
     "url": "https://guides.law.byu.edu/c.php?g=1488188",
@@ -3112,14 +1728,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-01 17:28:30",
     "isLocalGuide": true
-  },
-  {
-    "name": "Marshall Islands",
-    "url": "https://guides.law.byu.edu/c.php?g=1488310",
-    "description": "Sources of Primary Law for Marshall Islands, available to the general public.",
-    "aliases": [
-      "Marshall Islands"
-    ]
   },
   {
     "id": 1488310,
@@ -3132,14 +1740,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Martinique",
-    "url": "https://guides.law.byu.edu/c.php?g=1488339",
-    "description": "Sources of Primary Law for Martinique, available to the general public.",
-    "aliases": [
-      "Martinique"
-    ]
-  },
-  {
     "id": 1488339,
     "name": "Martinique",
     "url": "https://guides.law.byu.edu/c.php?g=1488339",
@@ -3148,14 +1748,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-01 20:54:11",
     "isLocalGuide": true
-  },
-  {
-    "name": "Mauritania",
-    "url": "https://guides.law.byu.edu/c.php?g=1488532",
-    "description": "Sources of Primary Law for Mauritania, available to the general public.",
-    "aliases": [
-      "Mauritania"
-    ]
   },
   {
     "id": 1488532,
@@ -3168,14 +1760,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Mauritius",
-    "url": "https://guides.law.byu.edu/c.php?g=1488536",
-    "description": "Sources of Primary Law for Mauritius, available to the general public.",
-    "aliases": [
-      "Mauritius"
-    ]
-  },
-  {
     "id": 1488536,
     "name": "Mauritius",
     "url": "https://guides.law.byu.edu/c.php?g=1488536",
@@ -3184,14 +1768,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-02 18:11:15",
     "isLocalGuide": true
-  },
-  {
-    "name": "Mexico",
-    "url": "https://guides.law.byu.edu/c.php?g=1491232",
-    "description": "Sources of Primary Law for Mexico, available to the general public.",
-    "aliases": [
-      "Mexico"
-    ]
   },
   {
     "id": 1491232,
@@ -3204,14 +1780,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Moldova",
-    "url": "https://guides.law.byu.edu/c.php?g=1491332",
-    "description": "Sources of Primary Law for Moldova, available to the general public.",
-    "aliases": [
-      "Moldova"
-    ]
-  },
-  {
     "id": 1491332,
     "name": "Moldova",
     "url": "https://guides.law.byu.edu/c.php?g=1491332",
@@ -3220,14 +1788,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-04 21:46:33",
     "isLocalGuide": true
-  },
-  {
-    "name": "Monaco",
-    "url": "https://guides.law.byu.edu/c.php?g=1491340",
-    "description": "Sources of Primary Law for Monaco, available to the general public.",
-    "aliases": [
-      "Monaco"
-    ]
   },
   {
     "id": 1491340,
@@ -3240,14 +1800,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Mongolia",
-    "url": "https://guides.law.byu.edu/c.php?g=1484535",
-    "description": "Sources of Primary Law for Mongolia, available to the general public.",
-    "aliases": [
-      "Mongolia"
-    ]
-  },
-  {
     "id": 1484535,
     "name": "Mongolia",
     "url": "https://guides.law.byu.edu/c.php?g=1484535",
@@ -3256,14 +1808,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-03 17:07:30",
     "isLocalGuide": true
-  },
-  {
-    "name": "Mormon Legal History 1800-1850: Joseph Smith time period",
-    "url": "https://guides.law.byu.edu/JosephSmith",
-    "description": "This resource guide covers print and online resources for legal and Mormon history during the life of Joseph Smith (1805-1844). Online and print court opinions",
-    "aliases": [
-      "Mormon Legal History 1800-1850: Joseph Smith time period"
-    ]
   },
   {
     "id": 315325,
@@ -3276,14 +1820,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Mormon Legal History 1850-1900: Utah Territory era",
-    "url": "https://guides.law.byu.edu/UtahTerritory",
-    "description": "This resource guide covers print and online resources for legal and Mormon history during the Utah Territorial era (1847-1896). Major opinions, laws and secondary sources",
-    "aliases": [
-      "Mormon Legal History 1850-1900: Utah Territory era"
-    ]
-  },
-  {
     "id": 315329,
     "name": "Mormon Legal History 1850-1900: Utah Territory era",
     "url": "https://guides.law.byu.edu/c.php?g=315329",
@@ -3292,14 +1828,6 @@
     "owner": "Haight, Iantha",
     "updated": "2025-03-20 15:17:05",
     "isLocalGuide": true
-  },
-  {
-    "name": "Mormon Legal History 1900-1960: J. Reuben Clark era",
-    "url": "https://guides.law.byu.edu/JReubenClark",
-    "description": "Legal history resources on Mormon lawyers and the legal profession during the life of J. Reuben Clark Jr. (1871-1961). Biographies and writings by and about J. Reuben Clark",
-    "aliases": [
-      "Mormon Legal History 1900-1960: J. Reuben Clark era"
-    ]
   },
   {
     "id": 315330,
@@ -3312,14 +1840,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Morocco",
-    "url": "https://guides.law.byu.edu/c.php?g=1491628",
-    "description": "Library Guides: Morocco: Legal Resources",
-    "aliases": [
-      "Morocco"
-    ]
-  },
-  {
     "id": 1491628,
     "name": "Morocco",
     "url": "https://guides.law.byu.edu/c.php?g=1491628",
@@ -3328,14 +1848,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-02 18:11:15",
     "isLocalGuide": true
-  },
-  {
-    "name": "Mozambique",
-    "url": "https://guides.law.byu.edu/c.php?g=1491638",
-    "description": "Library Guides: Mozambique: Legal Resources",
-    "aliases": [
-      "Mozambique"
-    ]
   },
   {
     "id": 1491638,
@@ -3348,14 +1860,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Myanmar (Burma)",
-    "url": "https://guides.law.byu.edu/c.php?g=1492436",
-    "description": "Sources of Primary Law for Myanmar, available to the general public.",
-    "aliases": [
-      "Myanmar (Burma)"
-    ]
-  },
-  {
     "id": 1492436,
     "name": "Myanmar (Burma)",
     "url": "https://guides.law.byu.edu/c.php?g=1492436",
@@ -3364,14 +1868,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-01 21:47:09",
     "isLocalGuide": true
-  },
-  {
-    "name": "Namibia",
-    "url": "https://guides.law.byu.edu/namibia",
-    "description": "Sources of Primary Law for Namibia, available to the general public.",
-    "aliases": [
-      "Namibia"
-    ]
   },
   {
     "id": 1495465,
@@ -3384,14 +1880,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Nauru",
-    "url": "https://guides.law.byu.edu/nauru",
-    "description": "Sources of Primary Law for Nauru, available to the general public.",
-    "aliases": [
-      "Nauru"
-    ]
-  },
-  {
     "id": 1495477,
     "name": "Nauru",
     "url": "https://guides.law.byu.edu/c.php?g=1495477",
@@ -3400,14 +1888,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-10-08 19:44:10",
     "isLocalGuide": true
-  },
-  {
-    "name": "Nepal",
-    "url": "https://guides.law.byu.edu/nepal",
-    "description": "Sources of Primary Law for Nepal, available to the general public.",
-    "aliases": [
-      "Nepal"
-    ]
   },
   {
     "id": 1495542,
@@ -3420,14 +1900,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Netherlands",
-    "url": "https://guides.law.byu.edu/netherlands",
-    "description": "Sources of Primary Law for the Netherlands, available to the general public.",
-    "aliases": [
-      "Netherlands"
-    ]
-  },
-  {
     "id": 1495693,
     "name": "Netherlands",
     "url": "https://guides.law.byu.edu/c.php?g=1495693",
@@ -3436,14 +1908,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-10-08 19:43:36",
     "isLocalGuide": true
-  },
-  {
-    "name": "Netherlands Antilles",
-    "url": "https://guides.law.byu.edu/netherlandsantilles",
-    "description": "Sources of Primary Law for Netherlands Antilles, available to the general public.",
-    "aliases": [
-      "Netherlands Antilles"
-    ]
   },
   {
     "id": 1495787,
@@ -3456,14 +1920,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "New Caledonia",
-    "url": "https://guides.law.byu.edu/newcaledonia",
-    "description": "Sources of Primary Law for New Caledonia, available to the general public.",
-    "aliases": [
-      "New Caledonia"
-    ]
-  },
-  {
     "id": 1495797,
     "name": "New Caledonia",
     "url": "https://guides.law.byu.edu/c.php?g=1495797",
@@ -3472,14 +1928,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-10-08 19:42:51",
     "isLocalGuide": true
-  },
-  {
-    "name": "New Zealand",
-    "url": "https://guides.law.byu.edu/newzealand",
-    "description": "Sources of Primary Law for New Zealand, available to the general public.",
-    "aliases": [
-      "New Zealand"
-    ]
   },
   {
     "id": 1495806,
@@ -3492,14 +1940,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "News (Legal)",
-    "url": "https://guides.law.byu.edu/news",
-    "description": "Library Guides: News (Legal): Home",
-    "aliases": [
-      "News (Legal)"
-    ]
-  },
-  {
     "id": 315306,
     "name": "News (Legal)",
     "url": "https://guides.law.byu.edu/c.php?g=315306",
@@ -3508,14 +1948,6 @@
     "owner": "Hickman Pierson, Annalee",
     "updated": "2024-08-15 14:24:19",
     "isLocalGuide": true
-  },
-  {
-    "name": "Nicaragua",
-    "url": "https://guides.law.byu.edu/nicaragua",
-    "description": "Sources of Primary Law for Nicaragua, available to the general public.",
-    "aliases": [
-      "Nicaragua"
-    ]
   },
   {
     "id": 1498292,
@@ -3528,14 +1960,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Niger",
-    "url": "https://guides.law.byu.edu/niger",
-    "description": "Sources of Primary Law for Niger, available to the general public.",
-    "aliases": [
-      "Niger"
-    ]
-  },
-  {
     "id": 1498302,
     "name": "Niger",
     "url": "https://guides.law.byu.edu/c.php?g=1498302",
@@ -3544,14 +1968,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-02 18:11:15",
     "isLocalGuide": true
-  },
-  {
-    "name": "Nigeria",
-    "url": "https://guides.law.byu.edu/nigeria",
-    "description": "Sources of Primary Law for Nigeria, available to the general public.",
-    "aliases": [
-      "Nigeria"
-    ]
   },
   {
     "id": 1498370,
@@ -3564,14 +1980,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Niue",
-    "url": "https://guides.law.byu.edu/niue",
-    "description": "Sources of Primary Law for Niue, available to the general public.",
-    "aliases": [
-      "Niue"
-    ]
-  },
-  {
     "id": 1498550,
     "name": "Niue",
     "url": "https://guides.law.byu.edu/c.php?g=1498550",
@@ -3580,14 +1988,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-10-23 15:50:45",
     "isLocalGuide": true
-  },
-  {
-    "name": "Norfolk Island",
-    "url": "https://guides.law.byu.edu/norfolkisland",
-    "description": "Sources of Primary Law for Norfolk Island, available to the general public.",
-    "aliases": [
-      "Norfolk Island"
-    ]
   },
   {
     "id": 1498554,
@@ -3600,14 +2000,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "North Korea",
-    "url": "https://guides.law.byu.edu/northkorea",
-    "description": "Sources of Primary Law for North Korea, available to the general public.",
-    "aliases": [
-      "North Korea"
-    ]
-  },
-  {
     "id": 1498560,
     "name": "North Korea",
     "url": "https://guides.law.byu.edu/c.php?g=1498560",
@@ -3616,14 +2008,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-01 21:48:20",
     "isLocalGuide": true
-  },
-  {
-    "name": "Northern Mariana Islands",
-    "url": "https://guides.law.byu.edu/northernmarianaislands",
-    "description": "Sources of Primary Law for Northern Mariana Islands, available to the general public.",
-    "aliases": [
-      "Northern Mariana Islands"
-    ]
   },
   {
     "id": 1499049,
@@ -3636,14 +2020,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Norway",
-    "url": "https://guides.law.byu.edu/norway",
-    "description": "Sources of Primary Law for Norway, available to the general public.",
-    "aliases": [
-      "Norway"
-    ]
-  },
-  {
     "id": 1499059,
     "name": "Norway",
     "url": "https://guides.law.byu.edu/c.php?g=1499059",
@@ -3652,14 +2028,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-10-27 19:15:47",
     "isLocalGuide": true
-  },
-  {
-    "name": "Oman",
-    "url": "https://guides.law.byu.edu/oman",
-    "description": "Sources of Primary Law for Oman, available to the general public.",
-    "aliases": [
-      "Oman"
-    ]
   },
   {
     "id": 1499117,
@@ -3672,14 +2040,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Pakistan",
-    "url": "https://guides.law.byu.edu/pakistan",
-    "description": "Sources of Primary Law for Pakistan, available to the general public.",
-    "aliases": [
-      "Pakistan"
-    ]
-  },
-  {
     "id": 1501267,
     "name": "Pakistan",
     "url": "https://guides.law.byu.edu/c.php?g=1501267",
@@ -3688,14 +2048,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-03 21:37:20",
     "isLocalGuide": true
-  },
-  {
-    "name": "Palau",
-    "url": "https://guides.law.byu.edu/palau",
-    "description": "Sources of Primary Law for Palau, available to the general public.",
-    "aliases": [
-      "Palau"
-    ]
   },
   {
     "id": 1501280,
@@ -3708,14 +2060,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Panama",
-    "url": "https://guides.law.byu.edu/panama",
-    "description": "Sources of Primary Law for Panama, available to the general public.",
-    "aliases": [
-      "Panama"
-    ]
-  },
-  {
     "id": 1502701,
     "name": "Panama",
     "url": "https://guides.law.byu.edu/c.php?g=1502701",
@@ -3724,14 +2068,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-11-17 18:48:03",
     "isLocalGuide": true
-  },
-  {
-    "name": "Papua New Guinea",
-    "url": "https://guides.law.byu.edu/papuanewguinea",
-    "description": "Sources of Primary Law for Papua New Guinea, available to the general public.",
-    "aliases": [
-      "Papua New Guinea"
-    ]
   },
   {
     "id": 1503032,
@@ -3744,14 +2080,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Paraguay",
-    "url": "https://guides.law.byu.edu/paraguay",
-    "description": "Sources of Primary Law for Paraguay, available to the general public.",
-    "aliases": [
-      "Paraguay"
-    ]
-  },
-  {
     "id": 1503039,
     "name": "Paraguay",
     "url": "https://guides.law.byu.edu/c.php?g=1503039",
@@ -3760,14 +2088,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-11-18 22:04:40",
     "isLocalGuide": true
-  },
-  {
-    "name": "Patent Law",
-    "url": "https://guides.law.byu.edu/patents",
-    "description": "Selected resources useful for general IP and Patent Law research.",
-    "aliases": [
-      "Patent Law"
-    ]
   },
   {
     "id": 315271,
@@ -3780,14 +2100,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Peru",
-    "url": "https://guides.law.byu.edu/peru",
-    "description": "Sources of Primary Law for Peru, available to the general public.",
-    "aliases": [
-      "Peru"
-    ]
-  },
-  {
     "id": 1503399,
     "name": "Peru",
     "url": "https://guides.law.byu.edu/c.php?g=1503399",
@@ -3796,14 +2108,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-11-25 19:55:51",
     "isLocalGuide": true
-  },
-  {
-    "name": "Philippines",
-    "url": "https://guides.law.byu.edu/philippines",
-    "description": "Sources of Primary Law for Philippines, available to the general public.",
-    "aliases": [
-      "Philippines"
-    ]
   },
   {
     "id": 1503534,
@@ -3816,14 +2120,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Poland",
-    "url": "https://guides.law.byu.edu/poland",
-    "description": "Sources of Primary Law for Poland, available to the general public.",
-    "aliases": [
-      "Poland"
-    ]
-  },
-  {
     "id": 1503537,
     "name": "Poland",
     "url": "https://guides.law.byu.edu/c.php?g=1503537",
@@ -3832,14 +2128,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-11-25 19:55:13",
     "isLocalGuide": true
-  },
-  {
-    "name": "Portugal",
-    "url": "https://guides.law.byu.edu/portugal",
-    "description": "Sources of Primary Law for Portugal, available to the general public.",
-    "aliases": [
-      "Portugal"
-    ]
   },
   {
     "id": 1504138,
@@ -3852,14 +2140,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Professional Responsibility",
-    "url": "https://guides.law.byu.edu/professional_responsibility",
-    "description": "A research guide to resources for professional responsibility.",
-    "aliases": [
-      "Professional Responsibility"
-    ]
-  },
-  {
     "id": 1108985,
     "name": "Professional Responsibility",
     "url": "https://guides.law.byu.edu/c.php?g=1108985",
@@ -3868,14 +2148,6 @@
     "owner": "Staheli, Kory",
     "updated": "2024-07-11 17:25:52",
     "isLocalGuide": true
-  },
-  {
-    "name": "Property Law",
-    "url": "https://guides.law.byu.edu/property",
-    "description": "Library Guides: Property Law: Property (Real Estate) Law Home",
-    "aliases": [
-      "Property Law"
-    ]
   },
   {
     "id": 315308,
@@ -3888,14 +2160,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Puerto Rico",
-    "url": "https://guides.law.byu.edu/puertorico",
-    "description": "Sources of Primary Law for Puerto Rico, available to the general public.",
-    "aliases": [
-      "Puerto Rico"
-    ]
-  },
-  {
     "id": 1504163,
     "name": "Puerto Rico",
     "url": "https://guides.law.byu.edu/c.php?g=1504163",
@@ -3904,14 +2168,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-11-25 19:54:18",
     "isLocalGuide": true
-  },
-  {
-    "name": "Qatar",
-    "url": "https://guides.law.byu.edu/qatar",
-    "description": "Sources of Primary Law for Qatar, available to the general public.",
-    "aliases": [
-      "Qatar"
-    ]
   },
   {
     "id": 1504169,
@@ -3924,14 +2180,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Recovering Our Forgotten Preamble",
-    "url": "https://guides.law.byu.edu/recovering-our-forgotten-preamble",
-    "description": "Constitutions, books, articles, cases, and letters cited by John W. Welch &amp; James A. Heilpern, Recovering Our Forgotten Preamble, 91 S. Cal. L. Rev. 1021 (2018).",
-    "aliases": [
-      "Recovering Our Forgotten Preamble"
-    ]
-  },
-  {
     "id": 949316,
     "name": "Recovering Our Forgotten Preamble",
     "url": "https://guides.law.byu.edu/c.php?g=949316",
@@ -3940,14 +2188,6 @@
     "owner": "Haight, Iantha",
     "updated": "2024-10-17 17:30:22",
     "isLocalGuide": true
-  },
-  {
-    "name": "Research Tips for Faculty Research Assistants",
-    "url": "https://guides.law.byu.edu/research_assistants",
-    "description": "This guide supplements training for research assistants for law faculty.",
-    "aliases": [
-      "Research Tips for Faculty Research Assistants"
-    ]
   },
   {
     "id": 1034196,
@@ -3960,14 +2200,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Reunion",
-    "url": "https://guides.law.byu.edu/reunion",
-    "description": "Sources of Primary Law for Reunion, available to the general public.",
-    "aliases": [
-      "Reunion"
-    ]
-  },
-  {
     "id": 1504214,
     "name": "Reunion",
     "url": "https://guides.law.byu.edu/c.php?g=1504214",
@@ -3976,14 +2208,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-11-26 02:17:09",
     "isLocalGuide": true
-  },
-  {
-    "name": "Romania",
-    "url": "https://guides.law.byu.edu/romania",
-    "description": "Sources of Primary Law for Romania, available to the general public.",
-    "aliases": [
-      "Romania"
-    ]
   },
   {
     "id": 1504629,
@@ -3996,14 +2220,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Russia",
-    "url": "https://guides.law.byu.edu/russia",
-    "description": "Sources of Primary Law for Russia, available to the general public.",
-    "aliases": [
-      "Russia"
-    ]
-  },
-  {
     "id": 1505853,
     "name": "Russia",
     "url": "https://guides.law.byu.edu/c.php?g=1505853",
@@ -4012,14 +2228,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-08 18:29:22",
     "isLocalGuide": true
-  },
-  {
-    "name": "Rwanda",
-    "url": "https://guides.law.byu.edu/rwanda",
-    "description": "Sources of Primary Law for Rwanda, available to the general public.",
-    "aliases": [
-      "Rwanda"
-    ]
   },
   {
     "id": 1505924,
@@ -4032,14 +2240,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Saint Kitts and Nevis",
-    "url": "https://guides.law.byu.edu/saintkittsandnevis",
-    "description": "Sources of Primary Law for Saint Kitts and Nevis, available to the general public.",
-    "aliases": [
-      "Saint Kitts and Nevis"
-    ]
-  },
-  {
     "id": 1506118,
     "name": "Saint Kitts and Nevis",
     "url": "https://guides.law.byu.edu/c.php?g=1506118",
@@ -4048,14 +2248,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-09 19:13:36",
     "isLocalGuide": true
-  },
-  {
-    "name": "Saint Lucia",
-    "url": "https://guides.law.byu.edu/saintlucia",
-    "description": "Sources of Primary Law for Saint Lucia, available to the general public.",
-    "aliases": [
-      "Saint Lucia"
-    ]
   },
   {
     "id": 1506272,
@@ -4068,14 +2260,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Saint Vincent and the Grenadines",
-    "url": "https://guides.law.byu.edu/saintvincentandthegrenadines",
-    "description": "Sources of Primary Law for Saint Vincent and the Grenadines, available to the general public.",
-    "aliases": [
-      "Saint Vincent and the Grenadines"
-    ]
-  },
-  {
     "id": 1506327,
     "name": "Saint Vincent and the Grenadines",
     "url": "https://guides.law.byu.edu/c.php?g=1506327",
@@ -4084,14 +2268,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-10 20:05:12",
     "isLocalGuide": true
-  },
-  {
-    "name": "Samoa",
-    "url": "https://guides.law.byu.edu/samoa",
-    "description": "Sources of Primary Law for Samoa, available to the general public.",
-    "aliases": [
-      "Samoa"
-    ]
   },
   {
     "id": 1506130,
@@ -4104,14 +2280,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "San Marino",
-    "url": "https://guides.law.byu.edu/sanmarino",
-    "description": "Sources of Primary Law for San Marino, available to the general public.",
-    "aliases": [
-      "San Marino"
-    ]
-  },
-  {
     "id": 1506420,
     "name": "San Marino",
     "url": "https://guides.law.byu.edu/c.php?g=1506420",
@@ -4120,14 +2288,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-10 20:36:18",
     "isLocalGuide": true
-  },
-  {
-    "name": "Sao Tome and Principe",
-    "url": "https://guides.law.byu.edu/saotomeandprincipe",
-    "description": "Sources of Primary Law for Sao Tome and Principe, available to the general public.",
-    "aliases": [
-      "Sao Tome and Principe"
-    ]
   },
   {
     "id": 1506481,
@@ -4140,14 +2300,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Saudi Arabia",
-    "url": "https://guides.law.byu.edu/saudiarabia",
-    "description": "Sources of Primary Law for Saudi Arabia, available to the general public.",
-    "aliases": [
-      "Saudi Arabia"
-    ]
-  },
-  {
     "id": 1506486,
     "name": "Saudi Arabia",
     "url": "https://guides.law.byu.edu/c.php?g=1506486",
@@ -4156,14 +2308,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-11 16:38:48",
     "isLocalGuide": true
-  },
-  {
-    "name": "Securities Law",
-    "url": "https://guides.law.byu.edu/securities",
-    "description": "A research guide for federal and state securities law",
-    "aliases": [
-      "Securities Law"
-    ]
   },
   {
     "id": 315311,
@@ -4176,14 +2320,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Senegal",
-    "url": "https://guides.law.byu.edu/senegal",
-    "description": "Sources of Primary Law for Senegal, available to the general public.",
-    "aliases": [
-      "Senegal"
-    ]
-  },
-  {
     "id": 1506845,
     "name": "Senegal",
     "url": "https://guides.law.byu.edu/c.php?g=1506845",
@@ -4192,14 +2328,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-12 21:02:09",
     "isLocalGuide": true
-  },
-  {
-    "name": "Seychelles",
-    "url": "https://guides.law.byu.edu/seychelles",
-    "description": "Sources of Primary Law for Seychelles, available to the general public.",
-    "aliases": [
-      "Seychelles"
-    ]
   },
   {
     "id": 677477,
@@ -4212,14 +2340,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Sierra Leone",
-    "url": "https://guides.law.byu.edu/sierraleone",
-    "description": "Sources of Primary Law for Sierra Leone, available to the general public.",
-    "aliases": [
-      "Sierra Leone"
-    ]
-  },
-  {
     "id": 677480,
     "name": "Sierra Leone",
     "url": "https://guides.law.byu.edu/c.php?g=677480",
@@ -4228,14 +2348,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:41:19",
     "isLocalGuide": true
-  },
-  {
-    "name": "Singapore",
-    "url": "https://guides.law.byu.edu/singapore",
-    "description": "Sources of Primary Law for Singapore, available to the general public.",
-    "aliases": [
-      "Singapore"
-    ]
   },
   {
     "id": 677487,
@@ -4248,14 +2360,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Slovakia",
-    "url": "https://guides.law.byu.edu/slovakia",
-    "description": "Sources of Primary Law for Slovakia, available to the general public.",
-    "aliases": [
-      "Slovakia"
-    ]
-  },
-  {
     "id": 677490,
     "name": "Slovakia",
     "url": "https://guides.law.byu.edu/c.php?g=677490",
@@ -4264,14 +2368,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:42:14",
     "isLocalGuide": true
-  },
-  {
-    "name": "Slovenia",
-    "url": "https://guides.law.byu.edu/slovenia",
-    "description": "Sources of Primary Law for Slovenia, available to the general public.",
-    "aliases": [
-      "Slovenia"
-    ]
   },
   {
     "id": 677495,
@@ -4284,14 +2380,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Social Science Research (for Lawyers)",
-    "url": "https://guides.law.byu.edu/social_science",
-    "description": "Covers local and web-based databases and resources for statistical and factual research in the social sciences. Introduction to types of social science research used by the legal profession",
-    "aliases": [
-      "Social Science Research (for Lawyers)"
-    ]
-  },
-  {
     "id": 315327,
     "name": "Social Science Research (for Lawyers)",
     "url": "https://guides.law.byu.edu/c.php?g=315327",
@@ -4300,14 +2388,6 @@
     "owner": "Hickman Pierson, Annalee",
     "updated": "2025-06-06 18:28:29",
     "isLocalGuide": true
-  },
-  {
-    "name": "Solomon Islands",
-    "url": "https://guides.law.byu.edu/solomonislands",
-    "description": "Sources of Primary Law for Solomon Islands, available to the general public.",
-    "aliases": [
-      "Solomon Islands"
-    ]
   },
   {
     "id": 677496,
@@ -4320,14 +2400,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Somalia",
-    "url": "https://guides.law.byu.edu/somalia",
-    "description": "Sources of Primary Law for Somalia, available to the general public.",
-    "aliases": [
-      "Somalia"
-    ]
-  },
-  {
     "id": 677498,
     "name": "Somalia",
     "url": "https://guides.law.byu.edu/c.php?g=677498",
@@ -4336,14 +2408,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:43:52",
     "isLocalGuide": true
-  },
-  {
-    "name": "South Africa",
-    "url": "https://guides.law.byu.edu/south_africa",
-    "description": "Sources of Primary Law for South Africa, available to the general public.",
-    "aliases": [
-      "South Africa"
-    ]
   },
   {
     "id": 678022,
@@ -4356,14 +2420,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "South Korea",
-    "url": "https://guides.law.byu.edu/south_korea",
-    "description": "Sources of Primary Law for South Korea, available to the general public.",
-    "aliases": [
-      "South Korea"
-    ]
-  },
-  {
     "id": 678026,
     "name": "South Korea",
     "url": "https://guides.law.byu.edu/c.php?g=678026",
@@ -4372,14 +2428,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-03 21:26:57",
     "isLocalGuide": true
-  },
-  {
-    "name": "South Sudan",
-    "url": "https://guides.law.byu.edu/south_sudan",
-    "description": "Sources of Primary Law for South Sudan, available to the general public.",
-    "aliases": [
-      "South Sudan"
-    ]
   },
   {
     "id": 678030,
@@ -4392,14 +2440,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Spain",
-    "url": "https://guides.law.byu.edu/spain",
-    "description": "Sources of Primary Law for Spain, available to the general public.",
-    "aliases": [
-      "Spain"
-    ]
-  },
-  {
     "id": 678038,
     "name": "Spain",
     "url": "https://guides.law.byu.edu/c.php?g=678038",
@@ -4408,14 +2448,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:48:00",
     "isLocalGuide": true
-  },
-  {
-    "name": "Sri Lanka",
-    "url": "https://guides.law.byu.edu/sri_lanka",
-    "description": "Sources of Primary Law for Sri Lanka, available to the general public.",
-    "aliases": [
-      "Sri Lanka"
-    ]
   },
   {
     "id": 678041,
@@ -4428,14 +2460,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "State and Local Government",
-    "url": "https://guides.law.byu.edu/state_local",
-    "description": "Library Guides: State and Local Government: State and Local Government Home",
-    "aliases": [
-      "State and Local Government"
-    ]
-  },
-  {
     "id": 315313,
     "name": "State and Local Government",
     "url": "https://guides.law.byu.edu/c.php?g=315313",
@@ -4444,14 +2468,6 @@
     "owner": "Haight, Iantha",
     "updated": "2025-12-09 18:26:00",
     "isLocalGuide": true
-  },
-  {
-    "name": "Study Aids for Law Students",
-    "url": "https://guides.law.byu.edu/studyaids",
-    "description": "Including materials available at the library and websites you can use anywhere",
-    "aliases": [
-      "Study Aids for Law Students"
-    ]
   },
   {
     "id": 951494,
@@ -4464,14 +2480,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Study Groups for Law Students",
-    "url": "https://guides.law.byu.edu/studygroups",
-    "description": "Tips for holding law students utilizing study groups, including technology tools for scheduling and holding virtual study groups",
-    "aliases": [
-      "Study Groups for Law Students"
-    ]
-  },
-  {
     "id": 1059423,
     "name": "Study Groups for Law Students",
     "url": "https://guides.law.byu.edu/c.php?g=1059423",
@@ -4480,14 +2488,6 @@
     "owner": "Haight, Iantha",
     "updated": "2021-08-20 20:44:00",
     "isLocalGuide": true
-  },
-  {
-    "name": "Sudan",
-    "url": "https://guides.law.byu.edu/sudan",
-    "description": "Sources of Primary Law for Sudan, available to the general public.",
-    "aliases": [
-      "Sudan"
-    ]
   },
   {
     "id": 678046,
@@ -4500,14 +2500,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Suriname",
-    "url": "https://guides.law.byu.edu/suriname",
-    "description": "Sources of Primary Law for Suriname, available to the general public.",
-    "aliases": [
-      "Suriname"
-    ]
-  },
-  {
     "id": 678050,
     "name": "Suriname",
     "url": "https://guides.law.byu.edu/c.php?g=678050",
@@ -4516,14 +2508,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:50:14",
     "isLocalGuide": true
-  },
-  {
-    "name": "Sweden",
-    "url": "https://guides.law.byu.edu/sweden",
-    "description": "Sources of Primary Law for Sweden, available to the general public.",
-    "aliases": [
-      "Sweden"
-    ]
   },
   {
     "id": 678058,
@@ -4536,14 +2520,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Switzerland",
-    "url": "https://guides.law.byu.edu/switzerland",
-    "description": "Sources of Primary Law for Switzerland, available to the general public.",
-    "aliases": [
-      "Switzerland"
-    ]
-  },
-  {
     "id": 678069,
     "name": "Switzerland",
     "url": "https://guides.law.byu.edu/c.php?g=678069",
@@ -4552,14 +2528,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:50:55",
     "isLocalGuide": true
-  },
-  {
-    "name": "Syria",
-    "url": "https://guides.law.byu.edu/syria",
-    "description": "Sources of Primary Law for Syria, available to the general public.",
-    "aliases": [
-      "Syria"
-    ]
   },
   {
     "id": 678076,
@@ -4572,14 +2540,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Taiwan",
-    "url": "https://guides.law.byu.edu/taiwan",
-    "description": "Sources of Primary Law for Taiwan, available to the general public.",
-    "aliases": [
-      "Taiwan"
-    ]
-  },
-  {
     "id": 678105,
     "name": "Taiwan",
     "url": "https://guides.law.byu.edu/c.php?g=678105",
@@ -4588,14 +2548,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-03 21:27:29",
     "isLocalGuide": true
-  },
-  {
-    "name": "Tajikistan",
-    "url": "https://guides.law.byu.edu/tajikistan",
-    "description": "Sources of Primary Law for Tajikistan, available to the general public.",
-    "aliases": [
-      "Tajikistan"
-    ]
   },
   {
     "id": 678114,
@@ -4608,14 +2560,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Tanzania",
-    "url": "https://guides.law.byu.edu/c.php?g=1484504",
-    "description": "Sources of Primary Law for Tanzania, available to the general public.",
-    "aliases": [
-      "Tanzania"
-    ]
-  },
-  {
     "id": 1484504,
     "name": "Tanzania",
     "url": "https://guides.law.byu.edu/c.php?g=1484504",
@@ -4624,14 +2568,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-12-02 18:19:49",
     "isLocalGuide": true
-  },
-  {
-    "name": "Taxation Law",
-    "url": "https://guides.law.byu.edu/tax",
-    "description": "Library Guides: Taxation Law: Taxation Home",
-    "aliases": [
-      "Taxation Law"
-    ]
   },
   {
     "id": 315314,
@@ -4644,14 +2580,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Technology Law",
-    "url": "https://guides.law.byu.edu/tech",
-    "description": "Library Guides: Technology Law: Technology Law Home",
-    "aliases": [
-      "Technology Law"
-    ]
-  },
-  {
     "id": 315315,
     "name": "Technology Law",
     "url": "https://guides.law.byu.edu/c.php?g=315315",
@@ -4660,14 +2588,6 @@
     "owner": "Hafen, Nick",
     "updated": "2024-06-07 21:05:45",
     "isLocalGuide": true
-  },
-  {
-    "name": "Thailand",
-    "url": "https://guides.law.byu.edu/thailand",
-    "description": "Sources of Primary Law for Thailand, available to the general public.",
-    "aliases": [
-      "Thailand"
-    ]
   },
   {
     "id": 678124,
@@ -4680,14 +2600,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "The Bahamas",
-    "url": "https://guides.law.byu.edu/bahamas",
-    "description": "Sources of Primary Law for The Bahamas, available to the general public.",
-    "aliases": [
-      "The Bahamas"
-    ]
-  },
-  {
     "id": 673998,
     "name": "The Bahamas",
     "url": "https://guides.law.byu.edu/c.php?g=673998",
@@ -4696,14 +2608,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:54:18",
     "isLocalGuide": true
-  },
-  {
-    "name": "The Bluebook",
-    "url": "https://guides.law.byu.edu/the_bluebook",
-    "description": "This research guide helps law review students and students writing academic papers for law school with The Bluebook.",
-    "aliases": [
-      "The Bluebook"
-    ]
   },
   {
     "id": 1339449,
@@ -4716,14 +2620,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Tibet",
-    "url": "https://guides.law.byu.edu/tibet",
-    "description": "Sources of Primary Law for Tibet, available to the general public.",
-    "aliases": [
-      "Tibet"
-    ]
-  },
-  {
     "id": 678128,
     "name": "Tibet",
     "url": "https://guides.law.byu.edu/c.php?g=678128",
@@ -4732,14 +2628,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-01 20:27:49",
     "isLocalGuide": true
-  },
-  {
-    "name": "Togo",
-    "url": "https://guides.law.byu.edu/togo",
-    "description": "Sources of Primary Law for Togo, available to the general public.",
-    "aliases": [
-      "Togo"
-    ]
   },
   {
     "id": 678133,
@@ -4752,14 +2640,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Tonga",
-    "url": "https://guides.law.byu.edu/tonga",
-    "description": "Sources of Primary Law for Tonga, available to the general public.",
-    "aliases": [
-      "Tonga"
-    ]
-  },
-  {
     "id": 678138,
     "name": "Tonga",
     "url": "https://guides.law.byu.edu/c.php?g=678138",
@@ -4768,14 +2648,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:55:54",
     "isLocalGuide": true
-  },
-  {
-    "name": "Trademark Law",
-    "url": "https://guides.law.byu.edu/trademarks",
-    "description": "Selected resources useful for general IP and Trademark Law research.",
-    "aliases": [
-      "Trademark Law"
-    ]
   },
   {
     "id": 315319,
@@ -4788,14 +2660,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Trinidad and Tobago",
-    "url": "https://guides.law.byu.edu/trinidad_and_tobago",
-    "description": "Sources of Primary Law for Trinidad and Tobago, available to the general public.",
-    "aliases": [
-      "Trinidad and Tobago"
-    ]
-  },
-  {
     "id": 678141,
     "name": "Trinidad and Tobago",
     "url": "https://guides.law.byu.edu/c.php?g=678141",
@@ -4804,14 +2668,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:56:20",
     "isLocalGuide": true
-  },
-  {
-    "name": "Tunisia",
-    "url": "https://guides.law.byu.edu/tunisia",
-    "description": "Sources of Primary Law for Tunisia, available to the general public.",
-    "aliases": [
-      "Tunisia"
-    ]
   },
   {
     "id": 678146,
@@ -4824,14 +2680,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Turkiye",
-    "url": "https://guides.law.byu.edu/turkey",
-    "description": "Sources of Primary Law for Turkey, available to the general public.",
-    "aliases": [
-      "Turkiye"
-    ]
-  },
-  {
     "id": 678147,
     "name": "Turkiye",
     "url": "https://guides.law.byu.edu/c.php?g=678147",
@@ -4840,14 +2688,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:56:52",
     "isLocalGuide": true
-  },
-  {
-    "name": "Turkmenistan",
-    "url": "https://guides.law.byu.edu/turkmenistan",
-    "description": "Sources of Primary Law for Turkmenistan, available to the general public.",
-    "aliases": [
-      "Turkmenistan"
-    ]
   },
   {
     "id": 678158,
@@ -4860,14 +2700,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Tuvalu",
-    "url": "https://guides.law.byu.edu/tuvalu",
-    "description": "Sources of Primary Law for Tuvalu, available to the general public.",
-    "aliases": [
-      "Tuvalu"
-    ]
-  },
-  {
     "id": 678160,
     "name": "Tuvalu",
     "url": "https://guides.law.byu.edu/c.php?g=678160",
@@ -4876,14 +2708,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:57:26",
     "isLocalGuide": true
-  },
-  {
-    "name": "U.S. Government",
-    "url": "https://guides.law.byu.edu/usgov",
-    "description": "Library Guides: U.S. Government: U.S. Government Home",
-    "aliases": [
-      "U.S. Government"
-    ]
   },
   {
     "id": 315287,
@@ -4896,14 +2720,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "U.S. Supreme Court",
-    "url": "https://guides.law.byu.edu/us_supreme_court",
-    "description": "Library Guides: U.S. Supreme Court: Home",
-    "aliases": [
-      "U.S. Supreme Court"
-    ]
-  },
-  {
     "id": 956238,
     "name": "U.S. Supreme Court",
     "url": "https://guides.law.byu.edu/c.php?g=956238",
@@ -4912,14 +2728,6 @@
     "owner": "Hickman Pierson, Annalee",
     "updated": "2024-06-06 15:29:51",
     "isLocalGuide": true
-  },
-  {
-    "name": "Uganda",
-    "url": "https://guides.law.byu.edu/uganda",
-    "description": "Sources of Primary Law for Uganda, available to the general public.",
-    "aliases": [
-      "Uganda"
-    ]
   },
   {
     "id": 678162,
@@ -4932,14 +2740,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Ukraine",
-    "url": "https://guides.law.byu.edu/ukraine",
-    "description": "Sources of Primary Law for Ukraine, available to the general public.",
-    "aliases": [
-      "Ukraine"
-    ]
-  },
-  {
     "id": 678167,
     "name": "Ukraine",
     "url": "https://guides.law.byu.edu/c.php?g=678167",
@@ -4948,14 +2748,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:59:43",
     "isLocalGuide": true
-  },
-  {
-    "name": "United Arab Emirates",
-    "url": "https://guides.law.byu.edu/united_arab_emirates",
-    "description": "Sources of Primary Law for United Arab Emirates, available to the general public.",
-    "aliases": [
-      "United Arab Emirates"
-    ]
   },
   {
     "id": 1502670,
@@ -4968,14 +2760,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "United Kingdom",
-    "url": "https://guides.law.byu.edu/united_kingdom",
-    "description": "Sources of Primary Law for United Kingdom, available to the general public.",
-    "aliases": [
-      "United Kingdom"
-    ]
-  },
-  {
     "id": 1502688,
     "name": "United Kingdom",
     "url": "https://guides.law.byu.edu/c.php?g=1502688",
@@ -4984,14 +2768,6 @@
     "owner": "Fellows, Alyssa",
     "updated": "2025-11-17 22:24:52",
     "isLocalGuide": true
-  },
-  {
-    "name": "United States of America",
-    "url": "https://guides.law.byu.edu/united_states_of_america",
-    "description": "Sources of Primary Law for United States of America, available to the general public.",
-    "aliases": [
-      "United States of America"
-    ]
   },
   {
     "id": 678174,
@@ -5004,14 +2780,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Uruguay",
-    "url": "https://guides.law.byu.edu/uruguay",
-    "description": "Sources of Primary Law for Uruguay, available to the general public.",
-    "aliases": [
-      "Uruguay"
-    ]
-  },
-  {
     "id": 679316,
     "name": "Uruguay",
     "url": "https://guides.law.byu.edu/c.php?g=679316",
@@ -5020,14 +2788,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 17:04:02",
     "isLocalGuide": true
-  },
-  {
-    "name": "Utah Law",
-    "url": "https://guides.law.byu.edu/utah",
-    "description": "Library Guides: Utah Law: Utah Law Home",
-    "aliases": [
-      "Utah Law"
-    ]
   },
   {
     "id": 315317,
@@ -5040,14 +2800,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Uzbekistan",
-    "url": "https://guides.law.byu.edu/uzbekistan",
-    "description": "Sources of Primary Law for Uzbekistan, available to the general public.",
-    "aliases": [
-      "Uzbekistan"
-    ]
-  },
-  {
     "id": 679324,
     "name": "Uzbekistan",
     "url": "https://guides.law.byu.edu/c.php?g=679324",
@@ -5056,14 +2808,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-02 18:53:56",
     "isLocalGuide": true
-  },
-  {
-    "name": "Vanuatu",
-    "url": "https://guides.law.byu.edu/vanuatu",
-    "description": "Sources of Primary Law for Vanuatu, available to the general public.",
-    "aliases": [
-      "Vanuatu"
-    ]
   },
   {
     "id": 679329,
@@ -5076,14 +2820,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Venezuela",
-    "url": "https://guides.law.byu.edu/venezuela",
-    "description": "Sources of Primary Law for Venezuela, available to the general public.",
-    "aliases": [
-      "Venezuela"
-    ]
-  },
-  {
     "id": 679330,
     "name": "Venezuela",
     "url": "https://guides.law.byu.edu/c.php?g=679330",
@@ -5092,14 +2828,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 17:05:07",
     "isLocalGuide": true
-  },
-  {
-    "name": "Vietnam",
-    "url": "https://guides.law.byu.edu/vietnam",
-    "description": "Sources of Primary Law for Vietnam, available to the general public.",
-    "aliases": [
-      "Vietnam"
-    ]
   },
   {
     "id": 679337,
@@ -5112,14 +2840,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Wallis and Futuna",
-    "url": "https://guides.law.byu.edu/wallisandfutuna",
-    "description": "Sources of Primary Law for Wallis and Futuna, available to the general public.",
-    "aliases": [
-      "Wallis and Futuna"
-    ]
-  },
-  {
     "id": 679345,
     "name": "Wallis and Futuna",
     "url": "https://guides.law.byu.edu/c.php?g=679345",
@@ -5128,14 +2848,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 17:06:42",
     "isLocalGuide": true
-  },
-  {
-    "name": "Water Law",
-    "url": "https://guides.law.byu.edu/water_law",
-    "description": "A research guide to resources for water law.",
-    "aliases": [
-      "Water Law"
-    ]
   },
   {
     "id": 1108928,
@@ -5148,14 +2860,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "West Bank",
-    "url": "https://guides.law.byu.edu/westbank",
-    "description": "Sources of Primary Law for West Bank, available to the general public.",
-    "aliases": [
-      "West Bank"
-    ]
-  },
-  {
     "id": 679358,
     "name": "West Bank",
     "url": "https://guides.law.byu.edu/c.php?g=679358",
@@ -5164,14 +2868,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 17:06:58",
     "isLocalGuide": true
-  },
-  {
-    "name": "Western Sahara",
-    "url": "https://guides.law.byu.edu/westernsahara",
-    "description": "Sources of Primary Law for Western Sahara, available to the general public.",
-    "aliases": [
-      "Western Sahara"
-    ]
   },
   {
     "id": 679887,
@@ -5184,14 +2880,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Wills, Trusts, & Estates",
-    "url": "https://guides.law.byu.edu/wills_trusts_estates",
-    "description": "A research guide to resources for wills, trusts, and estates.",
-    "aliases": [
-      "Wills, Trusts, & Estates"
-    ]
-  },
-  {
     "id": 1115192,
     "name": "Wills, Trusts, & Estates",
     "url": "https://guides.law.byu.edu/c.php?g=1115192",
@@ -5200,14 +2888,6 @@
     "owner": "Staheli, Kory",
     "updated": "2024-07-11 19:09:50",
     "isLocalGuide": true
-  },
-  {
-    "name": "Writing Academic Papers for Law School",
-    "url": "https://guides.law.byu.edu/writing_academic_papers_for_law_school",
-    "description": "Academic legal writing is different from regular, or practitioner, legal writing. This guide was created as a resource to help law students learn the nuances of academic writing and to assist with their Substantial Writing and other papers for law school",
-    "aliases": [
-      "Writing Academic Papers for Law School"
-    ]
   },
   {
     "id": 1167558,
@@ -5220,14 +2900,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Yemen",
-    "url": "https://guides.law.byu.edu/yemen",
-    "description": "Sources of Primary Law for Yemen, available to the general public.",
-    "aliases": [
-      "Yemen"
-    ]
-  },
-  {
     "id": 679889,
     "name": "Yemen",
     "url": "https://guides.law.byu.edu/c.php?g=679889",
@@ -5236,14 +2908,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-02 18:47:55",
     "isLocalGuide": true
-  },
-  {
-    "name": "Yugoslavia",
-    "url": "https://guides.law.byu.edu/yugoslavia",
-    "description": "Sources of Primary Law for Yugoslavia, available to the general public.",
-    "aliases": [
-      "Yugoslavia"
-    ]
   },
   {
     "id": 679911,
@@ -5256,14 +2920,6 @@
     "isLocalGuide": true
   },
   {
-    "name": "Zambia",
-    "url": "https://guides.law.byu.edu/zambia",
-    "description": "Sources of Primary Law for Zambia, available to the general public.",
-    "aliases": [
-      "Zambia"
-    ]
-  },
-  {
     "id": 679921,
     "name": "Zambia",
     "url": "https://guides.law.byu.edu/c.php?g=679921",
@@ -5272,14 +2928,6 @@
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-12-03 20:29:49",
     "isLocalGuide": true
-  },
-  {
-    "name": "Zimbabwe",
-    "url": "https://guides.law.byu.edu/zimbabwe",
-    "description": "Sources of Primary Law for Zimbabwe, available to the general public.",
-    "aliases": [
-      "Zimbabwe"
-    ]
   },
   {
     "id": 679922,
