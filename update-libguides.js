@@ -360,10 +360,22 @@ async function main() {
     updateResourceWhitelist(guides);
     
     console.log('\n✨ All done! Your whitelists and catalogs are up to date.');
+    
+    // Restart the search server to reload data
+    console.log('\n🔄 Restarting search server...');
+    const { execSync } = require('child_process');
+    try {
+      const output = execSync('pm2 restart byu-library-search --update-env', { encoding: 'utf8' });
+      console.log('   ✅ Server restarted successfully');
+    } catch (e) {
+      console.warn('   ⚠️  Could not restart server automatically:', e.message);
+      console.log('   Please restart manually: pm2 restart byu-library-search');
+    }
+    
     console.log('\nNext steps:');
     console.log('  1. Review the updated files');
     console.log('  2. Commit changes: git add *.json && git commit -m "Update LibGuides catalog"');
-    console.log('  3. Restart your search server if needed');
+    console.log('  3. Test search: search for a recently added guide');
     
   } catch (error) {
     console.error('❌ Error:', error.message);
