@@ -171,10 +171,15 @@ async function fetchGuideAssets(token, guideId) {
 function updateLibraryResourcesCatalog(guides) {
   console.log('📝 Updating library-resources-database.catalog.json...');
   
-  let catalog = {};
+  let catalog = [];
+  let existingIds = new Set();
+  
   try {
     if (fs.existsSync(LIBRARY_RESOURCES_FILE)) {
-      catalog = JSON.parse(fs.readFileSync(LIBRARY_RESOURCES_FILE, 'utf8'));
+      const existing = JSON.parse(fs.readFileSync(LIBRARY_RESOURCES_FILE, 'utf8'));
+      // Handle both array and object formats
+      catalog = Array.isArray(existing) ? existing : Object.values(existing);
+      existingIds = new Set(catalog.map(g => g.id).filter(Boolean));
     }
   } catch (e) {
     console.log('   Creating new catalog file');
@@ -185,10 +190,8 @@ function updateLibraryResourcesCatalog(guides) {
   let updated = 0;
   
   for (const guide of guides) {
-    const key = guide.name.toLowerCase().replace(/[^a-z0-9]+/g, '_');
-    const existing = catalog[key];
-    
     const entry = {
+      id: guide.id,
       name: guide.name,
       url: guide.url,
       description: guide.description || `LibGuide: ${guide.name}`,
@@ -200,17 +203,25 @@ function updateLibraryResourcesCatalog(guides) {
       isLocalGuide: true
     };
     
-    if (existing) {
-      updated++;
+    if (existingIds.has(guide.id)) {
+      // Update existing guide
+      const index = catalog.findIndex(g => g.id === guide.id);
+      if (index >= 0) {
+        catalog[index] = entry;
+        updated++;
+      }
     } else {
+      // Add new guide
+      catalog.push(entry);
       added++;
     }
-    
-    catalog[key] = entry;
   }
   
+  // Sort by name
+  catalog.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+  
   fs.writeFileSync(LIBRARY_RESOURCES_FILE, JSON.stringify(catalog, null, 2));
-  console.log(`   ✅ Added ${added} new guides, updated ${updated} existing guides`);
+  console.log(`   ✅ Added ${added} new guides, updated ${updated} existing guides (total: ${catalog.length})`);
 }
 
 // Update libguide assets catalog
