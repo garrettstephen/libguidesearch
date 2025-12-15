@@ -12,6 +12,9 @@
  *   LIBGUIDES_CLIENT_SECRET=xxxx (Your API client secret)
  */
 
+// Load environment variables from .env file
+require('dotenv').config();
+
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
@@ -20,7 +23,10 @@ const path = require('path');
 const LIBGUIDES_SITE_ID = process.env.LIBGUIDES_SITE_ID || '10827'; // BYU Law default
 const LIBGUIDES_CLIENT_ID = process.env.LIBGUIDES_CLIENT_ID;
 const LIBGUIDES_CLIENT_SECRET = process.env.LIBGUIDES_CLIENT_SECRET;
-const LIBGUIDES_API_BASE = 'https://lgapi-us.libapps.com/1.1';
+const LIBGUIDES_API_BASE = 'https://lgapi-us.libapps.com/1.2';
+
+// OAuth endpoints use v1.2
+const USE_LEGACY_AUTH = false; // Always use OAuth for v1.2
 
 // File paths
 const LIBGUIDE_ASSETS_FILE = path.join(__dirname, 'libguide-assets.catalog.json');
@@ -51,16 +57,57 @@ function httpsGet(url, headers = {}) {
 // Get OAuth token
 async function getAccessToken() {
   console.log('🔑 Getting OAuth token...');
-  const url = `${LIBGUIDES_API_BASE}/oauth/token?client_id=${LIBGUIDES_CLIENT_ID}&client_secret=${LIBGUIDES_CLIENT_SECRET}&grant_type=client_credentials`;
-  const response = await httpsGet(url);
-  return response.access_token;
+  const url = `${LIBGUIDES_API_BASE}/oauth/token`;
+  const postData = `client_id=${LIBGUIDES_CLIENT_ID}&client_secret=${LIBGUIDES_CLIENT_SECRET}&grant_type=client_credentials`;
+  
+  return new Promise((resolve, reject) => {
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Length': postData.length
+      }
+    };
+    
+    const req = https.request(url, options, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        if (res.statusCode >= 200 && res.statusCode < 300) {
+          try {
+            const response = JSON.parse(data);
+            resolve(response.access_token);
+          } catch (e) {
+            reject(new Error(`Failed to parse OAuth response: ${data}`));
+          }
+        } else {
+          reject(new Error(`HTTP ${res.statusCode}: ${data}`));
+        }
+      });
+    });
+    
+    req.on('error', reject);
+    req.write(postData);
+    req.end();
+  });
 }
 
 // Fetch all guides
 async function fetchGuides(token) {
   console.log('📚 Fetching LibGuides...');
-  const url = `${LIBGUIDES_API_BASE}/guides?site_id=${LIBGUIDES_SITE_ID}&status=1&expand=owner`;
-  const guides = await httpsGet(url, { Authorization: `Bearer ${token}` });
+  let url;
+  let headers = {};
+  
+  if (USE_LEGACY_AUTH) {
+    // Legacy key/hash authentication
+    url = `${LIBGUIDES_API_BASE}/guides?site_id=${LIBGUIDES_SITE_ID}&key=${LIBGUIDES_CLIENT_ID}&hash=${LIBGUIDES_CLIENT_SECRET}&status=1&expand=owner`;
+  } else {
+    // OAuth2 authentication
+    url = `${LIBGUIDES_API_BASE}/guides?site_id=${LIBGUIDES_SITE_ID}&status=1&expand=owner`;
+    headers = { Authorization: `Bearer ${token}` };
+  }
+  
+  const guides = await httpsGet(url, headers);
   console.log(`   Found ${guides.length} published guides`);
   return guides;
 }
@@ -277,15 +324,21 @@ async function main() {
   if (!LIBGUIDES_CLIENT_ID || !LIBGUIDES_CLIENT_SECRET) {
     console.error('❌ Error: Missing LibGuides API credentials');
     console.error('Please set environment variables:');
-    console.error('  LIBGUIDES_CLIENT_ID');
-    console.error('  LIBGUIDES_CLIENT_SECRET');
-    console.error('\nOr edit this script to hardcode them (not recommended for production)');
+    console.error('  LIBGUIDES_CLIENT_ID (or API key)');
+    console.error('  LIBGUIDES_CLIENT_SECRET (or API hash)');
+    console.error('\nOr edit .env file with your credentials');
     process.exit(1);
   }
   
   try {
-    // Get OAuth token
-    const token = await getAccessToken();
+    let token = null;
+    
+    // Get OAuth token only if using OAuth (not legacy key/hash)
+    if (!USE_LEGACY_AUTH) {
+      token = await getAccessToken();
+    } else {
+      console.log('🔑 Using legacy key/hash authentication');
+    }
     
     // Fetch all guides
     const guides = await fetchGuides(token);
