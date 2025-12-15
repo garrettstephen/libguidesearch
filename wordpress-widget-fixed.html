@@ -767,9 +767,16 @@
           els.health.textContent = `✅ WordPress API Online • AI Server: ${h.ok ? 'Connected' : 'Offline'} • Model: ${h.model_resolved || h.model || 'n/a'}`;
           els.health.style.color = '#10b981';
         } catch (e) {
-          els.health.textContent = '❌ WordPress API Offline (Check functions.php)';
-          els.health.style.color = '#ef4444';
+          // Don't show error immediately - wait to see if search works
+          console.warn('Health check failed:', e);
+          els.health.textContent = '⏳ Checking connection...';
+          els.health.style.color = '#94a3b8';
         }
+      }
+      
+      function updateHealthSuccess() {
+        els.health.textContent = '✅ WordPress API Connected';
+        els.health.style.color = '#10b981';
       }
 
       async function doSearch(q) {
@@ -783,6 +790,9 @@
         try {
           // Increase timeout to 60 seconds for AI queries
           const json = await getJSON(url, { timeout: 60000 });
+          
+          // Update health status on successful search
+          updateHealthSuccess();
           
           // FIXED: Use normalizeResults to handle different response formats
           const results = normalizeResults(json);
