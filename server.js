@@ -1268,13 +1268,13 @@ async function makeGroqRequest(prompt, wantRaw = false) {
 }
 
 async function makeHuggingFaceRequest(prompt, wantRaw = false) {
-  const url = `https://router.huggingface.co/models/${HUGGINGFACE_MODEL}`;
+  const url = `https://api-inference.huggingface.co/models/${HUGGINGFACE_MODEL}`;
 
   const payload = {
     inputs: prompt,
     parameters: {
       temperature: 0.3,
-      max_length: MAX_OUTPUT_TOKENS,
+      max_new_tokens: MAX_OUTPUT_TOKENS,
     },
   };
 
@@ -1300,8 +1300,13 @@ async function makeHuggingFaceRequest(prompt, wantRaw = false) {
     }
 
     const data = await resp.json();
-    // Hugging Face returns array of results
-    const text = Array.isArray(data) ? data[0]?.generated_text ?? "[]" : data?.generated_text ?? "[]";
+    // Hugging Face text generation returns array of results with generated_text
+    let text = "[]";
+    if (Array.isArray(data) && data.length > 0) {
+      text = data[0]?.generated_text ?? data[0]?.summary_text ?? "[]";
+    } else if (data?.generated_text) {
+      text = data.generated_text;
+    }
     return wantRaw ? { text, data } : { text, data: null };
     
   } catch (error) {
