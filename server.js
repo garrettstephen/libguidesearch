@@ -1268,7 +1268,7 @@ async function makeGroqRequest(prompt, wantRaw = false) {
 }
 
 async function makeHuggingFaceRequest(prompt, wantRaw = false) {
-  const url = `https://api-inference.huggingface.co/models/${HUGGINGFACE_MODEL}`;
+  const url = `https://router.huggingface.co/models/${HUGGINGFACE_MODEL}`;
 
   const payload = {
     inputs: prompt,
