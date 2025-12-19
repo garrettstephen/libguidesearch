@@ -418,14 +418,32 @@ app.use(cors({
 app.use(express.json({ limit: '10mb' }));
 
 const PORT = process.env.PORT || 3000;
+
+// AI Provider Configuration (Priority: Groq > Hugging Face > Gemini)
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const HUGGINGFACE_API_KEY = process.env.HUGGINGFACE_API_KEY;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
+const GROQ_MODEL = process.env.GROQ_MODEL || "mixtral-8x7b-32768";
+const HUGGINGFACE_MODEL = process.env.HUGGINGFACE_MODEL || "meta-llama/Llama-2-70b-chat-hf";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash-lite";
+
 const LOCAL_API_KEY = process.env.LOCAL_API_KEY;
-const MODEL = process.env.MODEL || "gemini-2.0-flash-lite";
+const MODEL = process.env.MODEL || GEMINI_MODEL; // Fallback for backwards compatibility
 const ALLOWLIST_SIZE = Number(process.env.ALLOWLIST_SIZE || 60);
 const MAX_OUTPUT_TOKENS = Number(process.env.MAX_OUTPUT_TOKENS || 2048);
 
-if (!GEMINI_API_KEY) {
-  console.warn("⚠️  GEMINI_API_KEY missing in .env — /search will fail until set.");
+// Determine which AI providers are available
+const AVAILABLE_PROVIDERS = [];
+if (GROQ_API_KEY) AVAILABLE_PROVIDERS.push('groq');
+if (HUGGINGFACE_API_KEY) AVAILABLE_PROVIDERS.push('huggingface');
+if (GEMINI_API_KEY) AVAILABLE_PROVIDERS.push('gemini');
+
+if (AVAILABLE_PROVIDERS.length === 0) {
+  console.warn("⚠️  No AI provider API keys found in .env — /search will fail until configured.");
+  console.warn("   Please set at least one of: GROQ_API_KEY, HUGGINGFACE_API_KEY, or GEMINI_API_KEY");
+} else {
+  console.log(`✅ Available AI providers (in order): ${AVAILABLE_PROVIDERS.join(' → ')}`);
 }
 
 // Simple API key authentication middleware
@@ -1073,7 +1091,12 @@ async function queryGemini(prompt, wantRaw = false) {
   
   // Queue the request to manage concurrency
   return await queueRequest(async () => {
-    return await queryGeminiWithRetry(prompt, wantRaw);
+    // Try AI providers in priority order: Groq > Hugging Face > Gemini
+    const result = await callAIWithFallback(prompt, wantRaw);
+    
+    // Cache successful response
+    setCachedResponse(prompt, initialModel, result);
+    return result;
   });
 }
 
@@ -1197,6 +1220,154 @@ async function makeGeminiRequest(model, prompt, wantRaw = false) {
     }
     throw error;
   }
+}
+
+async function makeGroqRequest(prompt, wantRaw = false) {
+  const url = "https://api.groq.com/openai/v1/chat/completions";
+
+  const payload = {
+    model: GROQ_MODEL,
+    messages: [{ role: "user", content: prompt }],
+    temperature: 0.3,
+    max_tokens: MAX_OUTPUT_TOKENS,
+  };
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 45000);
+
+  try {
+    const resp = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${GROQ_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+      signal: controller.signal,
+    });
+
+    clearTimeout(timeoutId);
+
+    if (!resp.ok) {
+      const responseText = await resp.text().catch(() => "");
+      throw new Error(`Groq HTTP ${resp.status}: ${responseText.slice(0, 400)}`);
+    }
+
+    const data = await resp.json();
+    const text = data?.choices?.[0]?.message?.content ?? "[]";
+    return wantRaw ? { text, data } : { text, data: null };
+    
+  } catch (error) {
+    clearTimeout(timeoutId);
+    
+    if (error.name === 'AbortError') {
+      throw new Error('AI request timed out - try a simpler query');
+    }
+    throw error;
+  }
+}
+
+async function makeHuggingFaceRequest(prompt, wantRaw = false) {
+  const url = `https://api-inference.huggingface.co/models/${HUGGINGFACE_MODEL}`;
+
+  const payload = {
+    inputs: prompt,
+    parameters: {
+      temperature: 0.3,
+      max_length: MAX_OUTPUT_TOKENS,
+    },
+  };
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 45000);
+
+  try {
+    const resp = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${HUGGINGFACE_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+      signal: controller.signal,
+    });
+
+    clearTimeout(timeoutId);
+
+    if (!resp.ok) {
+      const responseText = await resp.text().catch(() => "");
+      throw new Error(`Hugging Face HTTP ${resp.status}: ${responseText.slice(0, 400)}`);
+    }
+
+    const data = await resp.json();
+    // Hugging Face returns array of results
+    const text = Array.isArray(data) ? data[0]?.generated_text ?? "[]" : data?.generated_text ?? "[]";
+    return wantRaw ? { text, data } : { text, data: null };
+    
+  } catch (error) {
+    clearTimeout(timeoutId);
+    
+    if (error.name === 'AbortError') {
+      throw new Error('AI request timed out - try a simpler query');
+    }
+    throw error;
+  }
+}
+
+/**
+ * Call AI providers in priority order: Groq > Hugging Face > Gemini
+ * Falls back to next provider on error
+ */
+async function callAIWithFallback(prompt, wantRaw = false) {
+  const errors = {};
+
+  // Try Groq first
+  if (GROQ_API_KEY) {
+    try {
+      console.log('🚀 Attempting Groq API...');
+      const result = await makeGroqRequest(prompt, wantRaw);
+      console.log('✅ Groq API succeeded');
+      return result;
+    } catch (error) {
+      const errMsg = error.message || String(error);
+      console.log(`⚠️  Groq failed: ${errMsg}`);
+      errors.groq = errMsg;
+    }
+  }
+
+  // Try Hugging Face second
+  if (HUGGINGFACE_API_KEY) {
+    try {
+      console.log('🚀 Attempting Hugging Face API...');
+      const result = await makeHuggingFaceRequest(prompt, wantRaw);
+      console.log('✅ Hugging Face API succeeded');
+      return result;
+    } catch (error) {
+      const errMsg = error.message || String(error);
+      console.log(`⚠️  Hugging Face failed: ${errMsg}`);
+      errors.huggingface = errMsg;
+    }
+  }
+
+  // Fallback to Gemini
+  if (GEMINI_API_KEY) {
+    try {
+      console.log('🚀 Attempting Gemini API (fallback)...');
+      const result = await makeGeminiRequest(GEMINI_MODEL, prompt, wantRaw);
+      console.log('✅ Gemini API succeeded (fallback)');
+      return result;
+    } catch (error) {
+      const errMsg = error.message || String(error);
+      console.log(`❌ Gemini failed: ${errMsg}`);
+      errors.gemini = errMsg;
+    }
+  }
+
+  // All providers failed
+  const failedProviders = Object.keys(errors).join(', ');
+  const allErrors = Object.entries(errors).map(([k, v]) => `${k}: ${v}`).join('\n');
+  console.error(`💥 All AI providers failed:\n${allErrors}`);
+  throw new Error(`All AI providers failed (${failedProviders}). Last error: ${allErrors}`);
 }
 
 
@@ -1459,9 +1630,11 @@ app.get("/search", requireApiKey, async (req, res) => {
     logRequest(clientIP, query || 'empty', req.headers['user-agent'], 0, 'Missing query parameter');
     return res.status(400).json({ error: "Missing ?query" });
   }
-  if (!GEMINI_API_KEY) {
-    logRequest(clientIP, query, req.headers['user-agent'], 0, 'Server missing GEMINI_API_KEY');
-    return res.status(500).json({ error: "Server missing GEMINI_API_KEY" });
+  
+  // Check that at least one AI provider is configured
+  if (AVAILABLE_PROVIDERS.length === 0) {
+    logRequest(clientIP, query, req.headers['user-agent'], 0, 'No AI providers configured');
+    return res.status(500).json({ error: "Server has no AI providers configured (set GROQ_API_KEY, HUGGINGFACE_API_KEY, or GEMINI_API_KEY)" });
   }
 
   console.log(`🔍 SEARCH REQUEST: "${query}" from ${clientIP.substring(0,8)}...`);
@@ -1621,9 +1794,11 @@ app.get("/wp-json/ais/v1/search", requireApiKey, async (req, res) => {
     logRequest(clientIP, query || 'empty', req.headers['user-agent'], 0, 'WordPress missing query parameter');
     return res.status(400).json({ error: "Missing ?query" });
   }
-  if (!GEMINI_API_KEY) {
-    logRequest(clientIP, query, req.headers['user-agent'], 0, 'WordPress server missing GEMINI_API_KEY');
-    return res.status(500).json({ error: "Server missing GEMINI_API_KEY" });
+  
+  // Check that at least one AI provider is configured
+  if (AVAILABLE_PROVIDERS.length === 0) {
+    logRequest(clientIP, query, req.headers['user-agent'], 0, 'WordPress no AI providers configured');
+    return res.status(500).json({ error: "Server has no AI providers configured (set GROQ_API_KEY, HUGGINGFACE_API_KEY, or GEMINI_API_KEY)" });
   }
 
   console.log(`🔍 WORDPRESS SEARCH REQUEST: "${query}" from ${clientIP.substring(0,8)}...`);

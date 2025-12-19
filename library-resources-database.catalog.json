@@ -106,7 +106,7 @@
     "description": "Sources of Primary Law for Antigua and Barbuda, available to the general public.",
     "subjects": [],
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
-    "updated": "2025-05-27 22:32:05",
+    "updated": "2025-12-15 22:36:24",
     "isLocalGuide": true
   },
   {
@@ -2340,6 +2340,16 @@
     "isLocalGuide": true
   },
   {
+    "id": 1506988,
+    "name": "Seychelles",
+    "url": "https://guides.law.byu.edu/c.php?g=1506988",
+    "description": "Sources of Primary Law for Seychelles, available to the general public.",
+    "subjects": [],
+    "owner": "Fellows, Alyssa",
+    "updated": "2025-12-15 20:10:21",
+    "isLocalGuide": true
+  },
+  {
     "id": 677480,
     "name": "Sierra Leone",
     "url": "https://guides.law.byu.edu/c.php?g=677480",
@@ -2347,6 +2357,16 @@
     "subjects": [],
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:41:19",
+    "isLocalGuide": true
+  },
+  {
+    "id": 1507028,
+    "name": "Sierra Leone",
+    "url": "https://guides.law.byu.edu/c.php?g=1507028",
+    "description": "Sources of Primary Law for Sierra Leone, available to the general public.",
+    "subjects": [],
+    "owner": "Fellows, Alyssa",
+    "updated": "2025-12-15 21:24:20",
     "isLocalGuide": true
   },
   {
@@ -2360,6 +2380,16 @@
     "isLocalGuide": true
   },
   {
+    "id": 1507074,
+    "name": "Singapore",
+    "url": "https://guides.law.byu.edu/c.php?g=1507074",
+    "description": "Sources of Primary Law for Singapore, available to the general public.\r\n",
+    "subjects": [],
+    "owner": "Fellows, Alyssa",
+    "updated": "2025-12-15 22:03:13",
+    "isLocalGuide": true
+  },
+  {
     "id": 677490,
     "name": "Slovakia",
     "url": "https://guides.law.byu.edu/c.php?g=677490",
@@ -2367,6 +2397,16 @@
     "subjects": [],
     "owner": "(FCIL Librarian), Kristen Clarke Kellems",
     "updated": "2025-06-06 16:42:14",
+    "isLocalGuide": true
+  },
+  {
+    "id": 1507093,
+    "name": "Slovakia",
+    "url": "https://guides.law.byu.edu/c.php?g=1507093",
+    "description": "Sources of Primary Law for Slovakia, available to the general public.\r\n",
+    "subjects": [],
+    "owner": "Fellows, Alyssa",
+    "updated": "2025-12-16 18:14:17",
     "isLocalGuide": true
   },
   {
