@@ -16,7 +16,7 @@ add_action('rest_api_init', function () {
     'permission_callback' => '__return_true',
     'callback' => function () {
       $start = microtime(true);
-      $resp = wp_remote_get('http://128.187.43.25:8443/health', [
+      $resp = wp_remote_get('http://128.187.43.25:8080/health', [
         'timeout' => 60,
         'redirection' => 0,
         'headers' => [
@@ -53,7 +53,7 @@ add_action('rest_api_init', function () {
         'query' => sanitize_text_field($query),
         'debug' => $debug,
         'skipWhitelist' => $skip,
-      ]), 'http://128.187.43.25:8443/search');
+      ]), 'http://128.187.43.25:8080/search');
 
       $start = microtime(true);
       $resp = wp_remote_get($url, [
