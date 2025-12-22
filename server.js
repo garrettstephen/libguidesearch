@@ -1268,13 +1268,16 @@ async function makeGroqRequest(prompt, wantRaw = false) {
 }
 
 async function makeHuggingFaceRequest(prompt, wantRaw = false) {
-  const url = `https://api-inference.huggingface.co/models/${HUGGINGFACE_MODEL}`;
+  // Use the serverless inference API endpoint with chat model
+  const url = `https://router.huggingface.co/models/${HUGGINGFACE_MODEL}`;
 
+  // Use compatible payload format for text-to-text generation
   const payload = {
     inputs: prompt,
     parameters: {
       temperature: 0.3,
       max_new_tokens: MAX_OUTPUT_TOKENS,
+      do_sample: true,
     },
   };
 
@@ -1300,12 +1303,14 @@ async function makeHuggingFaceRequest(prompt, wantRaw = false) {
     }
 
     const data = await resp.json();
-    // Hugging Face text generation returns array of results with generated_text
+    // Handle HF API response format - can be array or object with generated_text
     let text = "[]";
     if (Array.isArray(data) && data.length > 0) {
-      text = data[0]?.generated_text ?? data[0]?.summary_text ?? "[]";
+      text = data[0]?.generated_text ?? data[0]?.summary_text ?? JSON.stringify(data[0]) ?? "[]";
     } else if (data?.generated_text) {
       text = data.generated_text;
+    } else if (typeof data === 'string') {
+      text = data;
     }
     return wantRaw ? { text, data } : { text, data: null };
     
@@ -1636,13 +1641,8 @@ app.get("/search", requireApiKey, async (req, res) => {
     return res.status(400).json({ error: "Missing ?query" });
   }
   
-  // Check that at least one AI provider is configured
-  if (AVAILABLE_PROVIDERS.length === 0) {
-    logRequest(clientIP, query, req.headers['user-agent'], 0, 'No AI providers configured');
-    return res.status(500).json({ error: "Server has no AI providers configured (set GROQ_API_KEY, HUGGINGFACE_API_KEY, or GEMINI_API_KEY)" });
-  }
-
   console.log(`🔍 SEARCH REQUEST: "${query}" from ${clientIP.substring(0,8)}...`);
+  console.log(`Available AI providers: ${AVAILABLE_PROVIDERS.length > 0 ? AVAILABLE_PROVIDERS.join(' → ') : 'none (using catalog fallback)'}`);
   
   try {
     // Step 1: Check if this is a legal advice request
@@ -1654,6 +1654,35 @@ app.get("/search", requireApiKey, async (req, res) => {
       const legalHelp = createLegalHelpResponse();
       logRequest(clientIP, query, req.headers['user-agent'], legalHelp.length, null);
       return res.json(legalHelp);
+    }
+    
+    // If no AI providers configured, skip straight to fallback + local guides
+    if (AVAILABLE_PROVIDERS.length === 0) {
+      console.log(`⚠️  No AI providers available - using catalog fallback only`);
+      
+      // Add local guides that match the query
+      const localGuides = searchLocalGuides(query);
+      
+      // Get fallback recommendations
+      let fallbackResults = fallbackRecommend(query, 8);
+      
+      // Combine and deduplicate
+      const best = new Map();
+      for (const item of [...localGuides, ...fallbackResults]) {
+        const key = normalize(item.name);
+        const prev = best.get(key);
+        if (!prev || item.relevanceScore > prev.relevanceScore) best.set(key, item);
+      }
+      
+      const finalOut = [...best.values()].sort((a, b) => b.relevanceScore - a.relevanceScore).slice(0, 8);
+      const enriched = enrichResults(finalOut);
+      
+      logRequest(clientIP, query, req.headers['user-agent'], enriched.length, 'catalog-fallback-only');
+      return res.json({
+        results: enriched,
+        fallback: true,
+        message: "Library catalog search results (AI search not currently available)"
+      });
     }
     
     console.log(`➡️ Proceeding to AI search for: "${query}"`);
@@ -1800,12 +1829,6 @@ app.get("/wp-json/ais/v1/search", requireApiKey, async (req, res) => {
     return res.status(400).json({ error: "Missing ?query" });
   }
   
-  // Check that at least one AI provider is configured
-  if (AVAILABLE_PROVIDERS.length === 0) {
-    logRequest(clientIP, query, req.headers['user-agent'], 0, 'WordPress no AI providers configured');
-    return res.status(500).json({ error: "Server has no AI providers configured (set GROQ_API_KEY, HUGGINGFACE_API_KEY, or GEMINI_API_KEY)" });
-  }
-
   console.log(`🔍 WORDPRESS SEARCH REQUEST: "${query}" from ${clientIP.substring(0,8)}...`);
   
   try {
@@ -1818,6 +1841,35 @@ app.get("/wp-json/ais/v1/search", requireApiKey, async (req, res) => {
       const legalHelp = createLegalHelpResponse();
       logRequest(clientIP, query, req.headers['user-agent'], legalHelp.length, null);
       return res.json(legalHelp);
+    }
+    
+    // If no AI providers configured, skip straight to fallback + local guides
+    if (AVAILABLE_PROVIDERS.length === 0) {
+      console.log(`⚠️  No AI providers available (WordPress) - using catalog fallback only`);
+      
+      // Add local guides that match the query
+      const localGuides = searchLocalGuides(query);
+      
+      // Get fallback recommendations
+      let fallbackResults = fallbackRecommend(query, 8);
+      
+      // Combine and deduplicate
+      const best = new Map();
+      for (const item of [...localGuides, ...fallbackResults]) {
+        const key = normalize(item.name);
+        const prev = best.get(key);
+        if (!prev || item.relevanceScore > prev.relevanceScore) best.set(key, item);
+      }
+      
+      const finalOut = [...best.values()].sort((a, b) => b.relevanceScore - a.relevanceScore).slice(0, 8);
+      const enriched = enrichResults(finalOut);
+      
+      logRequest(clientIP, query, req.headers['user-agent'], enriched.length, 'wordpress-catalog-fallback-only');
+      return res.json({
+        results: enriched,
+        fallback: true,
+        message: "Library catalog search results (AI search not currently available)"
+      });
     }
     
     console.log(`➡️ WordPress proceeding to AI search for: "${query}"`);
@@ -1936,13 +1988,46 @@ app.get("/logs", (req, res) => {
 
 // Export app for production startup, or start directly if this file is run
 if (require.main === module) {
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`✅ LibrarySearch running on port ${PORT}`);
-    console.log(`   Health:  http://0.0.0.0:${PORT}/health`);
-    console.log(`   Models:  http://0.0.0.0:${PORT}/models`);
-    console.log(`   Search:  http://0.0.0.0:${PORT}/search?query=constitutional%20law`);
-    console.log(`            Add &debug=1 (or &debug=2) and/or &skipWhitelist=1 for troubleshooting`);
-  });
+  const actualPort = PORT || 8080;
+  
+  // Try to use HTTPS if certificates exist, otherwise fall back to HTTP
+  const certPath = path.join(__dirname, 'server.crt');
+  const keyPath = path.join(__dirname, 'server.key');
+  
+  if (fs.existsSync(certPath) && fs.existsSync(keyPath)) {
+    // Use HTTPS with existing certificates
+    try {
+      const options = {
+        cert: fs.readFileSync(certPath),
+        key: fs.readFileSync(keyPath)
+      };
+      https.createServer(options, app).listen(actualPort, "0.0.0.0", () => {
+        console.log(`✅ LibrarySearch running on HTTPS port ${actualPort}`);
+        console.log(`   Health:  https://0.0.0.0:${actualPort}/health`);
+        console.log(`   Models:  https://0.0.0.0:${actualPort}/models`);
+        console.log(`   Search:  https://0.0.0.0:${actualPort}/search?query=constitutional%20law`);
+        console.log(`            Add &debug=1 (or &debug=2) and/or &skipWhitelist=1 for troubleshooting`);
+      });
+    } catch (err) {
+      console.error('❌ Failed to load SSL certificates, falling back to HTTP:', err.message);
+      app.listen(actualPort, "0.0.0.0", () => {
+        console.log(`✅ LibrarySearch running on HTTP port ${actualPort}`);
+        console.log(`   Health:  http://0.0.0.0:${actualPort}/health`);
+        console.log(`   Models:  http://0.0.0.0:${actualPort}/models`);
+        console.log(`   Search:  http://0.0.0.0:${actualPort}/search?query=constitutional%20law`);
+        console.log(`            Add &debug=1 (or &debug=2) and/or &skipWhitelist=1 for troubleshooting`);
+      });
+    }
+  } else {
+    // Use HTTP (suitable for reverse proxy HTTPS termination)
+    app.listen(actualPort, "0.0.0.0", () => {
+      console.log(`✅ LibrarySearch running on HTTP port ${actualPort}`);
+      console.log(`   Health:  http://0.0.0.0:${actualPort}/health`);
+      console.log(`   Models:  http://0.0.0.0:${actualPort}/models`);
+      console.log(`   Search:  http://0.0.0.0:${actualPort}/search?query=constitutional%20law`);
+      console.log(`            Add &debug=1 (or &debug=2) and/or &skipWhitelist=1 for troubleshooting`);
+    });
+  }
 } else {
   console.log(`📦 LibrarySearch app exported for external startup`);
 }
